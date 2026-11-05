@@ -1,7 +1,7 @@
 import { createGetUrl } from 'fumadocs-core/source';
 
 export const appName = 'QA-animate-ui';
-export const siteUrl = 'https://qa-animate-ui.com';
+export const siteUrl = 'https://qa-animate-ui.vercel.app';
 export const docsRoute = '/docs';
 export const docsImageRoute = '/og/docs';
 export const docsContentRoute = '/llms.mdx/docs';
@@ -15,12 +15,12 @@ export const docsVersions = [
     note: undefined,
     url:
       process.env.NEXT_PUBLIC_V2_URL ??
-      (isDev ? 'http://localhost:3000' : 'https://qa-animate-ui.com'),
+      (isDev ? 'http://localhost:3000' : 'https://qa-animate-ui.vercel.app'),
   },
 ] as const;
 
 export const gitConfig = {
-  user: 'QA-animate-ui',
+  user: 'quocanh221125-star',
   repo: 'QA-animate-ui',
   branch: 'main',
 };
