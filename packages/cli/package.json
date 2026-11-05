@@ -1,0 +1,60 @@
+{
+  "name": "@qa-animate-ui/cli",
+  "version": "1.0.0",
+  "description": "Swap your shadcn/ui primitives for QA-animate-ui's animated ones.",
+  "keywords": [
+    "qa-animate-ui",
+    "animate-ui",
+    "cli",
+    "shadcn",
+    "shadcn-ui",
+    "codemod",
+    "motion",
+    "animation",
+    "radix-ui",
+    "base-ui",
+    "react-aria"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QA-animate-ui/QA-animate-ui.git",
+    "directory": "packages/cli"
+  },
+  "type": "module",
+  "bin": {
+    "qa-animate-ui": "dist/index.mjs",
+    "animate-ui": "dist/index.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "prepublishOnly": "node ../../scripts/check-publish.mjs agent && pnpm build && node ../../scripts/check-publish.mjs dist",
+    "build": "node scripts/generate-primitives.mts && tsdown",
+    "dev": "tsdown --watch",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "node scripts/generate-primitives.mts && vitest run",
+    "gen": "node scripts/generate-primitives.mts"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@babel/types": "^7.29.8",
+    "@types/node": "catalog:",
+    "@workspace/eslint-config": "workspace:*",
+    "eslint": "catalog:",
+    "tsdown": "^0.23.0",
+    "tsx": "^4.23.15",
+    "typescript": "~6.0.3",
+    "vitest": "^5.0.3"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.29.9"
+  }
+}
