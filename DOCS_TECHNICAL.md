@@ -186,3 +186,93 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
    git commit -m "chore(release): v1.0.1"
    git push
    ```
+
+---
+
+## 7. Đặc Tả Chi Tiết Từng Nhóm Component & Props (Component Reference)
+
+### 7.1. Nhóm Headless UI Primitives (`radix-ui`, `base-ui`, `react-aria`)
+
+Mọi primitive trong `packages/react/src/primitives` đều kế thừa toàn bộ props của thư viện gốc và bổ sung cơ chế điều phối `AnimatePresence` + `motion` thông qua các bộ máy nội bộ trong `packages/react/src/internal/`:
+
+| Cơ chế nội bộ (`src/internal/`) | Các Primitive áp dụng | Hành vi chuyển động (Motion Behavior) |
+| :--- | :--- | :--- |
+| `modal-motion.tsx` | `Dialog`, `AlertDialog`, `Sheet`, `Modal` | Overlay mờ dần (`opacity`), Content phóng nhẹ kèm trượt theo hướng `from` (`top`, `bottom`, `left`, `right`) và hiệu ứng `blur`. |
+| `anchored.tsx` | `Popover`, `HoverCard`, `Tooltip`, `Select`, `Combobox` | Tự động tính toán `transformOrigin` từ biến CSS của Radix/Base UI/React Aria, phóng từ điểm neo với lò xo vật lý (`spring`). |
+| `menu-handoff.tsx` | `DropdownMenu`, `ContextMenu`, `Menubar`, `NavigationMenu` | Chuyển giao mượt mà (handoff) vệt sáng `Highlight` khi di chuột qua các `MenuItem` và trượt mượt giữa các menu con (`SubContent`). |
+| `disclosure-panel.tsx` | `Accordion`, `Collapsible`, `Disclosure` | Đo chiều cao thực tế qua `ResizeObserver` để animate `height: 0 -> auto` mượt mà kèm làm mờ nội dung (`mask-image` / `blur`). |
+| `item-indicator.tsx` | `Checkbox`, `RadioGroup`, `SelectItem`, `MenuCheckboxItem` | Hỗ trợ 2 chế độ từ `AnimateUIProvider`: `checkAnimation="draw"` (vẽ nét SVG `pathLength`) hoặc `"pop"` (phóng nảy). |
+
+---
+
+### 7.2. Nhóm Visual Effects (`qa-animate-ui/primitives/effects/*`)
+
+| Component | Import Path | Props chính | Mô tả kỹ thuật |
+| :--- | :--- | :--- | :--- |
+| **`Effect` / `Effects`** | `qa-animate-ui/primitives/effects/effect` | `fade`, `slide`, `zoom`, `blur`, `delay`, `inView`, `inViewOnce` | Kết hợp linh hoạt nhiều hiệu ứng xuất hiện (enter animation) trên cùng một phần tử hoặc danh sách phần tử (`stagger`). |
+| **`Highlight`** | `qa-animate-ui/primitives/effects/highlight` | `mode` (`'children'` \| `'parent'`), `hover`, `click`, `exitDelay`, `controlledItems` | Tạo nền trượt (floating indicator) bám theo phần tử đang active hoặc đang hover (dùng trong Tabs, Navbar, Segmented Control). |
+| **`Magnetic`** | `qa-animate-ui/primitives/effects/magnetic` | `strength` (`0..1`), `range` (`px`), `onlyOnHover`, `springOptions` | Tính khoảng cách tâm phần tử tới con trỏ chuột và hút phần tử theo lực đàn hồi lò xo. |
+| **`Tilt`** | `qa-animate-ui/primitives/effects/tilt` | `maxTilt` (`deg`), `perspective` (`px`), `scale` | Nghiêng thẻ 3D (`rotateX`, `rotateY`) theo vị trí di chuột trên bề mặt thẻ. |
+| **`Particles`** | `qa-animate-ui/primitives/effects/particles` | `count`, `radius`, `spread`, `duration`, `holdDelay` | Phát tán các hạt xung quanh phần tử khi kích hoạt (ví dụ nút Like, GitHub Stars). |
+| **`Shine`** | `qa-animate-ui/primitives/effects/shine` | `deg`, `duration`, `loop`, `loopDelay`, `enableOnHover` | Quét vệt sáng chéo qua bề mặt thẻ hoặc nút bấm. |
+| **`AutoHeight`** | `qa-animate-ui/primitives/effects/auto-height` | `deps`, `transition` | Tự động đo và làm mượt sự thay đổi chiều cao khi nội dung bên trong biến đổi động. |
+| **`ScrollFade`** | `qa-animate-ui/primitives/effects/scroll-fade` | `size`, `shrink`, `blur` | Tạo hiệu ứng thu nhỏ và mờ dần ở hai đầu danh sách cuộn. |
+
+---
+
+### 7.3. Nhóm Typography & Number Animations (`qa-animate-ui/primitives/texts/*`)
+
+| Component | Import Path | Props chính | Ứng dụng thực tế |
+| :--- | :--- | :--- | :--- |
+| **`CountingNumber`** | `qa-animate-ui/primitives/texts/counting-number` | `number`, `fromNumber`, `decimalPlaces`, `padStart`, `inView` | Đếm số tăng/giảm mượt mà theo thời gian thực cho Dashboard, KPI, thống kê. |
+| **`SlidingNumber`** | `qa-animate-ui/primitives/texts/sliding-number` | `number`, `padStart`, `thousandSeparator`, `decimalSeparator` | Cuộn từng chữ số theo trục dọc giống đồng hồ cơ học (Odometer) khi giá trị thay đổi. |
+| **`TypingText`** | `qa-animate-ui/primitives/texts/typing` | `text` (`string \| string[]`), `cursor`, `loop`, `holdDelay`, `duration` | Hiệu ứng gõ phím từng ký tự kèm con trỏ nhấp nháy, hỗ trợ lặp qua mảng nhiều câu. |
+| **`MorphingText`** | `qa-animate-ui/primitives/texts/morphing` | `text` (`string[]`), `loop`, `holdDelay` | Biến hình chữ (SVG threshold blur morph) mượt mà giữa các từ khóa. |
+| **`ShimmeringText`** | `qa-animate-ui/primitives/texts/shimmering` | `text`, `wave`, `duration`, `color`, `shimmeringColor` | Chữ ánh kim chạy sáng ngang hoặc lượn sóng 3D (`wave={true}`). |
+| **`SplittingText`** | `qa-animate-ui/primitives/texts/splitting` | `text`, `type` (`'chars'` \| `'words'` \| `'lines'`), `animation` (`'default'` \| `'vibe'` \| `'writing'`) | Tách văn bản thành từng ký tự/từ/dòng để chạy hiệu ứng xuất hiện tuần tự. |
+| **`RotatingText` / `SwappingText`** | `qa-animate-ui/primitives/texts/rotating` | `text` (`string[]`), `duration`, `y`, `stagger` | Xoay vòng danh sách các từ khóa nổi bật trong câu tiêu đề Hero. |
+
+---
+
+### 7.4. Nhóm Registry Components & Backgrounds (`apps/v2/registry/`)
+
+Các thành phần giao diện hoàn chỉnh nằm trong `apps/v2/registry/` được biên dịch sẵn ra `apps/v2/public/r/*.json`:
+
+- **Animated Backgrounds (`registry/backgrounds/`):**
+  - `backgrounds-bubble`, `backgrounds-fireworks`, `backgrounds-glyph`, `backgrounds-gravity-stars`, `backgrounds-gradient`, `backgrounds-hexagon`, `backgrounds-hole`, `backgrounds-stars`, `backgrounds-topography`.
+- **Animated Buttons (`registry/buttons/`):**
+  - `buttons-button`, `buttons-copy`, `buttons-flip`, `buttons-github-stars`, `buttons-icon`, `buttons-liquid`, `buttons-ripple`, `buttons-theme-toggler`.
+- **Composite UI Components (`registry/components/`):**
+  - `components-avatar-group`, `components-bottom-navigation`, `components-code-tabs`, `components-cursor`, `components-motion-carousel`, `components-motion-grid`, `components-page-transition`, `components-pinned-list`, `components-scroll-progress`, `components-spring-element`.
+
+---
+
+## 8. Hướng Dẫn Triển Khai Trang Docs & Shadcn Registry (`apps/v2`) Lên Vercel
+
+### Bước 1: Đẩy mã nguồn lên GitHub cá nhân
+
+```bash
+git remote add origin https://github.com/<username>/QA-animate-ui.git
+git push -u origin main
+```
+
+### Bước 2: Cấu hình Project trên Vercel
+
+1. Truy cập `https://vercel.com/new` và chọn **Import** repository `QA-animate-ui` từ GitHub.
+2. Tại màn hình **Configure Project**, thiết lập:
+   - **Framework Preset:** `Next.js`
+   - **Root Directory:** `apps/v2`
+   - **Install Command:** `pnpm install`
+   - **Build Command:** `pnpm build` (tự động chạy `pnpm registry && next build`)
+3. **Environment Variables (Tuỳ chọn):**
+   - `NEXT_PUBLIC_V2_URL`: Tên miền Vercel của bạn (ví dụ `https://qa-animate-ui.vercel.app`).
+   - `GITHUB_TOKEN`: (Tuỳ chọn) Personal Access Token của GitHub.
+4. Bấm **Deploy**.
+
+### Bước 3: Sử dụng Shadcn Registry từ tên miền Vercel của bạn
+
+```bash
+npx shadcn@latest add https://qa-animate-ui.vercel.app/r/backgrounds-bubble.json
+npx shadcn@latest add https://qa-animate-ui.vercel.app/r/buttons-liquid.json
+npx shadcn@latest add https://qa-animate-ui.vercel.app/r/icons-lucide-sparkles.json
+```
