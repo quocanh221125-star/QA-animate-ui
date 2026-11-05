@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { Tabs } from '@qa-animate-ui/react/primitives/base-ui/tabs';
+import { Tabs } from 'qa-animate-ui/primitives/base-ui/tabs';
 
 export default function BaseTabsHiddenListFixture() {
   const [shown, setShown] = React.useState(true);

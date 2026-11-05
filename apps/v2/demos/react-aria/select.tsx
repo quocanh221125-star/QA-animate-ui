@@ -20,8 +20,8 @@ import {
   type ListBoxSectionProps as SelectGroupProps,
   type SelectProps,
   type SelectValueProps,
-} from "@qa-animate-ui/react/primitives/react-aria"
-import { AnimateUIProvider } from "@qa-animate-ui/react/provider"
+} from "qa-animate-ui/primitives/react-aria"
+import { AnimateUIProvider } from "qa-animate-ui/provider"
 
 import {
   InputGroup,

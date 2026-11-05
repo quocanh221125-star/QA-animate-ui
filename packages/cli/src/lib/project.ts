@@ -105,7 +105,7 @@ export function loadProject(cwd: string): Project {
       ? 'vue'
       : 'react';
   const animateUI =
-    framework === 'vue' ? '@qa-animate-ui/vue' : '@qa-animate-ui/react';
+    framework === 'vue' ? '@qa-animate-ui/vue' : 'qa-animate-ui';
   const hasPackage =
     Boolean(
       pkg.dependencies?.[animateUI] ??

@@ -8,7 +8,7 @@ import {
   useAnimateIconContext,
   IconWrapper,
   type IconProps,
-} from '@qa-animate-ui/react/icons';
+} from 'qa-animate-ui/icons';
 
 type WifiLowProps = IconProps<keyof typeof animations>;
 

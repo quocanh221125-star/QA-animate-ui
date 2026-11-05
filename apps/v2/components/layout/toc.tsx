@@ -1,7 +1,7 @@
 'use client';
 
-import { useScrollFade } from '@qa-animate-ui/react/primitives/effects/scroll-fade';
-import { useShouldReduceMotion } from '@qa-animate-ui/react/utils/motion';
+import { useScrollFade } from 'qa-animate-ui/primitives/effects/scroll-fade';
+import { useShouldReduceMotion } from 'qa-animate-ui/utils/motion';
 import { TextAlignLeftIcon } from '@hugeicons/core-free-icons';
 import { HugeiconsIcon } from '@hugeicons/react';
 import { TOCItem, type TOCItemType } from 'fumadocs-core/toc';

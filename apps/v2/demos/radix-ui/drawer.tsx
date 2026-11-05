@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { cn } from "cn"
-import { Drawer as DrawerPrimitive } from "@qa-animate-ui/react/primitives/radix-ui"
+import { Drawer as DrawerPrimitive } from "qa-animate-ui/primitives/radix-ui"
 import { Bar, BarChart, ResponsiveContainer } from "recharts"
 
 import { Button } from "@/components/ui/button"

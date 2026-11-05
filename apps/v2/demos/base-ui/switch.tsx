@@ -1,6 +1,6 @@
 "use client"
 
-import { Switch as SwitchPrimitive } from "@qa-animate-ui/react/primitives/base-ui/switch"
+import { Switch as SwitchPrimitive } from "qa-animate-ui/primitives/base-ui/switch"
 import { cn } from "cn"
 import { Label } from "@/components/ui/base-ui/label"
 

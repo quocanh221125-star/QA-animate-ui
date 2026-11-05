@@ -1,8 +1,8 @@
 "use client"
 
 import * as React from "react"
-import { Menu as MenuPrimitive } from "@qa-animate-ui/react/primitives/base-ui/menu"
-import { AnimateUIProvider } from "@qa-animate-ui/react/provider"
+import { Menu as MenuPrimitive } from "qa-animate-ui/primitives/base-ui/menu"
+import { AnimateUIProvider } from "qa-animate-ui/provider"
 import { cn } from "cn"
 
 import { ArrowRight01Icon, Tick02Icon } from "@hugeicons/core-free-icons"

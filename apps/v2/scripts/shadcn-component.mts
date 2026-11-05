@@ -86,7 +86,7 @@ if (!values.raw) {
   );
   writeFileSync(
     path.join(project, 'package.json'),
-    '{"dependencies":{"@qa-animate-ui/react":"*"}}',
+    '{"dependencies":{"qa-animate-ui":"*"}}',
   );
   mkdirSync(path.join(project, 'components', 'ui'), { recursive: true });
   const file = path.join(project, 'components', 'ui', `${component}.tsx`);

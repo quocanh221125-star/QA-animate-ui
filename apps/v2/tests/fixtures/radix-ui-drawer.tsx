@@ -1,8 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import { Drawer } from '@qa-animate-ui/react/primitives/radix-ui/drawer';
-import * as Vaul from '@qa-animate-ui/react/primitives/radix-ui/drawer';
+import { Drawer } from 'qa-animate-ui/primitives/radix-ui/drawer';
+import * as Vaul from 'qa-animate-ui/primitives/radix-ui/drawer';
 
 const overlay = 'fixed inset-0 z-50 bg-black/40';
 const bottom =

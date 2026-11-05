@@ -6,7 +6,7 @@ import {
   Particles,
   ParticlesEffect,
   type ParticlesEffectProps,
-} from "@qa-animate-ui/react/primitives/effects/particles"
+} from "qa-animate-ui/primitives/effects/particles"
 import { FavouriteIcon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
 import { cn } from "cn"

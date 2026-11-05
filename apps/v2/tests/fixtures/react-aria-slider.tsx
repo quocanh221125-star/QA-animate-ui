@@ -8,7 +8,7 @@ import {
   SliderOutput,
   SliderThumb,
   SliderTrack,
-} from '@qa-animate-ui/react/primitives/react-aria';
+} from 'qa-animate-ui/primitives/react-aria';
 
 import { Slider as DemoSlider } from '@/demos/react-aria/slider';
 

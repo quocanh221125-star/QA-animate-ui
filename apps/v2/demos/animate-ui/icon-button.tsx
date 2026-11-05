@@ -7,7 +7,7 @@ import { motion, useReducedMotion } from "motion/react"
 import {
   IconButton,
   IconButtonParticles,
-} from "@qa-animate-ui/react/primitives/buttons/icon"
+} from "qa-animate-ui/primitives/buttons/icon"
 import { FavouriteIcon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
 

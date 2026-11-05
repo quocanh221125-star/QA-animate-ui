@@ -3,7 +3,7 @@
 import * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "cn"
-import { Tabs as TabsPrimitive } from "@qa-animate-ui/react/primitives/radix-ui"
+import { Tabs as TabsPrimitive } from "qa-animate-ui/primitives/radix-ui"
 
 function Tabs({
   className,

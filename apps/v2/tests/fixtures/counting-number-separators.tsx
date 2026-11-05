@@ -1,6 +1,6 @@
 'use client';
 
-import { CountingNumber } from '@qa-animate-ui/react/primitives/texts/counting-number';
+import { CountingNumber } from 'qa-animate-ui/primitives/texts/counting-number';
 
 export default function CountingNumberSeparatorsFixture() {
   return (

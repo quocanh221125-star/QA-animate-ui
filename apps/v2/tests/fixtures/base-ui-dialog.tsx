@@ -1,8 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import { Dialog } from '@qa-animate-ui/react/primitives/base-ui/dialog';
-import { AlertDialog } from '@qa-animate-ui/react/primitives/base-ui/alert-dialog';
+import { Dialog } from 'qa-animate-ui/primitives/base-ui/dialog';
+import { AlertDialog } from 'qa-animate-ui/primitives/base-ui/alert-dialog';
 
 const popup =
   'fixed top-1/2 left-1/2 z-50 -translate-x-1/2 -translate-y-1/2 rounded-lg border bg-background p-6';

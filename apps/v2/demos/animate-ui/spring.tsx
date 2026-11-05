@@ -4,7 +4,7 @@ import {
   Spring,
   SpringElement,
   SpringProvider,
-} from "@qa-animate-ui/react/primitives/spring"
+} from "qa-animate-ui/primitives/spring"
 
 export default function SpringDemo() {
   return (

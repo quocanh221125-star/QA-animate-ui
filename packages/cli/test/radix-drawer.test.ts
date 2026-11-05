@@ -4,7 +4,7 @@ import { expect, test } from 'vitest';
 
 import { transform } from '../src/lib/transform';
 
-const DRAWER = '@qa-animate-ui/react/primitives/radix-ui/drawer';
+const DRAWER = 'qa-animate-ui/primitives/radix-ui/drawer';
 const FIXTURES = path.join(import.meta.dirname, 'fixtures', 'radix-ui');
 
 test('radix drawer, every style: vaul swapped, overlay fade gone', () => {

@@ -8,7 +8,7 @@ import {
   ToggleButton as TogglePrimitive,
   type ToggleButtonGroupProps,
   type ToggleButtonProps,
-} from "@qa-animate-ui/react/primitives/react-aria"
+} from "qa-animate-ui/primitives/react-aria"
 
 import { toggleVariants } from "@/components/ui/react-aria/toggle"
 import { TextBoldIcon, TextItalicIcon, TextUnderlineIcon } from "@hugeicons/core-free-icons"

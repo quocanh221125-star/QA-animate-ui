@@ -1,7 +1,7 @@
 'use client';
 
-import { useShouldReduceMotion } from '@qa-animate-ui/react/utils/motion';
-import { AnimateIcon } from '@qa-animate-ui/react/icons';
+import { useShouldReduceMotion } from 'qa-animate-ui/utils/motion';
+import { AnimateIcon } from 'qa-animate-ui/icons';
 import {
   Tabs as AnimateTabs,
   TabsContent,
@@ -10,8 +10,8 @@ import {
   TabsHighlightItem,
   TabsList,
   TabsTrigger,
-} from '@qa-animate-ui/react/primitives/tabs';
-import { SlidingNumber } from '@qa-animate-ui/react/primitives/texts/sliding-number';
+} from 'qa-animate-ui/primitives/tabs';
+import { SlidingNumber } from 'qa-animate-ui/primitives/texts/sliding-number';
 import {
   createContext,
   use,

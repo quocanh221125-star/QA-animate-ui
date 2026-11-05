@@ -1,6 +1,6 @@
 "use client"
 
-import { ScrollFade } from "@qa-animate-ui/react/primitives/effects/scroll-fade"
+import { ScrollFade } from "qa-animate-ui/primitives/effects/scroll-fade"
 
 const RELEASES = [
   { version: "2.4.0", date: "Oct 2", title: "Scroll fade", tag: "New" },

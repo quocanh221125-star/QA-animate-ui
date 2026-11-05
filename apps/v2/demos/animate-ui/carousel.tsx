@@ -4,7 +4,7 @@ import * as React from "react"
 import { cn } from "cn"
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
-} from "@qa-animate-ui/react/primitives/carousel"
+} from "qa-animate-ui/primitives/carousel"
 
 import { ArrowLeft01Icon, ArrowRight01Icon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
@@ -247,7 +247,7 @@ export {
 import {
   CarouselCounter,
   CarouselDots,
-} from "@qa-animate-ui/react/primitives/carousel"
+} from "qa-animate-ui/primitives/carousel"
 
 export const controls = {
   Carousel: {

@@ -1,12 +1,12 @@
 'use client';
 
 import * as React from 'react';
-import { SlidingNumber } from '@qa-animate-ui/react/primitives/texts/sliding-number';
+import { SlidingNumber } from 'qa-animate-ui/primitives/texts/sliding-number';
 import {
   ScrollingNumber,
   ScrollingNumberContainer,
   ScrollingNumberItems,
-} from '@qa-animate-ui/react/primitives/texts/scrolling-number';
+} from 'qa-animate-ui/primitives/texts/scrolling-number';
 
 export default function AnimateUINumberEventsFixture() {
   const [last, setLast] = React.useState<number | null>(null);

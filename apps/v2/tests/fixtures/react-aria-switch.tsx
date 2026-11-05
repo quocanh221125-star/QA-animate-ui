@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { Switch } from '@qa-animate-ui/react/primitives/react-aria';
+import { Switch } from 'qa-animate-ui/primitives/react-aria';
 
 const Track = ({ isSelected }: { isSelected: boolean }) => (
   <span className="inline-flex h-5 w-9 items-center rounded-full border">

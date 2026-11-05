@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { Label, ProgressBar } from '@qa-animate-ui/react/primitives/react-aria';
+import { Label, ProgressBar } from 'qa-animate-ui/primitives/react-aria';
 
 const track = {
   display: 'block',

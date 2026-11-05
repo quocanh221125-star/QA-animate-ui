@@ -1,6 +1,6 @@
 "use client"
 
-import { GradientText } from "@qa-animate-ui/react/primitives/texts/gradient"
+import { GradientText } from "qa-animate-ui/primitives/texts/gradient"
 
 export const controls = {
   GradientText: {

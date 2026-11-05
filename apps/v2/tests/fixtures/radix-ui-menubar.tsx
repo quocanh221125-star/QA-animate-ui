@@ -1,8 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import { Menubar } from '@qa-animate-ui/react/primitives/radix-ui/menubar';
-import * as MenubarStar from '@qa-animate-ui/react/primitives/radix-ui/menubar';
+import { Menubar } from 'qa-animate-ui/primitives/radix-ui/menubar';
+import * as MenubarStar from 'qa-animate-ui/primitives/radix-ui/menubar';
 
 const content = 'min-w-40 rounded-md border bg-white p-1 shadow-md';
 

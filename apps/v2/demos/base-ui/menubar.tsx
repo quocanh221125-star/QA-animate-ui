@@ -1,9 +1,9 @@
 "use client"
 
 import * as React from "react"
-import { Menu as MenuPrimitive } from "@qa-animate-ui/react/primitives/base-ui/menu"
-import { Menubar as MenubarPrimitive } from "@qa-animate-ui/react/primitives/base-ui/menubar"
-import { AnimateUIProvider } from "@qa-animate-ui/react/provider"
+import { Menu as MenuPrimitive } from "qa-animate-ui/primitives/base-ui/menu"
+import { Menubar as MenubarPrimitive } from "qa-animate-ui/primitives/base-ui/menubar"
+import { AnimateUIProvider } from "qa-animate-ui/provider"
 import { cn } from "cn"
 
 import {

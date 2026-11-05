@@ -3,7 +3,7 @@
 import {
   TypingText,
   TypingTextCursor,
-} from "@qa-animate-ui/react/primitives/texts/typing"
+} from "qa-animate-ui/primitives/texts/typing"
 
 export const controls = {
   TypingText: {

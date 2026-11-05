@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Popover as PopoverPrimitive } from "@qa-animate-ui/react/primitives/base-ui/popover"
+import { Popover as PopoverPrimitive } from "qa-animate-ui/primitives/base-ui/popover"
 import { cn } from "cn"
 import { Button } from "@/components/ui/base-ui/button"
 import { Input } from "@/components/ui/base-ui/input"

@@ -1,7 +1,7 @@
 "use client"
 
 import { cn } from "cn"
-import { Separator as SeparatorPrimitive } from "@qa-animate-ui/react/primitives/react-aria"
+import { Separator as SeparatorPrimitive } from "qa-animate-ui/primitives/react-aria"
 
 function Separator({
   className,

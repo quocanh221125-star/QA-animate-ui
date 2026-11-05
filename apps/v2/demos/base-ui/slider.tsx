@@ -1,6 +1,6 @@
 "use client"
 
-import { Slider as SliderPrimitive } from "@qa-animate-ui/react/primitives/base-ui/slider"
+import { Slider as SliderPrimitive } from "qa-animate-ui/primitives/base-ui/slider"
 import { cn } from "cn"
 
 function Slider({

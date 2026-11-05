@@ -1,7 +1,7 @@
 'use client';
 
-import { AnimateUIProvider } from '@qa-animate-ui/react/provider';
-import { useTempoTransition } from '@qa-animate-ui/react/utils/motion';
+import { AnimateUIProvider } from 'qa-animate-ui/provider';
+import { useTempoTransition } from 'qa-animate-ui/utils/motion';
 
 function Paced({ id }: { id: string }) {
   const transition = useTempoTransition({

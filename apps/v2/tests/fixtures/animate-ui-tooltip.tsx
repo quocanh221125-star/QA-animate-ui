@@ -6,7 +6,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@qa-animate-ui/react/primitives/tooltip';
+} from 'qa-animate-ui/primitives/tooltip';
 
 const CONTENT = 'rounded-md bg-black px-3 py-1.5 text-xs text-white';
 

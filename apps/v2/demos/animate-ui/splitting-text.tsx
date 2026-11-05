@@ -4,7 +4,7 @@ import * as React from "react"
 import {
   SplittingText,
   type SplittingTextProps,
-} from "@qa-animate-ui/react/primitives/texts/splitting"
+} from "qa-animate-ui/primitives/texts/splitting"
 import { RefreshIcon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
 

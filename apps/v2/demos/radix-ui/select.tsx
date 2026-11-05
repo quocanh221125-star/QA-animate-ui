@@ -2,8 +2,8 @@
 
 import * as React from "react"
 import { cn } from "cn"
-import { Select as SelectPrimitive } from "@qa-animate-ui/react/primitives/radix-ui"
-import { AnimateUIProvider } from "@qa-animate-ui/react/provider"
+import { Select as SelectPrimitive } from "qa-animate-ui/primitives/radix-ui"
+import { AnimateUIProvider } from "qa-animate-ui/provider"
 
 import { ArrowDown01Icon, ArrowUp01Icon, Tick02Icon, UnfoldMoreIcon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"

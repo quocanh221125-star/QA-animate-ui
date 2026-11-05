@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { Slider } from '@qa-animate-ui/react/primitives/base-ui/slider';
+import { Slider } from 'qa-animate-ui/primitives/base-ui/slider';
 
 import { Slider as DemoSlider } from '@/demos/base-ui/slider';
 

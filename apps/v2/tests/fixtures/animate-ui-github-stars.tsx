@@ -6,7 +6,7 @@ import {
   GithubStarsLogo,
   GithubStarsNumber,
   GithubStarsParticles,
-} from '@qa-animate-ui/react/primitives/github-stars';
+} from 'qa-animate-ui/primitives/github-stars';
 import { StarIcon } from '@hugeicons/core-free-icons';
 import { HugeiconsIcon } from '@hugeicons/react';
 

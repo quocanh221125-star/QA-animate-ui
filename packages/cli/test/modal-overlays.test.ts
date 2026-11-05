@@ -11,10 +11,10 @@ const files = (library: string, component: RegExp) =>
   readdirSync(path.join(FIXTURES, library)).filter((f) => component.test(f));
 
 const MODULE: Record<string, (component: string) => string> = {
-  'radix-ui': () => '@qa-animate-ui/react/primitives/radix-ui',
+  'radix-ui': () => 'qa-animate-ui/primitives/radix-ui',
   'base-ui': (component) =>
-    `@qa-animate-ui/react/primitives/base-ui/${component === 'sheet' ? 'dialog' : component}`,
-  'react-aria': () => '@qa-animate-ui/react/primitives/react-aria',
+    `qa-animate-ui/primitives/base-ui/${component === 'sheet' ? 'dialog' : component}`,
+  'react-aria': () => 'qa-animate-ui/primitives/react-aria',
 };
 
 for (const library of Object.keys(MODULE)) {
@@ -46,7 +46,7 @@ for (const library of ['base-ui', 'react-aria']) {
     test(`${library}/${file}: the primitive owns the drawer's motion`, () => {
       const result = transform(read(library, file));
       expect(result.code).toContain(
-        '"@qa-animate-ui/react/primitives/base-ui/drawer"',
+        '"qa-animate-ui/primitives/base-ui/drawer"',
       );
       expect(result.code).not.toMatch(
         /transform-\[translate3d|transform-\(--closed-transform\)|duration-450|data-swiping:duration|data-ending-style:duration/,
@@ -69,7 +69,7 @@ export const C = () => <ModalOverlay className="data-entering:animate-in data-en
 `;
   const result = transform(input);
   expect(result.code).toContain(
-    'import { Dialog, Modal, ModalOverlay, Heading } from "@qa-animate-ui/react/primitives/react-aria"',
+    'import { Dialog, Modal, ModalOverlay, Heading } from "qa-animate-ui/primitives/react-aria"',
   );
   expect(result.code).toContain('className="fixed inset-0"');
   expect(result.code).toContain('<Modal className="">');

@@ -6,7 +6,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@qa-animate-ui/react/primitives/tooltip';
+} from 'qa-animate-ui/primitives/tooltip';
 import { InformationCircleIcon } from '@hugeicons/core-free-icons';
 import { HugeiconsIcon } from '@hugeicons/react';
 import { cn } from 'cn';

@@ -3,8 +3,8 @@
 import {
   AvatarGroup,
   AvatarGroupTooltip,
-} from '@qa-animate-ui/react/primitives/avatar-group';
-import { AnimateUIProvider } from '@qa-animate-ui/react/provider';
+} from 'qa-animate-ui/primitives/avatar-group';
+import { AnimateUIProvider } from 'qa-animate-ui/provider';
 
 function Group({ label }: { label: string }) {
   return (

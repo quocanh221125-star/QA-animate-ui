@@ -2,22 +2,22 @@
 
 import * as React from 'react';
 import { useSearchParams } from 'next/navigation';
-import { Popover as RadixPopover } from '@qa-animate-ui/react/primitives/radix-ui/popover';
-import { Tooltip as RadixTooltip } from '@qa-animate-ui/react/primitives/radix-ui/tooltip';
-import { HoverCard as RadixHoverCard } from '@qa-animate-ui/react/primitives/radix-ui/hover-card';
-import { DropdownMenu as RadixDropdownMenu } from '@qa-animate-ui/react/primitives/radix-ui/dropdown-menu';
-import { Menubar as RadixMenubar } from '@qa-animate-ui/react/primitives/radix-ui/menubar';
-import { Select as RadixSelect } from '@qa-animate-ui/react/primitives/radix-ui/select';
-import { NavigationMenu as RadixNavigationMenu } from '@qa-animate-ui/react/primitives/radix-ui/navigation-menu';
-import { Popover as BasePopover } from '@qa-animate-ui/react/primitives/base-ui/popover';
-import { Tooltip as BaseTooltip } from '@qa-animate-ui/react/primitives/base-ui/tooltip';
-import { PreviewCard as BasePreviewCard } from '@qa-animate-ui/react/primitives/base-ui/preview-card';
-import { Menu as BaseMenu } from '@qa-animate-ui/react/primitives/base-ui/menu';
-import { Menubar as BaseMenubar } from '@qa-animate-ui/react/primitives/base-ui/menubar';
-import { ContextMenu as BaseContextMenu } from '@qa-animate-ui/react/primitives/base-ui/context-menu';
-import { Select as BaseSelect } from '@qa-animate-ui/react/primitives/base-ui/select';
-import { Combobox as BaseCombobox } from '@qa-animate-ui/react/primitives/base-ui/combobox';
-import { NavigationMenu as BaseNavigationMenu } from '@qa-animate-ui/react/primitives/base-ui/navigation-menu';
+import { Popover as RadixPopover } from 'qa-animate-ui/primitives/radix-ui/popover';
+import { Tooltip as RadixTooltip } from 'qa-animate-ui/primitives/radix-ui/tooltip';
+import { HoverCard as RadixHoverCard } from 'qa-animate-ui/primitives/radix-ui/hover-card';
+import { DropdownMenu as RadixDropdownMenu } from 'qa-animate-ui/primitives/radix-ui/dropdown-menu';
+import { Menubar as RadixMenubar } from 'qa-animate-ui/primitives/radix-ui/menubar';
+import { Select as RadixSelect } from 'qa-animate-ui/primitives/radix-ui/select';
+import { NavigationMenu as RadixNavigationMenu } from 'qa-animate-ui/primitives/radix-ui/navigation-menu';
+import { Popover as BasePopover } from 'qa-animate-ui/primitives/base-ui/popover';
+import { Tooltip as BaseTooltip } from 'qa-animate-ui/primitives/base-ui/tooltip';
+import { PreviewCard as BasePreviewCard } from 'qa-animate-ui/primitives/base-ui/preview-card';
+import { Menu as BaseMenu } from 'qa-animate-ui/primitives/base-ui/menu';
+import { Menubar as BaseMenubar } from 'qa-animate-ui/primitives/base-ui/menubar';
+import { ContextMenu as BaseContextMenu } from 'qa-animate-ui/primitives/base-ui/context-menu';
+import { Select as BaseSelect } from 'qa-animate-ui/primitives/base-ui/select';
+import { Combobox as BaseCombobox } from 'qa-animate-ui/primitives/base-ui/combobox';
+import { NavigationMenu as BaseNavigationMenu } from 'qa-animate-ui/primitives/base-ui/navigation-menu';
 import {
   Button,
   Dialog,
@@ -35,7 +35,7 @@ import {
   SelectValue,
   Tooltip,
   TooltipTrigger,
-} from '@qa-animate-ui/react/primitives/react-aria';
+} from 'qa-animate-ui/primitives/react-aria';
 
 const panel = 'rounded-md border bg-white p-2 shadow-md';
 const FRUITS = ['Apple', 'Banana', 'Cherry'];

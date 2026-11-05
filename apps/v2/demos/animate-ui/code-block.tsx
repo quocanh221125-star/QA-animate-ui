@@ -6,11 +6,11 @@ import { cn } from "cn"
 
 import { Copy01Icon, Tick02Icon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
-import * as CodeBlockPrimitive from "@qa-animate-ui/react/primitives/code-block"
+import * as CodeBlockPrimitive from "qa-animate-ui/primitives/code-block"
 import {
   CopyButton,
   CopyButtonIcon,
-} from "@qa-animate-ui/react/primitives/buttons/copy"
+} from "qa-animate-ui/primitives/buttons/copy"
 
 import { Button } from "@/components/ui/button"
 
@@ -250,7 +250,7 @@ import {
   FileCodeIcon,
   TextWrapIcon,
 } from "@hugeicons/core-free-icons"
-import { useCodeWriting } from "@qa-animate-ui/react/primitives/code-block"
+import { useCodeWriting } from "qa-animate-ui/primitives/code-block"
 
 import { useHighlightedCode } from "@/hooks/use-highlighted-code"
 

@@ -9,7 +9,7 @@ import {
   blur,
   ease,
   useShouldReduceMotion,
-} from '@qa-animate-ui/react/utils/motion';
+} from 'qa-animate-ui/utils/motion';
 
 type PageTransitionEffect =
   | 'fade'

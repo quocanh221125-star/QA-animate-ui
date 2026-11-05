@@ -1,6 +1,6 @@
 'use client';
 
-import { ease, useShouldReduceMotion } from '@qa-animate-ui/react/utils/motion';
+import { ease, useShouldReduceMotion } from 'qa-animate-ui/utils/motion';
 import {
   motion,
   useAnimationFrame,

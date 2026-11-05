@@ -2,8 +2,8 @@
 
 import * as React from "react"
 import { cn } from "cn"
-import { Checkbox as CheckboxPrimitive } from "@qa-animate-ui/react/primitives/radix-ui"
-import { AnimateUIProvider } from "@qa-animate-ui/react/provider"
+import { Checkbox as CheckboxPrimitive } from "qa-animate-ui/primitives/radix-ui"
+import { AnimateUIProvider } from "qa-animate-ui/provider"
 
 import { Tick02Icon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"

@@ -1,8 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import type { QuestionnaireItemStatus } from '@qa-animate-ui/react/primitives/questionnaire';
-import { AnimateUIProvider } from '@qa-animate-ui/react/provider';
+import type { QuestionnaireItemStatus } from 'qa-animate-ui/primitives/questionnaire';
+import { AnimateUIProvider } from 'qa-animate-ui/provider';
 
 import {
   Questionnaire,

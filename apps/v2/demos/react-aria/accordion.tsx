@@ -12,7 +12,7 @@ import {
   type DisclosureGroupProps,
   type DisclosurePanelProps,
   type DisclosureProps,
-} from "@qa-animate-ui/react/primitives/react-aria"
+} from "qa-animate-ui/primitives/react-aria"
 
 import { ArrowDown01Icon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"

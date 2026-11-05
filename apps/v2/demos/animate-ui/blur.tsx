@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Blurs } from "@qa-animate-ui/react/primitives/effects/blur"
+import { Blurs } from "qa-animate-ui/primitives/effects/blur"
 import { RepeatIcon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
 

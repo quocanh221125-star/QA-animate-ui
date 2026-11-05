@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { Tooltip } from '@qa-animate-ui/react/primitives/base-ui/tooltip';
+import { Tooltip } from 'qa-animate-ui/primitives/base-ui/tooltip';
 
 const TOOLS = [
   { label: 'Bold', shortcut: '⌘B' },

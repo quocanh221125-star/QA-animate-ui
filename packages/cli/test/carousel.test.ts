@@ -5,7 +5,7 @@ import { expect, test } from 'vitest';
 import { transform } from '../src/lib/transform';
 import { transformVue } from '../src/lib/vue';
 
-const CAROUSEL = '@qa-animate-ui/react/primitives/carousel';
+const CAROUSEL = 'qa-animate-ui/primitives/carousel';
 const VUE_CAROUSEL = '@qa-animate-ui/vue/primitives/carousel';
 
 test('shadcn/ui carousel: embla-carousel-react swapped for the animated hook, nothing else', () => {

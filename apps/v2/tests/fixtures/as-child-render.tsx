@@ -1,13 +1,13 @@
 'use client';
 
-import { Menu } from '@qa-animate-ui/react/primitives/base-ui/menu';
-import { Progress as BaseProgress } from '@qa-animate-ui/react/primitives/base-ui/progress';
-import { Slider as BaseSlider } from '@qa-animate-ui/react/primitives/base-ui/slider';
-import { Accordion } from '@qa-animate-ui/react/primitives/radix-ui/accordion';
-import { Collapsible } from '@qa-animate-ui/react/primitives/radix-ui/collapsible';
-import { DropdownMenu } from '@qa-animate-ui/react/primitives/radix-ui/dropdown-menu';
-import { Progress } from '@qa-animate-ui/react/primitives/radix-ui/progress';
-import { Slider } from '@qa-animate-ui/react/primitives/radix-ui/slider';
+import { Menu } from 'qa-animate-ui/primitives/base-ui/menu';
+import { Progress as BaseProgress } from 'qa-animate-ui/primitives/base-ui/progress';
+import { Slider as BaseSlider } from 'qa-animate-ui/primitives/base-ui/slider';
+import { Accordion } from 'qa-animate-ui/primitives/radix-ui/accordion';
+import { Collapsible } from 'qa-animate-ui/primitives/radix-ui/collapsible';
+import { DropdownMenu } from 'qa-animate-ui/primitives/radix-ui/dropdown-menu';
+import { Progress } from 'qa-animate-ui/primitives/radix-ui/progress';
+import { Slider } from 'qa-animate-ui/primitives/radix-ui/slider';
 
 const track = { width: 200, height: 8, background: '#ddd' } as const;
 

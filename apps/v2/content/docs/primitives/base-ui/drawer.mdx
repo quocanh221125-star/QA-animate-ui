@@ -15,7 +15,7 @@ releaseDate: '2026-10-18'
 Import the primitive from Animate UI instead of Base UI. Everything else stays the same, types included (`Drawer.Popup.Props`, `Drawer.Root.SnapPoint`…).
 
 ```tsx
-import { Drawer } from '@qa-animate-ui/react/primitives/base-ui/drawer';
+import { Drawer } from 'qa-animate-ui/primitives/base-ui/drawer';
 
 export function DailyGoals() {
   return (
@@ -38,7 +38,7 @@ export function DailyGoals() {
 }
 ```
 
-Using the `@base-ui/react` umbrella import instead? The barrel mirrors it: `import { Drawer } from '@qa-animate-ui/react/primitives/base-ui'`.
+Using the `@base-ui/react` umbrella import instead? The barrel mirrors it: `import { Drawer } from 'qa-animate-ui/primitives/base-ui'`.
 
 shadcn/ui's React Aria Drawer is built on Base UI's Drawer too: `animate-ui animate drawer` animates it the same way. shadcn/ui's Radix UI Drawer is built on Vaul instead: Animate UI replaces it with the [Radix UI Drawer](/docs/primitives/radix-ui/drawer), which has Vaul's API.
 

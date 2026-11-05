@@ -15,7 +15,7 @@
     "registry": "node scripts/build-icons.mts && node scripts/build-ui.mts && node scripts/build-demos.mts && node scripts/build-catalog.mts"
   },
   "dependencies": {
-    "@qa-animate-ui/react": "workspace:*",
+    "qa-animate-ui": "workspace:*",
     "@hugeicons/core-free-icons": "^4.3.5",
     "@hugeicons/react": "^1.1.10",
     "@shadcn/react": "^0.3.1",

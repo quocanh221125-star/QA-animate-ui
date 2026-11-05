@@ -1,14 +1,14 @@
 'use client';
 
 import * as React from 'react';
-import { Tabs as BaseTabs } from '@qa-animate-ui/react/primitives/base-ui/tabs';
-import { Tabs as RadixTabs } from '@qa-animate-ui/react/primitives/radix-ui';
+import { Tabs as BaseTabs } from 'qa-animate-ui/primitives/base-ui/tabs';
+import { Tabs as RadixTabs } from 'qa-animate-ui/primitives/radix-ui';
 import {
   Tab,
   TabList,
   TabPanel,
   Tabs as AriaTabs,
-} from '@qa-animate-ui/react/primitives/react-aria';
+} from 'qa-animate-ui/primitives/react-aria';
 
 const BOX = {
   border: '1px solid rgb(212, 212, 212)',

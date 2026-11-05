@@ -20,7 +20,7 @@ const toV1 = [
 
 const config = {
   reactStrictMode: false,
-  transpilePackages: ['@qa-animate-ui/react'],
+  transpilePackages: ['qa-animate-ui'],
   async redirects() {
     return [
       ...v1Redirects,

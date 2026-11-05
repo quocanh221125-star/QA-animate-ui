@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { Tabs } from '@qa-animate-ui/react/primitives/base-ui/tabs';
+import { Tabs } from 'qa-animate-ui/primitives/base-ui/tabs';
 
 const BOX = {
   border: '1px solid rgb(212, 212, 212)',

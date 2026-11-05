@@ -15,7 +15,7 @@ releaseDate: '2026-10-18'
 Import the primitive from Animate UI instead of Base UI. Everything else stays the same.
 
 ```tsx
-import { ContextMenu } from '@qa-animate-ui/react/primitives/base-ui/context-menu';
+import { ContextMenu } from 'qa-animate-ui/primitives/base-ui/context-menu';
 
 export function CanvasMenu() {
   return (
@@ -36,14 +36,14 @@ export function CanvasMenu() {
 }
 ```
 
-Using the `@base-ui/react` umbrella import instead? The barrel mirrors it: `import { ContextMenu } from '@qa-animate-ui/react/primitives/base-ui'`.
+Using the `@base-ui/react` umbrella import instead? The barrel mirrors it: `import { ContextMenu } from 'qa-animate-ui/primitives/base-ui'`.
 
 ### Check animation
 
 Checkbox and radio items show their check in a `CheckboxItemIndicator` or a `RadioItemIndicator`: it draws itself when the item is checked, and erases itself when it's unchecked (a radio item's while the new one draws). With `animation="pop"`, it pops in from half its size and shrinks back out instead, and a radio item's check glides to the newly checked item:
 
 ```tsx
-import { ContextMenu } from '@qa-animate-ui/react/primitives/base-ui/context-menu';
+import { ContextMenu } from 'qa-animate-ui/primitives/base-ui/context-menu';
 
 export function CanvasMenu() {
   return (

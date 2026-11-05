@@ -5,7 +5,7 @@ import { cn } from "cn"
 import {
   Click,
   type ClickVariant,
-} from "@qa-animate-ui/react/primitives/effects/click"
+} from "qa-animate-ui/primitives/effects/click"
 
 const VARIANTS: ClickVariant[] = [
   "ring",

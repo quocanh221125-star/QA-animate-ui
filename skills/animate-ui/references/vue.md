@@ -2,7 +2,7 @@
 
 A Vue project (`vue` in `package.json`, Nuxt, or a `components.json` whose `$schema` is shadcn-vue's) takes the same paths, gate, levels, tokens, recipes and rules as React. This file says what changes: the packages, the import paths, and how the code is written. Everything not named here applies as written in `SKILL.md` and the other references, read with these swaps:
 
-- `@qa-animate-ui/react` → `@qa-animate-ui/vue`, `motion` → `motion-v`, `motion/react` → `motion-v`, and every catalog path under `@qa-animate-ui/react/…` lives at the same place under `@qa-animate-ui/vue/…`.
+- `qa-animate-ui` → `@qa-animate-ui/vue`, `motion` → `motion-v`, `motion/react` → `motion-v`, and every catalog path under `qa-animate-ui/…` lives at the same place under `@qa-animate-ui/vue/…`.
 - No `'use client'`: Nuxt's `<ClientOnly>` (§ C below) covers what must not render on the server.
 - Props in camelCase become kebab-case attributes in templates, callbacks become events, React state becomes refs.
 

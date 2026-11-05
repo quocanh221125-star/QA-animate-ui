@@ -48,7 +48,7 @@ export type Diagnostic = {
 };
 
 /**
- * Type-checks `files` with `@qa-animate-ui/react/*` pointing at its sources and
+ * Type-checks `files` with `qa-animate-ui/*` pointing at its sources and
  * bare imports (react, radix-ui, motion…) at its node_modules. Returns the
  * diagnostics of `files` only.
  */
@@ -67,7 +67,7 @@ export function typecheck(
     lib: ['lib.es2023.d.ts', 'lib.dom.d.ts', 'lib.dom.iterable.d.ts'],
     types: [],
     paths: {
-      '@qa-animate-ui/react/*': [path.join(REACT, 'src', '*')],
+      'qa-animate-ui/*': [path.join(REACT, 'src', '*')],
       ...paths,
       '*': [
         path.join(REACT, 'node_modules', '@types', '*'),

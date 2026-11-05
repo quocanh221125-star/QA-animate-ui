@@ -1,5 +1,5 @@
 {
-  "name": "@qa-animate-ui/cli",
+  "name": "qa-animate-ui-cli",
   "version": "1.0.0",
   "description": "Swap your shadcn/ui primitives for QA-animate-ui's animated ones.",
   "keywords": [

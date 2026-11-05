@@ -1,8 +1,8 @@
 'use client';
 
 import { VueDemo } from './vue-demo';
-import { AnimateIcon } from '@qa-animate-ui/react/icons';
-import { Button } from '@qa-animate-ui/react/primitives/buttons/button';
+import { AnimateIcon } from 'qa-animate-ui/icons';
+import { Button } from 'qa-animate-ui/primitives/buttons/button';
 import {
   ArrowUpRight01Icon,
   PlayIcon,

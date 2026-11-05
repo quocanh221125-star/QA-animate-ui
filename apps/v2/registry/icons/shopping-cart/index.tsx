@@ -8,7 +8,7 @@ import {
   useAnimateIconContext,
   IconWrapper,
   type IconProps,
-} from '@qa-animate-ui/react/icons';
+} from 'qa-animate-ui/icons';
 
 type ShoppingCartProps = IconProps<keyof typeof animations>;
 

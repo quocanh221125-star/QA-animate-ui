@@ -7,7 +7,7 @@ import {
   SliderThumb,
   SliderTrack,
   type SliderProps as SliderPrimitiveProps,
-} from "@qa-animate-ui/react/primitives/react-aria"
+} from "qa-animate-ui/primitives/react-aria"
 
 type SliderValue = number | number[]
 type SliderProps<T extends SliderValue = SliderValue> = Omit<

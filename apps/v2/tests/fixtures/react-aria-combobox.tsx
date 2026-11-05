@@ -13,7 +13,7 @@ import {
   TagGroup,
   TagList,
   type Key,
-} from '@qa-animate-ui/react/primitives/react-aria';
+} from 'qa-animate-ui/primitives/react-aria';
 
 const FRUITS = [
   { id: 'apple', name: 'Apple' },

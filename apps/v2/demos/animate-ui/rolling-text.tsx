@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { RollingText } from "@qa-animate-ui/react/primitives/texts/rolling"
+import { RollingText } from "qa-animate-ui/primitives/texts/rolling"
 import { RefreshIcon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
 

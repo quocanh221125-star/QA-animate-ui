@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { cn } from "cn"
-import { Popover as PopoverPrimitive } from "@qa-animate-ui/react/primitives/radix-ui"
+import { Popover as PopoverPrimitive } from "qa-animate-ui/primitives/radix-ui"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"

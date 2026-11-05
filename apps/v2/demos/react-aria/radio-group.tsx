@@ -7,7 +7,7 @@ import {
   Radio as RadioPrimitive,
   type RadioGroupProps,
   type RadioProps,
-} from "@qa-animate-ui/react/primitives/react-aria"
+} from "qa-animate-ui/primitives/react-aria"
 import { Label } from "@/components/ui/react-aria/label"
 
 function RadioGroup({ className, ...props }: RadioGroupProps) {

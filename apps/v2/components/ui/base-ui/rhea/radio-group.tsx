@@ -1,7 +1,7 @@
 "use client"
 
-import { Radio as RadioPrimitive } from "@qa-animate-ui/react/primitives/base-ui/radio"
-import { RadioGroup as RadioGroupPrimitive } from "@qa-animate-ui/react/primitives/base-ui/radio-group"
+import { Radio as RadioPrimitive } from "qa-animate-ui/primitives/base-ui/radio"
+import { RadioGroup as RadioGroupPrimitive } from "qa-animate-ui/primitives/base-ui/radio-group"
 import { cn } from "cn"
 
 function RadioGroup({ className, ...props }: RadioGroupPrimitive.Props) {

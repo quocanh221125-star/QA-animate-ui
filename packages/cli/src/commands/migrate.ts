@@ -322,7 +322,7 @@ export async function migrate(components: string[], options: MigrateOptions) {
     .sort()
     .filter((file) => importersOf(file).length > 0);
   if (stillImported.length > 0) {
-    log('\nStill imported (v1 files @qa-animate-ui/react replaces):');
+    log('\nStill imported (v1 files qa-animate-ui replaces):');
     for (const file of stillImported) {
       const importers = importersOf(file);
       const more =
@@ -343,7 +343,7 @@ export async function migrate(components: string[], options: MigrateOptions) {
       options.interactive ??
       Boolean(process.stdin.isTTY && process.stdout.isTTY);
     const header = (verb: string) =>
-      log(`\n${verb} (v1 files @qa-animate-ui/react replaces):`);
+      log(`\n${verb} (v1 files qa-animate-ui replaces):`);
     const list = () => {
       for (const file of unused) log(`    ${relative(file)}`);
     };

@@ -1,9 +1,9 @@
 'use client';
 
-import { CopyButton } from '@qa-animate-ui/react/primitives/buttons/copy';
+import { CopyButton } from 'qa-animate-ui/primitives/buttons/copy';
 import { LiquidButton } from '@/registry/buttons/liquid';
-import { Click } from '@qa-animate-ui/react/primitives/effects/click';
-import { Shine } from '@qa-animate-ui/react/primitives/effects/shine';
+import { Click } from 'qa-animate-ui/primitives/effects/click';
+import { Shine } from 'qa-animate-ui/primitives/effects/shine';
 
 export default function MinorCasesFixture() {
   return (

@@ -16,7 +16,7 @@ import {
   transition,
   useShouldReduceMotion,
   useTempoTransition,
-} from '@qa-animate-ui/react/utils/motion';
+} from 'qa-animate-ui/utils/motion';
 
 export function FormSteps({
   step,

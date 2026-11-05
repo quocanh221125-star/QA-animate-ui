@@ -1,6 +1,6 @@
 "use client"
 
-import { Button } from "@qa-animate-ui/react/primitives/buttons/button"
+import { Button } from "qa-animate-ui/primitives/buttons/button"
 
 export const controls = {
   Button: {

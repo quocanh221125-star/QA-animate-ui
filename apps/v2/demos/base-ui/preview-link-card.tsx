@@ -13,7 +13,7 @@ import {
   type PreviewLinkCardPositionerProps,
   type PreviewLinkCardProps,
   type PreviewLinkCardTriggerProps,
-} from "@qa-animate-ui/react/primitives/base-ui/preview-link-card"
+} from "qa-animate-ui/primitives/base-ui/preview-link-card"
 
 function PreviewLinkCard(props: PreviewLinkCardProps) {
   return <PreviewLinkCardPrimitive {...props} />

@@ -7,23 +7,23 @@ updatedDate: '2026-10-18'
 ## Install the packages
 
 ```npm
-npm install @qa-animate-ui/react motion
+npm install qa-animate-ui motion
 ```
 
-`@qa-animate-ui/react` uses the primitive library your components already depend on (`radix-ui`, `@base-ui/react` or `react-aria-components`).
+`qa-animate-ui` uses the primitive library your components already depend on (`radix-ui`, `@base-ui/react` or `react-aria-components`).
 
 ## Animate your components
 
 Run the CLI in your project. It finds your shadcn/ui components through `components.json`, swaps their primitive imports for Animate UI's and removes the CSS animation classes Motion replaces.
 
 ```npm
-npx @qa-animate-ui/cli@latest animate all
+npx qa-animate-ui-cli@latest animate all
 ```
 
 Animate one component at a time by naming it, and preview the changes with `--dry-run`:
 
 ```npm
-npx @qa-animate-ui/cli@latest animate accordion --dry-run
+npx qa-animate-ui-cli@latest animate accordion --dry-run
 ```
 
 ## Change the pace (optional)
@@ -31,7 +31,7 @@ npx @qa-animate-ui/cli@latest animate accordion --dry-run
 Every animation follows the same timing. Wrap your app in `AnimateUIProvider` to make it all faster or slower:
 
 ```tsx
-import { AnimateUIProvider } from '@qa-animate-ui/react/provider';
+import { AnimateUIProvider } from 'qa-animate-ui/provider';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return <AnimateUIProvider tempo={1.2}>{children}</AnimateUIProvider>;

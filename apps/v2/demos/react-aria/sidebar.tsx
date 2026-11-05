@@ -8,9 +8,9 @@ import {
   Link as LinkPrimitive,
   type ButtonProps,
   type LinkProps,
-} from "@qa-animate-ui/react/primitives/react-aria"
+} from "qa-animate-ui/primitives/react-aria"
 
-import * as SidebarPrimitive from "@qa-animate-ui/react/primitives/sidebar"
+import * as SidebarPrimitive from "qa-animate-ui/primitives/sidebar"
 import { PanelLeft } from "@/registry/hugeicons/panel-left"
 import { Button } from "@/components/ui/react-aria/button"
 import { Input } from "@/components/ui/react-aria/input"

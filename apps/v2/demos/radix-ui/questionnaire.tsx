@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Questionnaire as QuestionnairePrimitive } from "@qa-animate-ui/react/primitives/questionnaire"
+import { Questionnaire as QuestionnairePrimitive } from "qa-animate-ui/primitives/questionnaire"
 import { cn } from "cn"
 
 import { Toaster, createToastManager } from "@/demos/base-ui/toast"

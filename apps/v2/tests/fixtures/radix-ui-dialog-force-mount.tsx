@@ -1,6 +1,6 @@
 'use client';
 
-import { Dialog } from '@qa-animate-ui/react/primitives/radix-ui/dialog';
+import { Dialog } from 'qa-animate-ui/primitives/radix-ui/dialog';
 
 const content =
   'fixed top-1/2 left-1/2 z-50 -translate-x-1/2 -translate-y-1/2 rounded-lg border bg-background p-6';

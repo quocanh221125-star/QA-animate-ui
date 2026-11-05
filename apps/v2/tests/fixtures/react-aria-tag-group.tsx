@@ -5,7 +5,7 @@ import {
   Tag,
   TagGroup,
   TagList,
-} from '@qa-animate-ui/react/primitives/react-aria';
+} from 'qa-animate-ui/primitives/react-aria';
 
 export default function ReactAriaTagGroupFixture() {
   const [tags, setTags] = React.useState(['Astro', 'Next.js']);

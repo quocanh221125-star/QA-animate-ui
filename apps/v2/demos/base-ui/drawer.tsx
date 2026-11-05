@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Drawer as DrawerPrimitive } from "@qa-animate-ui/react/primitives/base-ui/drawer"
+import { Drawer as DrawerPrimitive } from "qa-animate-ui/primitives/base-ui/drawer"
 import { cn } from "cn"
 import { toast } from "sonner"
 

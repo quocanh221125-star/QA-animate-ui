@@ -4,7 +4,7 @@ const FRAMEWORKS = [
   {
     name: 'React',
     url: '/docs/primitives/animate-ui/motion-grid',
-    import: '@qa-animate-ui/react/primitives/motion-grid',
+    import: 'qa-animate-ui/primitives/motion-grid',
     other: '@qa-animate-ui/vue/',
     gridSize: (cols: number, rows: number) => `gridSize={[${cols}, ${rows}]}`,
     duration: (ms: number) => `duration={${ms}}`,
@@ -14,7 +14,7 @@ const FRAMEWORKS = [
     name: 'Vue',
     url: '/docs/vue/primitives/animate-ui/motion-grid',
     import: '@qa-animate-ui/vue/primitives/motion-grid',
-    other: '@qa-animate-ui/react/',
+    other: 'qa-animate-ui/',
     gridSize: (cols: number, rows: number) => `:grid-size="[${cols}, ${rows}]"`,
     duration: (ms: number) => `:duration="${ms}"`,
     cells: 'class="size-1 rounded-full',

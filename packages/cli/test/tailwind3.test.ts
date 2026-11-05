@@ -53,7 +53,7 @@ function project(options: {
   writeFileSync(
     path.join(root, 'package.json'),
     JSON.stringify({
-      dependencies: { '@qa-animate-ui/react': '^2.0.0' },
+      dependencies: { 'qa-animate-ui': '^2.0.0' },
       devDependencies: options.tailwind
         ? { tailwindcss: options.tailwind }
         : {},

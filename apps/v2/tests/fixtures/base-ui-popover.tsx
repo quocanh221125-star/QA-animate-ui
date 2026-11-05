@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { Popover } from '@qa-animate-ui/react/primitives/base-ui/popover';
+import { Popover } from 'qa-animate-ui/primitives/base-ui/popover';
 
 export default function BaseUIPopoverFixture() {
   const [open, setOpen] = React.useState(false);

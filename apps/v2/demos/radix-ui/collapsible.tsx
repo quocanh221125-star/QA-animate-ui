@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Collapsible as CollapsiblePrimitive } from "@qa-animate-ui/react/primitives/radix-ui"
+import { Collapsible as CollapsiblePrimitive } from "qa-animate-ui/primitives/radix-ui"
 
 import { UnfoldMoreIcon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"

@@ -14,7 +14,7 @@ const fixtures = (library: string, component: string) =>
 test('base toast: shadcn CSS stack is gone, its layout stays', () => {
   for (const input of fixtures('base-ui', 'toast')) {
     const { code } = transform(input);
-    expect(code).toContain('from "@qa-animate-ui/react/primitives/base-ui/toast"');
+    expect(code).toContain('from "qa-animate-ui/primitives/base-ui/toast"');
     expect(code).not.toMatch(/\[(transform|transition):/);
     expect(code).not.toMatch(/\[--(offset-y|scale|shrink|peek):/);
     expect(code).not.toContain('duration-250');
@@ -50,6 +50,6 @@ test('tabs and slider: only the import changes', () => {
 test('react aria: importing an animated part moves the whole import', () => {
   const input = `import { Tab, TabList, TabPanel, Tabs } from "react-aria-components"\n`;
   expect(transform(input).code).toBe(
-    `import { Tab, TabList, TabPanel, Tabs } from "@qa-animate-ui/react/primitives/react-aria"\n`,
+    `import { Tab, TabList, TabPanel, Tabs } from "qa-animate-ui/primitives/react-aria"\n`,
   );
 });

@@ -1,6 +1,6 @@
 # Wiring Motion into a base library
 
-`@qa-animate-ui/react` already does this for every primitive it ships: use it when you can, and read this when you wire Motion into a part it doesn't cover (or contribute one).
+`qa-animate-ui` already does this for every primitive it ships: use it when you can, and read this when you wire Motion into a part it doesn't cover (or contribute one).
 
 An exit animation needs the element to stay mounted until the animation ends. Each library unmounts closed content on its own, so the component takes over: it tracks `open` itself, gates rendering with `AnimatePresence`, and asks the library to keep the content mounted.
 
@@ -8,8 +8,8 @@ The examples use these imports:
 
 ```tsx
 import { AnimatePresence, motion, type Transition } from 'motion/react';
-import { getStrictContext } from '@qa-animate-ui/react/utils/strict-context';
-import { useControlledState } from '@qa-animate-ui/react/utils/use-controlled-state';
+import { getStrictContext } from 'qa-animate-ui/utils/strict-context';
+import { useControlledState } from 'qa-animate-ui/utils/use-controlled-state';
 import {
   ReducedMotionConfig,
   scale,
@@ -17,7 +17,7 @@ import {
   transition as motionTransition,
   useShouldReduceMotion,
   useTempoTransition,
-} from '@qa-animate-ui/react/utils/motion';
+} from 'qa-animate-ui/utils/motion';
 ```
 
 The snippets pass every token through `useTempoTransition()` so `AnimateUIProvider`'s `tempo` applies (`useMotionTokens()` does the same).
@@ -186,7 +186,7 @@ React Aria signals overlays with `isEntering` / `isExiting` render props and `da
 - A menu's clip must meet its submenu's for the highlight to cross between them: shadcn-style React Aria menus pad the `Popover` and clip in the inner `Menu` (flush with the items), leaving a gap of the padding on each side. Animate UI's `Menu` reaches into its popover's padding (negative margin, as much padding) so it clips at the popover's padding box, like Radix UI's and Base UI's content.
 - Collection items (`ListBoxItem`, `MenuItem`) are rendered by React Aria from the props they gave the collection: hooks in your wrapper don't run around the real element. Pass a `render` function and do the work in a component it renders (the highlight follows the item marked `data-focused`, read through a ref merged with React Aria's). A `SelectValue` renders the chosen item's children again outside the list: anything list-bound inside them (a `SelectionIndicator`) must render nothing there.
 
-`@qa-animate-ui/react/primitives/react-aria` re-exports all of React Aria with the animated overrides, so one import covers a whole component.
+`qa-animate-ui/primitives/react-aria` re-exports all of React Aria with the animated overrides, so one import covers a whole component.
 
 ## 5. Plain markup (no base library)
 

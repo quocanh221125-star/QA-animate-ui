@@ -16,13 +16,13 @@ import {
   SubmenuTrigger as SubmenuTriggerPrimitive,
   type MenuItemProps as MenuItemPrimitiveProps,
   type MenuSectionProps as MenuSectionPrimitiveProps,
-} from "@qa-animate-ui/react/primitives/react-aria"
+} from "qa-animate-ui/primitives/react-aria"
 
 import { ArrowRight01Icon, Tick02Icon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
 
-import { Pressable } from "@qa-animate-ui/react/primitives/react-aria"
-import { AnimateUIProvider } from "@qa-animate-ui/react/provider"
+import { Pressable } from "qa-animate-ui/primitives/react-aria"
+import { AnimateUIProvider } from "qa-animate-ui/provider"
 
 function ContextMenu({
   "data-slot": dataSlot = "context-menu-content",

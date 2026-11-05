@@ -3,8 +3,8 @@
 import * as React from "react"
 import { cn } from "cn"
 
-import * as PaginationPrimitive from "@qa-animate-ui/react/primitives/pagination"
-import { RouterProvider } from "@qa-animate-ui/react/primitives/react-aria"
+import * as PaginationPrimitive from "qa-animate-ui/primitives/pagination"
+import { RouterProvider } from "qa-animate-ui/primitives/react-aria"
 
 import { LinkButton } from "@/components/ui/react-aria/button"
 import { ArrowLeft01Icon, ArrowRight01Icon, MoreHorizontalCircle01Icon } from "@hugeicons/core-free-icons"

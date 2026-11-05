@@ -1,6 +1,6 @@
 "use client"
 
-import { Toggle as TogglePrimitive } from "@qa-animate-ui/react/primitives/base-ui"
+import { Toggle as TogglePrimitive } from "qa-animate-ui/primitives/base-ui"
 import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "cn"
 

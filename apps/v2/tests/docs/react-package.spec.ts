@@ -10,7 +10,7 @@ const PKG = JSON.parse(
   ),
 ) as { peerDependencies: Record<string, string> };
 
-test('the sidebar lists @qa-animate-ui/react right above the CLI', async ({
+test('the sidebar lists qa-animate-ui right above the CLI', async ({
   page,
 }) => {
   await page.goto('/docs/react', { waitUntil: 'networkidle' });
@@ -25,7 +25,7 @@ test('the package page lists every peer dependency and entry point', async ({
 }) => {
   await page.goto('/docs/react', { waitUntil: 'networkidle' });
   await expect(page.getByRole('heading', { level: 1 })).toHaveText(
-    '@qa-animate-ui/react',
+    'qa-animate-ui',
   );
   const peers = page
     .locator('#installation ~ div table, #installation ~ table')
@@ -43,7 +43,7 @@ test('the package page lists every peer dependency and entry point', async ({
     'provider',
     'utils/motion',
   ])
-    await expect(entries).toContainText(`@qa-animate-ui/react/${entry}`);
+    await expect(entries).toContainText(`qa-animate-ui/${entry}`);
 });
 
 test("the package page's links lead to existing pages", async ({

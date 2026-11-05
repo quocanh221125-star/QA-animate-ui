@@ -1,8 +1,8 @@
 'use client';
 
-import { AnimateUIProvider } from '@qa-animate-ui/react/provider';
-import { Collapsible } from '@qa-animate-ui/react/primitives/radix-ui/collapsible';
-import { useShouldReduceMotion } from '@qa-animate-ui/react/utils/motion';
+import { AnimateUIProvider } from 'qa-animate-ui/provider';
+import { Collapsible } from 'qa-animate-ui/primitives/radix-ui/collapsible';
+import { useShouldReduceMotion } from 'qa-animate-ui/utils/motion';
 
 function Shown({ id }: { id: string }) {
   const reduce = useShouldReduceMotion();

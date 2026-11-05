@@ -31,7 +31,7 @@ test('demo registry items hold the demo and its local files', async ({
 }) => {
   const item = await (await request.get('/r/demo-base-ui-dialog.json')).json();
   expect(item.dependencies).toEqual(
-    expect.arrayContaining(['@qa-animate-ui/react', 'motion', '@base-ui/react']),
+    expect.arrayContaining(['qa-animate-ui', 'motion', '@base-ui/react']),
   );
   const targets = item.files.map((file: { target: string }) => file.target);
   expect(targets).toContain('@components/dialog-demo.tsx');

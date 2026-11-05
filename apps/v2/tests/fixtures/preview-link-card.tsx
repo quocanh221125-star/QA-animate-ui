@@ -1,8 +1,8 @@
 'use client';
 
-import * as Radix from '@qa-animate-ui/react/primitives/radix-ui/preview-link-card';
-import * as Base from '@qa-animate-ui/react/primitives/base-ui/preview-link-card';
-import * as Aria from '@qa-animate-ui/react/primitives/react-aria/preview-link-card';
+import * as Radix from 'qa-animate-ui/primitives/radix-ui/preview-link-card';
+import * as Base from 'qa-animate-ui/primitives/base-ui/preview-link-card';
+import * as Aria from 'qa-animate-ui/primitives/react-aria/preview-link-card';
 
 const CUSTOM_SRC = 'https://screenshots.test/custom.svg';
 const SCREENSHOT = {

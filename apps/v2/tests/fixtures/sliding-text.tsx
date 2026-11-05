@@ -1,6 +1,6 @@
 'use client';
 
-import { SlidingText } from '@qa-animate-ui/react/primitives/texts/sliding';
+import { SlidingText } from 'qa-animate-ui/primitives/texts/sliding';
 
 export default function SlidingTextFixture() {
   return (

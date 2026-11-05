@@ -10,7 +10,7 @@ import {
   type PreviewLinkCardPopoverProps,
   type PreviewLinkCardProps,
   type PreviewLinkCardTriggerProps,
-} from "@qa-animate-ui/react/primitives/react-aria/preview-link-card"
+} from "qa-animate-ui/primitives/react-aria/preview-link-card"
 
 function PreviewLinkCard(props: PreviewLinkCardProps) {
   return <PreviewLinkCardPrimitive {...props} />

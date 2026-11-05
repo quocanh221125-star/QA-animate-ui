@@ -1,7 +1,7 @@
 'use client';
 
-import { AnimateUIProvider } from '@qa-animate-ui/react/provider';
-import { Accordion } from '@qa-animate-ui/react/primitives/radix-ui/accordion';
+import { AnimateUIProvider } from 'qa-animate-ui/provider';
+import { Accordion } from 'qa-animate-ui/primitives/radix-ui/accordion';
 
 function Panel({ label }: { label: string }) {
   return (

@@ -7,7 +7,7 @@ import {
   type ButtonProps,
   type DisclosurePanelProps,
   type DisclosureProps,
-} from "@qa-animate-ui/react/primitives/react-aria"
+} from "qa-animate-ui/primitives/react-aria"
 
 function Collapsible({ ...props }: DisclosureProps) {
   return <CollapsiblePrimitive data-slot="collapsible" {...props} />

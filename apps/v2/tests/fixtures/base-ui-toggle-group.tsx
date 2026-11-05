@@ -1,8 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import { Toggle } from '@qa-animate-ui/react/primitives/base-ui/toggle';
-import { ToggleGroup } from '@qa-animate-ui/react/primitives/base-ui/toggle-group';
+import { Toggle } from 'qa-animate-ui/primitives/base-ui/toggle';
+import { ToggleGroup } from 'qa-animate-ui/primitives/base-ui/toggle-group';
 
 import ToggleGroupDemo from '@/demos/base-ui/toggle-group';
 

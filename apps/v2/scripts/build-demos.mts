@@ -66,7 +66,7 @@ for (const library of readdirSync(demosDir)) {
         } else if (!specifier!.startsWith('.')) {
           const pkg = specifier!.match(/^(@[^/]+\/[^/]+|[^/]+)/)![1]!;
           if (!IGNORED.has(pkg)) dependencies.add(pkg);
-          if (pkg === '@qa-animate-ui/react') {
+          if (pkg === 'qa-animate-ui') {
             dependencies.add('motion');
             for (const peer of peersOf(specifier!)) dependencies.add(peer);
           }

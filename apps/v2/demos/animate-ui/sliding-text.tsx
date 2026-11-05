@@ -4,7 +4,7 @@ import {
   SlidingText,
   type SlidingTextDirection,
   type SlidingTextTrigger,
-} from "@qa-animate-ui/react/primitives/texts/sliding"
+} from "qa-animate-ui/primitives/texts/sliding"
 import { Button } from "@/components/ui/button"
 
 export const controls = {

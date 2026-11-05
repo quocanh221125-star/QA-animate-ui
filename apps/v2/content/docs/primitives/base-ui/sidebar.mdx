@@ -8,12 +8,12 @@ updatedDate: '2026-10-18'
 
 ## Installation
 
-shadcn/ui's Sidebar isn't a Base UI primitive: the CLI has no import to swap in it. Its behaviour and motion come from `@qa-animate-ui/react/primitives/sidebar`, a headless primitive that works with every shadcn/ui base. The mobile sheet and the tooltips are shadcn/ui's Sheet and Tooltip, which the CLI animates.
+shadcn/ui's Sidebar isn't a Base UI primitive: the CLI has no import to swap in it. Its behaviour and motion come from `qa-animate-ui/primitives/sidebar`, a headless primitive that works with every shadcn/ui base. The mobile sheet and the tooltips are shadcn/ui's Sheet and Tooltip, which the CLI animates.
 
 ### 1. Install the packages
 
 ```npm
-npm install @qa-animate-ui/react motion
+npm install qa-animate-ui motion
 ```
 
 ### 2. Add shadcn/ui's sidebar, and animate its sheet and tooltips
@@ -23,7 +23,7 @@ npx shadcn@latest add sidebar
 ```
 
 ```npm
-npx @qa-animate-ui/cli@latest animate sheet tooltip
+npx qa-animate-ui-cli@latest animate sheet tooltip
 ```
 
 Animate the components you put in the sidebar too (`collapsible`, `dropdown-menu`…), or all of them at once: `animate all`.
@@ -34,7 +34,7 @@ Import the primitive instead of `useIsMobile`, and drop the constants it now kee
 
 ```tsx title="components/ui/sidebar.tsx"
 import { useIsMobile } from '@/hooks/use-mobile'; // [!code --]
-import * as SidebarPrimitive from '@qa-animate-ui/react/primitives/sidebar'; // [!code ++]
+import * as SidebarPrimitive from 'qa-animate-ui/primitives/sidebar'; // [!code ++]
 
 const SIDEBAR_COOKIE_NAME = 'sidebar_state'; // [!code --]
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7; // [!code --]
@@ -202,7 +202,7 @@ Animate UI v1's sidebar, in Animate UI's motion.
 
 ## API Reference
 
-`@qa-animate-ui/react/primitives/sidebar` exports the parts of shadcn/ui's sidebar that carry behaviour or motion. Each renders a `div` and takes its props.
+`qa-animate-ui/primitives/sidebar` exports the parts of shadcn/ui's sidebar that carry behaviour or motion. Each renders a `div` and takes its props.
 
 ### Provider
 

@@ -3,7 +3,7 @@
 import {
   MotionGrid,
   MotionGridCells,
-} from '@qa-animate-ui/react/primitives/motion-grid';
+} from 'qa-animate-ui/primitives/motion-grid';
 
 export default function AnimateUIMotionGridDurationFixture() {
   return (

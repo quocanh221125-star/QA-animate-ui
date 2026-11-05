@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { AnimateIcon } from '@qa-animate-ui/react/icons';
+import { AnimateIcon } from 'qa-animate-ui/icons';
 
 import { Bell } from '@/registry/icons/bell';
 import { CirclePlus } from '@/registry/icons/circle-plus';

@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { ToggleButton } from '@qa-animate-ui/react/primitives/react-aria';
+import { ToggleButton } from 'qa-animate-ui/primitives/react-aria';
 
 export default function ReactAriaToggleFixture() {
   const [selected, setSelected] = React.useState(false);

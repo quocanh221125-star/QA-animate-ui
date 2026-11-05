@@ -7,10 +7,10 @@ import { transform } from '../src/lib/transform';
 const FIXTURES = path.join(import.meta.dirname, 'fixtures');
 const COMPONENT = /^(popover|hover-card|tooltip)\./;
 const MODULE: Record<string, (component: string) => string> = {
-  'radix-ui': () => '@qa-animate-ui/react/primitives/radix-ui',
+  'radix-ui': () => 'qa-animate-ui/primitives/radix-ui',
   'base-ui': (component) =>
-    `@qa-animate-ui/react/primitives/base-ui/${component === 'hover-card' ? 'preview-card' : component}`,
-  'react-aria': () => '@qa-animate-ui/react/primitives/react-aria',
+    `qa-animate-ui/primitives/base-ui/${component === 'hover-card' ? 'preview-card' : component}`,
+  'react-aria': () => 'qa-animate-ui/primitives/react-aria',
 };
 
 for (const library of Object.keys(MODULE)) {

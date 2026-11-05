@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { NavigationMenu } from '@qa-animate-ui/react/primitives/base-ui/navigation-menu';
+import { NavigationMenu } from 'qa-animate-ui/primitives/base-ui/navigation-menu';
 
 export default function BaseNavigationMenuFixture() {
   const [value, setValue] = React.useState<string | null>(null);

@@ -11,7 +11,7 @@ import {
   type ModalOverlayProps as ModalOverlayPrimitiveProps,
   type DialogProps as SheetPrimitiveProps,
   type DialogTriggerProps as SheetTriggerPrimitiveProps,
-} from "@qa-animate-ui/react/primitives/react-aria"
+} from "qa-animate-ui/primitives/react-aria"
 
 import { Button } from "@/components/ui/react-aria/button"
 import { Input } from "@/components/ui/react-aria/input"

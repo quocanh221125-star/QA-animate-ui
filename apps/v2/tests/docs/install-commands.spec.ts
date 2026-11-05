@@ -78,14 +78,14 @@ test('the home command follows the chosen package manager', async ({
     .first();
   await managers.getByRole('tab', { name: 'pnpm' }).click();
   await expect(
-    page.getByText('pnpm dlx @qa-animate-ui/cli@latest animate all'),
+    page.getByText('pnpm dlx qa-animate-ui-cli@latest animate all'),
   ).toHaveCount(1);
   await expect(
     page.getByText('pnpm dlx skills add imskyleen/animate-ui'),
   ).toHaveCount(1);
   await managers.getByRole('tab', { name: 'bun' }).click();
   await expect(
-    page.getByText('bun x @qa-animate-ui/cli@latest animate all'),
+    page.getByText('bun x qa-animate-ui-cli@latest animate all'),
   ).toHaveCount(1);
   await expect(
     page.getByText('bun x skills add imskyleen/animate-ui'),

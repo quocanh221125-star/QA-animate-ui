@@ -9,12 +9,12 @@ Purpose: feedback, the number changed. The digits roll with Sliding Number (cata
 
 import * as React from 'react';
 import { useAnimate } from 'motion/react';
-import { SlidingNumber } from '@qa-animate-ui/react/primitives/texts/sliding-number';
+import { SlidingNumber } from 'qa-animate-ui/primitives/texts/sliding-number';
 import {
   spring,
   useShouldReduceMotion,
   useTempoTransition,
-} from '@qa-animate-ui/react/utils/motion';
+} from 'qa-animate-ui/utils/motion';
 
 export function CountBadge({ count }: { count: number }) {
   const [scope, animate] = useAnimate<HTMLSpanElement>();

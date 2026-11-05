@@ -3,7 +3,7 @@
 import * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "cn"
-import { Group, type GroupProps } from "@qa-animate-ui/react/primitives/react-aria"
+import { Group, type GroupProps } from "qa-animate-ui/primitives/react-aria"
 
 import { Button } from "@/components/ui/react-aria/button"
 import { Input } from "@/components/ui/react-aria/input"

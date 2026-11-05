@@ -6,8 +6,8 @@ import { stripClasses } from '../src/lib/classes';
 import { transform } from '../src/lib/transform';
 
 const FIXTURES = path.join(import.meta.dirname, 'fixtures');
-const ACCORDION = '@qa-animate-ui/react/primitives/radix-ui/accordion';
-const RADIX = '@qa-animate-ui/react/primitives/radix-ui';
+const ACCORDION = 'qa-animate-ui/primitives/radix-ui/accordion';
+const RADIX = 'qa-animate-ui/primitives/radix-ui';
 
 describe('shadcn/ui fixtures', () => {
   for (const library of readdirSync(FIXTURES)) {
@@ -67,12 +67,12 @@ test('moves a whole radix-ui import to the barrel, unanimated names included', (
   const input = `import { Accordion, Slot, Avatar as AvatarPrimitive } from "radix-ui"\n`;
   const result = transform(input);
   expect(result.code).toBe(
-    `import { Accordion, Slot, Avatar as AvatarPrimitive } from "@qa-animate-ui/react/primitives/radix-ui"\n`,
+    `import { Accordion, Slot, Avatar as AvatarPrimitive } from "qa-animate-ui/primitives/radix-ui"\n`,
   );
   expect(result.imports).toEqual([
     {
       from: 'radix-ui',
-      to: '@qa-animate-ui/react/primitives/radix-ui',
+      to: 'qa-animate-ui/primitives/radix-ui',
       name: 'Accordion',
     },
   ]);
@@ -148,14 +148,14 @@ describe("radix's self-named root", () => {
       `import { Dialog, DialogContent } from "@radix-ui/react-dialog";\nimport { Tabs as T } from "@radix-ui/react-tabs";\n`,
     );
     expect(code).toBe(
-      `import { Root as Dialog, DialogContent } from "@qa-animate-ui/react/primitives/radix-ui/dialog";\nimport { Root as T } from "@qa-animate-ui/react/primitives/radix-ui/tabs";\n`,
+      `import { Root as Dialog, DialogContent } from "qa-animate-ui/primitives/radix-ui/dialog";\nimport { Root as T } from "qa-animate-ui/primitives/radix-ui/tabs";\n`,
     );
   });
 
   test("vaul's Drawer stays its namespace", () => {
     const { code } = transform(`import { Drawer } from "vaul";\n`);
     expect(code).toBe(
-      `import { Drawer } from "@qa-animate-ui/react/primitives/radix-ui/drawer";\n`,
+      `import { Drawer } from "qa-animate-ui/primitives/radix-ui/drawer";\n`,
     );
   });
 });

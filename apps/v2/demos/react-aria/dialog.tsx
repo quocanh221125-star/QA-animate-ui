@@ -11,7 +11,7 @@ import {
   type DialogProps as DialogPrimitiveProps,
   type DialogTriggerProps as DialogTriggerPrimitiveProps,
   type ModalOverlayProps as ModalOverlayPrimitiveProps,
-} from "@qa-animate-ui/react/primitives/react-aria"
+} from "qa-animate-ui/primitives/react-aria"
 
 import { Button } from "@/components/ui/react-aria/button"
 import { Field, FieldGroup } from "@/components/ui/react-aria/field"

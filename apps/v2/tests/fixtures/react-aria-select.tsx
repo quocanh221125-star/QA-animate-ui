@@ -10,7 +10,7 @@ import {
   Select,
   SelectValue,
   type Key,
-} from '@qa-animate-ui/react/primitives/react-aria';
+} from 'qa-animate-ui/primitives/react-aria';
 
 export default function ReactAriaSelectFixture() {
   const [value, setValue] = React.useState<Key | null>('banana');

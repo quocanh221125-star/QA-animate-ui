@@ -1,14 +1,14 @@
 'use client';
 
 import * as React from 'react';
-import { CopyButton } from '@qa-animate-ui/react/primitives/buttons/copy';
-import { Highlight } from '@qa-animate-ui/react/primitives/effects/highlight';
+import { CopyButton } from 'qa-animate-ui/primitives/buttons/copy';
+import { Highlight } from 'qa-animate-ui/primitives/effects/highlight';
 import {
   Dialog,
   Heading,
   Modal,
   ModalOverlay,
-} from '@qa-animate-ui/react/primitives/react-aria';
+} from 'qa-animate-ui/primitives/react-aria';
 
 export default function ControlledStateFixture() {
   const [log, setLog] = React.useState<string[]>([]);

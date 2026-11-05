@@ -6,7 +6,7 @@ import { findPrimitive, primitiveModule } from '../src/lib/primitives';
 import { transform } from '../src/lib/transform';
 
 const SHADCN = '@shadcn/react/questionnaire';
-const QUESTIONNAIRE = '@qa-animate-ui/react/primitives/questionnaire';
+const QUESTIONNAIRE = 'qa-animate-ui/primitives/questionnaire';
 const FIXTURES = path.join(import.meta.dirname, 'fixtures');
 
 test('the questionnaire lives directly under primitives/', () => {

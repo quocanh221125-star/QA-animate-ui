@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { AvatarGroup } from '@qa-animate-ui/react/primitives/avatar-group';
+import { AvatarGroup } from 'qa-animate-ui/primitives/avatar-group';
 
 import { FireworksBackground } from '@/registry/backgrounds/fireworks';
 import { GravityStarsBackground } from '@/registry/backgrounds/gravity-stars';

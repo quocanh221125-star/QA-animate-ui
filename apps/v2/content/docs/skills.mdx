@@ -38,10 +38,10 @@ The skill gives your AI assistant the following knowledge:
 
 Every component takes the shortest path to its animation:
 
-- **shadcn/ui components**: runs `@qa-animate-ui/cli animate`, which swaps their primitives for Animate UI's and removes the CSS animations Motion replaces.
-- **Built on Radix UI, Base UI or React Aria**: swaps the import to `@qa-animate-ui/react`, keeping every part, prop and data attribute.
+- **shadcn/ui components**: runs `qa-animate-ui-cli animate`, which swaps their primitives for Animate UI's and removes the CSS animations Motion replaces.
+- **Built on Radix UI, Base UI or React Aria**: swaps the import to `qa-animate-ui`, keeping every part, prop and data attribute.
 - **Anything else**: animates it with Motion, following Animate UI's recipes and tokens, or uses a component from the catalog when one already does it.
-- **Animate UI v1 projects**: runs `@qa-animate-ui/cli migrate`, then walks through the manual steps it lists.
+- **Animate UI v1 projects**: runs `qa-animate-ui-cli migrate`, then walks through the manual steps it lists.
 
 ### Motion Tokens
 
@@ -69,7 +69,7 @@ Show it a link, a video or a GIF: it measures the motion (what moves, how far, h
 
 ### Review
 
-It reviews the motion you already have from facts, not guesses: `npx @qa-animate-ui/cli audit` lists what moves in your project, what each property costs the browser and the patterns worth a look (`transition: all`, ease-in entrances, long durations, hover scales, missing reduced-motion paths…). The skill then judges each fact against how often the element is used and what it's for, ranks what to fix first and says which facts are fine.
+It reviews the motion you already have from facts, not guesses: `npx qa-animate-ui-cli audit` lists what moves in your project, what each property costs the browser and the patterns worth a look (`transition: all`, ease-in entrances, long durations, hover scales, missing reduced-motion paths…). The skill then judges each fact against how often the element is used and what it's for, ranks what to fix first and says which facts are fine.
 
 ### Motion Rules
 
@@ -79,12 +79,12 @@ Quality rules that must pass (reduced motion, keyboard, hover-capable pointers, 
 
 1. **Gate and level**: when you ask for an animation, you get one. How often the component is used decides its form (a menu opened all day stays quick, a rare success can be expressive), and the level you pick sets how much it moves. On an open request ("make the page feel alive"), it may suggest less motion where motion would only add a wait.
 2. **Path detection**: it finds what the component is built on and picks the CLI, an import swap, a recipe or an interaction pattern, after checking whether an Animate UI component already does the job.
-3. **Token use**: every value comes from `@qa-animate-ui/react/utils/motion`, never a hand-typed spring, so your animations stay coherent and follow your `tempo`.
+3. **Token use**: every value comes from `qa-animate-ui/utils/motion`, never a hand-typed spring, so your animations stay coherent and follow your `tempo`.
 4. **Verification**: it checks reduced motion, the keyboard path, interruptions and origins before it's done, then tells you the path, the recipe and any default it changed.
 
 ## Learn More
 
-- [Installation](/docs/installation): set up `@qa-animate-ui/react` and the CLI.
+- [Installation](/docs/installation): set up `qa-animate-ui` and the CLI.
 - [Accessibility](/docs/accessibility): reduced motion in Animate UI.
 - [Source](https://github.com/QA-animate-ui/QA-animate-ui/tree/main/skills/animate-ui): the skill's instructions and references.
 - [skills.sh](https://skills.sh): discover and install skills for AI assistants.

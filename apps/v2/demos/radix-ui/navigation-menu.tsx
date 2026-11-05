@@ -4,7 +4,7 @@ import * as React from "react"
 import Link from "next/link"
 import { cva } from "class-variance-authority"
 import { cn } from "cn"
-import { NavigationMenu as NavigationMenuPrimitive } from "@qa-animate-ui/react/primitives/radix-ui"
+import { NavigationMenu as NavigationMenuPrimitive } from "qa-animate-ui/primitives/radix-ui"
 
 import { ArrowDown01Icon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"

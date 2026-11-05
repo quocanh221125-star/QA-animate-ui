@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { AutoHeight } from "@qa-animate-ui/react/primitives/effects/auto-height"
+import { AutoHeight } from "qa-animate-ui/primitives/effects/auto-height"
 import { AnimatePresence, motion } from "motion/react"
 
 import { Button } from "@/components/ui/button"

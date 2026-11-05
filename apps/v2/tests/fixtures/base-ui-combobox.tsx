@@ -1,8 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import { Combobox } from '@qa-animate-ui/react/primitives/base-ui/combobox';
-import { Combobox as BarrelCombobox } from '@qa-animate-ui/react/primitives/base-ui';
+import { Combobox } from 'qa-animate-ui/primitives/base-ui/combobox';
+import { Combobox as BarrelCombobox } from 'qa-animate-ui/primitives/base-ui';
 
 const FRUITS = ['Apple', 'Banana', 'Cherry', 'Grape'];
 const FRAMEWORKS = ['Next.js', 'SvelteKit', 'Nuxt.js', 'Remix', 'Astro'];

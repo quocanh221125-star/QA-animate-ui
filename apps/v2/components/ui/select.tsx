@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { cn } from "cn"
-import { Select as SelectPrimitive } from "@qa-animate-ui/react/primitives/radix-ui"
+import { Select as SelectPrimitive } from "qa-animate-ui/primitives/radix-ui"
 
 import { ArrowDown01Icon, ArrowUp01Icon, Tick02Icon, UnfoldMoreIcon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"

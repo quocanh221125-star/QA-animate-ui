@@ -3,7 +3,7 @@
 import {
   Highlight,
   HighlightItem,
-} from '@qa-animate-ui/react/primitives/effects/highlight';
+} from 'qa-animate-ui/primitives/effects/highlight';
 import { ReactIcon } from '@hugeicons/core-free-icons';
 import { HugeiconsIcon } from '@hugeicons/react';
 import { cn } from 'cn';

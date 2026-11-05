@@ -1,6 +1,6 @@
 "use client"
 
-import { Separator as SeparatorPrimitive } from "@qa-animate-ui/react/primitives/base-ui"
+import { Separator as SeparatorPrimitive } from "qa-animate-ui/primitives/base-ui"
 import { cn } from "cn"
 
 function Separator({

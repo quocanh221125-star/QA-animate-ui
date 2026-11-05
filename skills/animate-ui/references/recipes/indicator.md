@@ -37,7 +37,7 @@ Radix UI, Base UI and React Aria toggle groups. shadcn/ui paints the items thems
 
 ### Pagination (primitives/pagination)
 
-shadcn/ui's pagination has no library primitive (no import to swap): build its `<nav>` on `@qa-animate-ui/react/primitives/pagination`'s `Root`; `PaginationLink` needs nothing (`data-slot="pagination-link"`, `aria-current="page"`). Same engine as the tabs' indicator (internal/sliding-indicator).
+shadcn/ui's pagination has no library primitive (no import to swap): build its `<nav>` on `qa-animate-ui/primitives/pagination`'s `Root`; `PaginationLink` needs nothing (`data-slot="pagination-link"`, `aria-current="page"`). Same engine as the tabs' indicator (internal/sliding-indicator).
 
 - One surface, the current link's (the Root's own, not a nested pagination's; drawn: a `display: none` duplicate is skipped): a `span` (`data-slot="pagination-indicator"`, `aria-hidden`, no pointer events, `box-sizing: border-box`) copies its classes and data attributes (the outline variant: border, background, radius, shadow, dark mode). Not `aria-current`: style the current page through the variant or `data-active`, never an `aria-[current=page]:` class. An unlayered stylesheet hides the link's own border, shadow and background once it's on screen (`data-animate-ui-pagination-ready`).
 - Stacking: the Root is `isolation: isolate`, the surface its first child at `z-index: 1` (over the list's and items' backgrounds, positioned or not); once ready, the links and the ellipsis get `position: relative; z-index: 2` in `@layer base` (a link's own `absolute` wins), so they paint over it.

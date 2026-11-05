@@ -7,7 +7,7 @@ import {
   TabsContents,
   TabsList,
   TabsTrigger,
-} from '@qa-animate-ui/react/primitives/tabs';
+} from 'qa-animate-ui/primitives/tabs';
 
 function Example({
   id,

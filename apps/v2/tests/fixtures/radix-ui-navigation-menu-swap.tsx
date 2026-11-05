@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { NavigationMenu } from '@qa-animate-ui/react/primitives/radix-ui/navigation-menu';
+import { NavigationMenu } from 'qa-animate-ui/primitives/radix-ui/navigation-menu';
 
 const content = 'absolute top-0 left-0 w-64 p-2';
 const link = 'block rounded px-2 py-1 hover:bg-[rgb(255,0,0)]';

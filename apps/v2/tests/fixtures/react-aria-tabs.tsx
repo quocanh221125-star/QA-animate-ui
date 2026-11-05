@@ -7,7 +7,7 @@ import {
   TabPanel,
   Tabs,
   type Key,
-} from '@qa-animate-ui/react/primitives/react-aria';
+} from 'qa-animate-ui/primitives/react-aria';
 
 const BOX = {
   border: '1px solid rgb(212, 212, 212)',

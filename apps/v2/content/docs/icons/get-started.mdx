@@ -1,12 +1,12 @@
 ---
 title: Get Started
-description: How animated icons work, whatever the icon library. Each icon is a file in your project, animated by one small core from @qa-animate-ui/react.
+description: How animated icons work, whatever the icon library. Each icon is a file in your project, animated by one small core from qa-animate-ui.
 updatedDate: '2026-10-18'
 ---
 
 ## Installation
 
-Add icons one by one from your icon library's page ([Lucide Icons](/docs/icons/lucide-icons) or [Hugeicons](/docs/icons/hugeicons)), here Lucide's Bell. Each icon is a file in your project; the core that animates them comes from `@qa-animate-ui/react/icons`, which the CLI installs with the first icon.
+Add icons one by one from your icon library's page ([Lucide Icons](/docs/icons/lucide-icons) or [Hugeicons](/docs/icons/hugeicons)), here Lucide's Bell. Each icon is a file in your project; the core that animates them comes from `qa-animate-ui/icons`, which the CLI installs with the first icon.
 
 <RegistryInstallation name="icons-lucide-bell" />
 
@@ -23,7 +23,7 @@ import { Bell } from '@/components/animate-ui/icons/bell';
 Or let a parent decide, so hovering a whole button animates its icon:
 
 ```tsx
-import { AnimateIcon } from '@qa-animate-ui/react/icons';
+import { AnimateIcon } from 'qa-animate-ui/icons';
 
 <AnimateIcon animateOnHover asChild>
   <button>

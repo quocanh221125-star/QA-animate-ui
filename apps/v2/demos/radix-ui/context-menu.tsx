@@ -2,8 +2,8 @@
 
 import * as React from "react"
 import { cn } from "cn"
-import { ContextMenu as ContextMenuPrimitive } from "@qa-animate-ui/react/primitives/radix-ui"
-import { AnimateUIProvider } from "@qa-animate-ui/react/provider"
+import { ContextMenu as ContextMenuPrimitive } from "qa-animate-ui/primitives/radix-ui"
+import { AnimateUIProvider } from "qa-animate-ui/provider"
 
 import { ArrowRight01Icon, Tick02Icon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"

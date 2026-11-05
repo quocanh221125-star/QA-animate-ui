@@ -3,7 +3,7 @@
 import {
   Highlight,
   HighlightItem,
-} from '@qa-animate-ui/react/primitives/effects/highlight';
+} from 'qa-animate-ui/primitives/effects/highlight';
 import { cn } from 'cn';
 import Link from 'next/link';
 import { useEffect } from 'react';

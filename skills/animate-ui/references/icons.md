@@ -16,7 +16,7 @@ A verb naming the gesture ("rings", "spins", "bounces on hover") says what moves
 
 ## The file
 
-One file per icon in the project's components folder, under `animate-ui/icons/<name>.tsx`: where `components.json`'s `components` alias points (the registry puts its icons there), else `components/` or `src/components/` like the project's other components. It imports the core from `@qa-animate-ui/react/icons` (install `@qa-animate-ui/react` and `motion` if missing, SKILL.md § 2).
+One file per icon in the project's components folder, under `animate-ui/icons/<name>.tsx`: where `components.json`'s `components` alias points (the registry puts its icons there), else `components/` or `src/components/` like the project's other components. It imports the core from `qa-animate-ui/icons` (install `qa-animate-ui` and `motion` if missing, SKILL.md § 2).
 
 The example is the registry's Lucide bell, its pieces renamed.
 
@@ -31,7 +31,7 @@ import {
   useAnimateIconContext,
   IconWrapper,
   type IconProps,
-} from '@qa-animate-ui/react/icons';
+} from 'qa-animate-ui/icons';
 
 type BellProps = IconProps<keyof typeof animations>;
 
@@ -205,13 +205,13 @@ The principles every registry icon follows:
 A state that comes from data rather than a gesture (unread notifications fill the bell, a saved item stays filled) can't go through `controls`: one animation plays at a time, and the hover ring must still play. Give the icon a prop and animate it on its own:
 
 - Type it beside the icon's props: `type BellProps = IconProps<keyof typeof animations> & { filled?: boolean }`, read it in `IconComponent`, and pass it through `IconWrapper` like the others.
-- Animate it with `animate={…}` and `initial={false}` (a page loaded with the state on shows it, no replay), its transition through `useTempoTransition()` and `useShouldReduceMotion()` from `@qa-animate-ui/react/utils/motion`: under reduced motion it fades instead of rising or moving. `speed` doesn't reach it.
+- Animate it with `animate={…}` and `initial={false}` (a page loaded with the state on shows it, no replay), its transition through `useTempoTransition()` and `useShouldReduceMotion()` from `qa-animate-ui/utils/motion`: under reduced motion it fades instead of rising or moving. `speed` doesn't reach it.
 
 ## Triggers
 
 - On the icon: `animateOnHover`, `animateOnTap`, `animateOnView` (once by default; `animateOnViewOnce={false}` replays each time it comes back, `animateOnViewMargin` starts it earlier or later), `animate`.
 - `animateOnTap` plays while the pointer is down and goes back to rest on release: add `completeOnStop` so a quick click plays it through. Keys don't trigger it; for a press from pointer and keyboard, or an icon a toggle swaps in, play it on mount with `animate`, and say what the other state does.
-- From a parent: `<AnimateIcon animateOnHover asChild>` (`import { AnimateIcon } from '@qa-animate-ui/react/icons'`) around a button or a card, so the whole target triggers it. `AnimateIcon` and the icon file are client components already; the file using them needs no `'use client'` of its own.
+- From a parent: `<AnimateIcon animateOnHover asChild>` (`import { AnimateIcon } from 'qa-animate-ui/icons'`) around a button or a card, so the whole target triggers it. `AnimateIcon` and the icon file are client components already; the file using them needs no `'use client'` of its own.
 - Played on view, the icon starts as it touches the viewport; its `initial` stays the rest state (a draw doesn't start hidden), so under reduced motion or before the trigger it shows whole.
 - Inside something that has its own entrance (a card fading in), `delay` by about that entrance's length so the icon plays once it's there.
 

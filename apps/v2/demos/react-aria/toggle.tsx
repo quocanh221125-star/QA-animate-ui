@@ -6,7 +6,7 @@ import { cn } from "cn"
 import {
   ToggleButton as TogglePrimitive,
   type ToggleButtonProps,
-} from "@qa-animate-ui/react/primitives/react-aria"
+} from "qa-animate-ui/primitives/react-aria"
 import { BookmarkIcon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
 import { motion, useReducedMotion } from "motion/react"

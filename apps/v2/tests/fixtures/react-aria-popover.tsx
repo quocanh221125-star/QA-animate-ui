@@ -16,7 +16,7 @@ import {
   Select,
   SelectValue,
   SubmenuTrigger,
-} from '@qa-animate-ui/react/primitives/react-aria';
+} from 'qa-animate-ui/primitives/react-aria';
 
 const FRUITS = ['Apple', 'Banana', 'Cherry'];
 

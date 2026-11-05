@@ -2,5 +2,5 @@ import { sheetCases } from './sheet-cases';
 
 sheetCases('base-ui', [
   "-import { Dialog as SheetPrimitive } from '@base-ui/react/dialog';",
-  "+import { Dialog as SheetPrimitive } from '@qa-animate-ui/react/primitives/base-ui/dialog';",
+  "+import { Dialog as SheetPrimitive } from 'qa-animate-ui/primitives/base-ui/dialog';",
 ]);

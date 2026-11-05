@@ -5,7 +5,7 @@ import {
   ToggleButton,
   ToggleButtonGroup,
   type Key,
-} from '@qa-animate-ui/react/primitives/react-aria';
+} from 'qa-animate-ui/primitives/react-aria';
 
 import ToggleGroupDemo from '@/demos/react-aria/toggle-group';
 

@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Fades } from "@qa-animate-ui/react/primitives/effects/fade"
+import { Fades } from "qa-animate-ui/primitives/effects/fade"
 import { RepeatIcon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
 

@@ -8,8 +8,8 @@ import {
   BottomNavigationAccessory,
   BottomNavigationItem,
   BottomNavigationLabel,
-} from "@qa-animate-ui/react/primitives/bottom-navigation"
-import { Button } from "@qa-animate-ui/react/primitives/buttons/button"
+} from "qa-animate-ui/primitives/bottom-navigation"
+import { Button } from "qa-animate-ui/primitives/buttons/button"
 
 import { House } from "@/registry/icons/house"
 import { Plus } from "@/registry/icons/plus"

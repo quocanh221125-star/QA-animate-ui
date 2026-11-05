@@ -1,8 +1,8 @@
 "use client"
 
 import * as React from "react"
-import { Toggle as TogglePrimitive } from "@qa-animate-ui/react/primitives/base-ui/toggle"
-import { ToggleGroup as ToggleGroupPrimitive } from "@qa-animate-ui/react/primitives/base-ui/toggle-group"
+import { Toggle as TogglePrimitive } from "qa-animate-ui/primitives/base-ui/toggle"
+import { ToggleGroup as ToggleGroupPrimitive } from "qa-animate-ui/primitives/base-ui/toggle-group"
 import { type VariantProps } from "class-variance-authority"
 import { cn } from "cn"
 

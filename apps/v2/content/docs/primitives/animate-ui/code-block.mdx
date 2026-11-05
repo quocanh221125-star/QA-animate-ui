@@ -13,8 +13,8 @@ updatedDate: '2026-10-25'
 Import the primitives:
 
 ```tsx title="components/ui/code-block.tsx"
-import * as CodeBlockPrimitive from '@qa-animate-ui/react/primitives/code-block'; // [!code ++]
-import { CopyButton, CopyButtonIcon } from '@qa-animate-ui/react/primitives/buttons/copy'; // [!code ++]
+import * as CodeBlockPrimitive from 'qa-animate-ui/primitives/code-block'; // [!code ++]
+import { CopyButton, CopyButtonIcon } from 'qa-animate-ui/primitives/buttons/copy'; // [!code ++]
 ```
 
 In `CodeBlockCopyButton`, the Copy Button copies and swaps the icons: it replaces the timer, the click handler and the two icons.
@@ -86,7 +86,7 @@ shadcn/ui's Code Block isn't built on a primitive library: `animate-ui animate c
 ## Usage
 
 ```tsx
-import { useCodeWriting } from '@qa-animate-ui/react/primitives/code-block';
+import { useCodeWriting } from 'qa-animate-ui/primitives/code-block';
 
 import { useHighlightedCode } from '@/hooks/use-highlighted-code';
 import {
@@ -216,10 +216,10 @@ Every part takes [shadcn/ui's props](https://ui.shadcn.com/docs/components/base/
 
 ## Primitive
 
-`@qa-animate-ui/react/primitives/code-block` also exports the `CodeBlock` primitive: one element that highlights a whole `code` with Shiki's `codeToHtml` (a peer dependency, loaded on demand) and types it out.
+`qa-animate-ui/primitives/code-block` also exports the `CodeBlock` primitive: one element that highlights a whole `code` with Shiki's `codeToHtml` (a peer dependency, loaded on demand) and types it out.
 
 ```tsx
-import { CodeBlock } from '@qa-animate-ui/react/primitives/code-block';
+import { CodeBlock } from 'qa-animate-ui/primitives/code-block';
 
 <CodeBlock code="console.log('Hello, world!');" lang="javascript" writing />;
 ```

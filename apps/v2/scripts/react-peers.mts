@@ -36,9 +36,9 @@ function resolveFile(base: string) {
 const cache = new Map<string, Set<string>>();
 
 export function peersOf(specifier: string) {
-  if (!specifier.startsWith('@qa-animate-ui/react/')) return new Set<string>();
+  if (!specifier.startsWith('qa-animate-ui/')) return new Set<string>();
   const entry = resolveFile(
-    path.join(sourceDir, specifier.slice('@qa-animate-ui/react/'.length)),
+    path.join(sourceDir, specifier.slice('qa-animate-ui/'.length)),
   );
   if (!entry) return new Set<string>();
   const cached = cache.get(entry);

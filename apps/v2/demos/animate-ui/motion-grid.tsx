@@ -5,11 +5,11 @@ import {
   MotionGrid,
   MotionGridCells,
   type Frames,
-} from "@qa-animate-ui/react/primitives/motion-grid"
+} from "qa-animate-ui/primitives/motion-grid"
 import {
   RotatingText,
   RotatingTextContainer,
-} from "@qa-animate-ui/react/primitives/texts/rotating"
+} from "qa-animate-ui/primitives/texts/rotating"
 import { motion } from "motion/react"
 
 const importingFrames = [

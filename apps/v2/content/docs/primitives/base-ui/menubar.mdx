@@ -15,8 +15,8 @@ releaseDate: '2026-10-18'
 Import `Menubar` and `Menu` from Animate UI instead of Base UI. Everything else stays the same.
 
 ```tsx
-import { Menu } from '@qa-animate-ui/react/primitives/base-ui/menu';
-import { Menubar } from '@qa-animate-ui/react/primitives/base-ui/menubar';
+import { Menu } from 'qa-animate-ui/primitives/base-ui/menu';
+import { Menubar } from 'qa-animate-ui/primitives/base-ui/menubar';
 
 export function EditorMenubar() {
   return (
@@ -48,7 +48,7 @@ export function EditorMenubar() {
 }
 ```
 
-Using the `@base-ui/react` umbrella import instead? The barrel mirrors it: `import { Menu, Menubar } from '@qa-animate-ui/react/primitives/base-ui'`.
+Using the `@base-ui/react` umbrella import instead? The barrel mirrors it: `import { Menu, Menubar } from 'qa-animate-ui/primitives/base-ui'`.
 
 `Menubar` takes Base UI's props as they are and lets its menus hand their popover over to one another: each menu is an animated [Menu](/docs/primitives/base-ui/dropdown-menu). Take both from Animate UI: under Base UI's own `Menubar`, each menu closes and opens on its own.
 
@@ -57,8 +57,8 @@ Using the `@base-ui/react` umbrella import instead? The barrel mirrors it: `impo
 Checkbox and radio items show their check in a Menu's `CheckboxItemIndicator` or `RadioItemIndicator`: it draws itself when the item is checked, and erases itself when it's unchecked (a radio item's while the new one draws). With `animation="pop"`, it pops in from half its size and shrinks back out instead, and a radio item's check glides to the newly checked item:
 
 ```tsx
-import { Menu } from '@qa-animate-ui/react/primitives/base-ui/menu';
-import { Menubar } from '@qa-animate-ui/react/primitives/base-ui/menubar';
+import { Menu } from 'qa-animate-ui/primitives/base-ui/menu';
+import { Menubar } from 'qa-animate-ui/primitives/base-ui/menubar';
 
 export function ViewMenubar() {
   return (

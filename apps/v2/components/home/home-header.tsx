@@ -1,6 +1,6 @@
 'use client';
 
-import { ease } from '@qa-animate-ui/react/utils/motion';
+import { ease } from 'qa-animate-ui/utils/motion';
 import { GithubIcon, StarIcon } from '@hugeicons/core-free-icons';
 import { HugeiconsIcon } from '@hugeicons/react';
 import { cn } from 'cn';

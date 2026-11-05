@@ -1,8 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import { Switch } from '@qa-animate-ui/react/primitives/radix-ui/switch';
-import * as SwitchStar from '@qa-animate-ui/react/primitives/radix-ui/switch';
+import { Switch } from 'qa-animate-ui/primitives/radix-ui/switch';
+import * as SwitchStar from 'qa-animate-ui/primitives/radix-ui/switch';
 
 const track = 'inline-flex h-5 w-9 items-center rounded-full border';
 const thumb =

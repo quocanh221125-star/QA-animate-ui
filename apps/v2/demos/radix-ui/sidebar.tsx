@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "cn"
 import { Slot } from "radix-ui"
 
-import * as SidebarPrimitive from "@qa-animate-ui/react/primitives/sidebar"
+import * as SidebarPrimitive from "qa-animate-ui/primitives/sidebar"
 import { PanelLeft } from "@/registry/hugeicons/panel-left"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"

@@ -11,7 +11,7 @@ import {
   type PreviewLinkCardImageProps,
   type PreviewLinkCardProps,
   type PreviewLinkCardTriggerProps,
-} from "@qa-animate-ui/react/primitives/radix-ui/preview-link-card"
+} from "qa-animate-ui/primitives/radix-ui/preview-link-card"
 
 function PreviewLinkCard(props: PreviewLinkCardProps) {
   return <PreviewLinkCardPrimitive {...props} />

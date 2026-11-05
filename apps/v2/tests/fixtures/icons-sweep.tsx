@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import type { IconProps } from '@qa-animate-ui/react/icons';
+import type { IconProps } from 'qa-animate-ui/icons';
 
 import { ICONS, iconComponent } from '@/registry/icons';
 

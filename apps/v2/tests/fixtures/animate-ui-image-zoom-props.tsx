@@ -4,7 +4,7 @@ import * as React from 'react';
 import {
   Image,
   ImageZoom,
-} from '@qa-animate-ui/react/primitives/effects/image-zoom';
+} from 'qa-animate-ui/primitives/effects/image-zoom';
 
 export default function AnimateUIImageZoomPropsFixture() {
   const [log, setLog] = React.useState<string[]>([]);

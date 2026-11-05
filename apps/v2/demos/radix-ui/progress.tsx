@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { cn } from "cn"
-import { Progress as ProgressPrimitive } from "@qa-animate-ui/react/primitives/radix-ui"
+import { Progress as ProgressPrimitive } from "qa-animate-ui/primitives/radix-ui"
 
 function Progress({
   className,

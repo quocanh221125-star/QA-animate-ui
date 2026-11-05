@@ -33,8 +33,8 @@ import {
   type SeparatorProps,
   type TagListProps,
   type TagProps,
-} from "@qa-animate-ui/react/primitives/react-aria"
-import { AnimateUIProvider } from "@qa-animate-ui/react/provider"
+} from "qa-animate-ui/primitives/react-aria"
+import { AnimateUIProvider } from "qa-animate-ui/provider"
 
 import { Button } from "@/components/ui/react-aria/button"
 import {

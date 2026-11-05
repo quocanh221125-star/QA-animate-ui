@@ -8,7 +8,7 @@ import {
   Popover as PopoverPrimitive,
   type DialogTriggerProps,
   type PopoverProps as PopoverPrimitiveProps,
-} from "@qa-animate-ui/react/primitives/react-aria"
+} from "qa-animate-ui/primitives/react-aria"
 import { Button } from "@/components/ui/react-aria/button"
 import { Input } from "@/components/ui/react-aria/input"
 import { Label } from "@/components/ui/react-aria/label"

@@ -37,8 +37,8 @@ apps
     ├── registry      # The shadcn registry: icons, hugeicons, backgrounds
     └── tests         # Playwright tests
 packages
-├── react             # @qa-animate-ui/react: the animated primitives
-├── cli               # @qa-animate-ui/cli: the animate, migrate and audit commands
+├── react             # qa-animate-ui: the animated primitives
+├── cli               # qa-animate-ui-cli: the animate, migrate and audit commands
 ├── eslint-config
 └── typescript-config
 skills
@@ -158,7 +158,7 @@ pnpm --filter=v2 test
 Run the CLI tests:
 
 ```bash
-pnpm --filter=@qa-animate-ui/cli test
+pnpm --filter=qa-animate-ui-cli test
 ```
 
 Please ensure the tests pass when submitting a pull request.

@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { Checkbox } from '@qa-animate-ui/react/primitives/base-ui/checkbox';
+import { Checkbox } from 'qa-animate-ui/primitives/base-ui/checkbox';
 
 const box = 'grid size-5 place-content-center border';
 

@@ -1,14 +1,14 @@
 'use client';
 
 import * as React from 'react';
-import { Slot } from '@qa-animate-ui/react/primitives/slot';
-import { Tabs, TabsList, TabsTrigger } from '@qa-animate-ui/react/primitives/tabs';
+import { Slot } from 'qa-animate-ui/primitives/slot';
+import { Tabs, TabsList, TabsTrigger } from 'qa-animate-ui/primitives/tabs';
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@qa-animate-ui/react/primitives/tooltip';
+} from 'qa-animate-ui/primitives/tooltip';
 
 export default function AnimateUISlotFixture() {
   const [log, setLog] = React.useState<string[]>([]);

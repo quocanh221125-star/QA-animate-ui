@@ -9,7 +9,7 @@ import {
   PinnedListPinned,
   PinnedListTrigger,
   PinnedListUnpinned,
-} from "@qa-animate-ui/react/primitives/pinned-list"
+} from "qa-animate-ui/primitives/pinned-list"
 import { PinIcon, PinOffIcon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
 

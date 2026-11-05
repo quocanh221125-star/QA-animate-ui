@@ -6,8 +6,8 @@ import {
   Checkbox as CheckboxPrimitive,
   composeRenderProps,
   type CheckboxProps,
-} from "@qa-animate-ui/react/primitives/react-aria"
-import { AnimateUIProvider } from "@qa-animate-ui/react/provider"
+} from "qa-animate-ui/primitives/react-aria"
+import { AnimateUIProvider } from "qa-animate-ui/provider"
 
 import { Tick02Icon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"

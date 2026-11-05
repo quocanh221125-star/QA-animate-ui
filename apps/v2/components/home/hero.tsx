@@ -1,11 +1,11 @@
 'use client';
 
 import { Copy01Icon, Tick02Icon } from '@hugeicons/core-free-icons';
-import { Button } from '@qa-animate-ui/react/primitives/buttons/button';
+import { Button } from 'qa-animate-ui/primitives/buttons/button';
 import {
   CopyButton,
   CopyButtonIcon,
-} from '@qa-animate-ui/react/primitives/buttons/copy';
+} from 'qa-animate-ui/primitives/buttons/copy';
 import {
   Tabs,
   TabsContent,
@@ -14,7 +14,7 @@ import {
   TabsHighlightItem,
   TabsList,
   TabsTrigger,
-} from '@qa-animate-ui/react/primitives/tabs';
+} from 'qa-animate-ui/primitives/tabs';
 import { HugeiconsIcon } from '@hugeicons/react';
 import {
   ease,
@@ -22,7 +22,7 @@ import {
   ReducedMotionConfig,
   scaleTransition,
   useMotionTokens,
-} from '@qa-animate-ui/react/utils/motion';
+} from 'qa-animate-ui/utils/motion';
 import { AnimatePresence, motion } from 'motion/react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -66,7 +66,7 @@ export const HOMES = {
 
 export const useHomeFramework = () => frameworkOf(usePathname());
 
-const animateAll = (dlx: string) => `${dlx} @qa-animate-ui/cli@latest animate all`;
+const animateAll = (dlx: string) => `${dlx} qa-animate-ui-cli@latest animate all`;
 
 const rise = (index: number, done: boolean) => ({
   initial: { opacity: 0, y: 20, filter: 'blur(10px)' },

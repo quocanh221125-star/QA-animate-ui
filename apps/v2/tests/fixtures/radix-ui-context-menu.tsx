@@ -1,8 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import { ContextMenu } from '@qa-animate-ui/react/primitives/radix-ui/context-menu';
-import * as ContextMenuStar from '@qa-animate-ui/react/primitives/radix-ui/context-menu';
+import { ContextMenu } from 'qa-animate-ui/primitives/radix-ui/context-menu';
+import * as ContextMenuStar from 'qa-animate-ui/primitives/radix-ui/context-menu';
 
 const area = 'flex h-24 w-64 items-center justify-center rounded-md border';
 const content = 'min-w-40 rounded-md border bg-white p-1 shadow-md';

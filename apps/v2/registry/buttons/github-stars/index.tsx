@@ -5,7 +5,7 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import {
   Button,
   type ButtonProps,
-} from '@qa-animate-ui/react/primitives/buttons/button';
+} from 'qa-animate-ui/primitives/buttons/button';
 import {
   GithubStars,
   GithubStarsIcon,
@@ -16,8 +16,8 @@ import {
   type GithubStarsLogoProps,
   type GithubStarsNumberProps,
   type GithubStarsParticlesProps,
-} from '@qa-animate-ui/react/primitives/github-stars';
-import type { UseIsInViewOptions } from '@qa-animate-ui/react/utils/use-is-in-view';
+} from 'qa-animate-ui/primitives/github-stars';
+import type { UseIsInViewOptions } from 'qa-animate-ui/utils/use-is-in-view';
 import { cn } from 'cn';
 
 const githubStarsButtonVariants = cva(

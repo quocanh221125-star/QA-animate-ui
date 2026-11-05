@@ -1,8 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import { NavigationMenu } from '@qa-animate-ui/react/primitives/radix-ui/navigation-menu';
-import * as NavigationMenuStar from '@qa-animate-ui/react/primitives/radix-ui/navigation-menu';
+import { NavigationMenu } from 'qa-animate-ui/primitives/radix-ui/navigation-menu';
+import * as NavigationMenuStar from 'qa-animate-ui/primitives/radix-ui/navigation-menu';
 
 const panel = 'w-48 rounded-md border bg-white p-2 shadow-md';
 

@@ -1,6 +1,6 @@
 'use client';
 
-import { Drawer } from '@qa-animate-ui/react/primitives/radix-ui/drawer';
+import { Drawer } from 'qa-animate-ui/primitives/radix-ui/drawer';
 
 export default function RadixDrawerForceMountFixture() {
   return (

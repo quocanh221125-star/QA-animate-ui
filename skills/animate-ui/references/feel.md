@@ -82,7 +82,7 @@ node <skill>/scripts/css-timing.mjs transition.menu --property opacity
 node <skill>/scripts/css-timing.mjs '{"type":"spring","visualDuration":0.4,"bounce":0.3}' --tempo 1.15
 ```
 
-It prints the duration, the easing (a spring becomes the `linear()` curve it plays) and a ready `transition` line. In code, `toCssTiming(transition)` from `@qa-animate-ui/react/utils/motion` returns the same `{ duration, easing }`. Put the curve in a CSS variable when several rules share it, and keep the reduced-motion rule beside it (`@media (prefers-reduced-motion: reduce)`: travel zeroed, fades kept).
+It prints the duration, the easing (a spring becomes the `linear()` curve it plays) and a ready `transition` line. In code, `toCssTiming(transition)` from `qa-animate-ui/utils/motion` returns the same `{ duration, easing }`. Put the curve in a CSS variable when several rules share it, and keep the reduced-motion rule beside it (`@media (prefers-reduced-motion: reduce)`: travel zeroed, fades kept).
 
 An element toggled with `display: none` animates both ways with `@starting-style` and `transition-behavior: allow-discrete`: the open rule carries the entrance, the closed rule the exit (an exiting element takes the closed rule's transition), and `display` transitions for as long as the longest of them: in the open rule that's the entrance's longest, in the closed rule the exit's.
 

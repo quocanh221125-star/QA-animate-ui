@@ -5,7 +5,7 @@ import {
   composeRenderProps,
   Switch as SwitchPrimitive,
   type SwitchProps as SwitchPrimitiveProps,
-} from "@qa-animate-ui/react/primitives/react-aria"
+} from "qa-animate-ui/primitives/react-aria"
 import { Label } from "@/components/ui/react-aria/label"
 
 function Switch({

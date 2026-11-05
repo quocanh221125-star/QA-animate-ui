@@ -38,7 +38,7 @@ export async function Command({
   );
 }
 
-const PRIMITIVES = '@qa-animate-ui/react/primitives/';
+const PRIMITIVES = 'qa-animate-ui/primitives/';
 
 const DROP_INS: Record<string, string> = {
   carousel: 'embla-carousel-react',
@@ -303,7 +303,7 @@ export function Installation({
   const vue = library === 'reka-ui' || framework === 'vue';
   const packages = vue
     ? '@qa-animate-ui/vue motion-v'
-    : '@qa-animate-ui/react motion';
+    : 'qa-animate-ui motion';
   const shadcn = vue ? 'shadcn-vue' : 'shadcn';
   const kit = vue ? 'shadcn-vue' : 'shadcn/ui';
 
@@ -348,7 +348,7 @@ export function Installation({
                 )}
                 <Command
                   command={(m) =>
-                    `${m.dlx} @qa-animate-ui/cli@latest animate ${name}`
+                    `${m.dlx} qa-animate-ui-cli@latest animate ${name}`
                   }
                 />
               </Step>

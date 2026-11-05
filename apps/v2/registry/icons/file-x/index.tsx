@@ -8,7 +8,7 @@ import {
   useAnimateIconContext,
   IconWrapper,
   type IconProps,
-} from '@qa-animate-ui/react/icons';
+} from 'qa-animate-ui/icons';
 
 type FileXProps = IconProps<keyof typeof animations>;
 

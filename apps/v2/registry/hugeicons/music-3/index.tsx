@@ -8,7 +8,7 @@ import {
   useAnimateIconContext,
   IconWrapper,
   type IconProps,
-} from '@qa-animate-ui/react/icons';
+} from 'qa-animate-ui/icons';
 
 type Music3Props = IconProps<keyof typeof animations>;
 

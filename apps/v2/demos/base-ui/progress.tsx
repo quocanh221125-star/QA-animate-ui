@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Progress as ProgressPrimitive } from "@qa-animate-ui/react/primitives/base-ui/progress"
+import { Progress as ProgressPrimitive } from "qa-animate-ui/primitives/base-ui/progress"
 import { cn } from "cn"
 
 function Progress({

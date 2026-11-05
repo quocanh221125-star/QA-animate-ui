@@ -1,8 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import { Popover } from '@qa-animate-ui/react/primitives/radix-ui/popover';
-import * as PopoverStar from '@qa-animate-ui/react/primitives/radix-ui/popover';
+import { Popover } from 'qa-animate-ui/primitives/radix-ui/popover';
+import * as PopoverStar from 'qa-animate-ui/primitives/radix-ui/popover';
 
 export default function RadixPopoverFixture() {
   const [open, setOpen] = React.useState(false);

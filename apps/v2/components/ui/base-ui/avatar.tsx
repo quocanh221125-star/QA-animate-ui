@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Avatar as AvatarPrimitive } from "@qa-animate-ui/react/primitives/base-ui"
+import { Avatar as AvatarPrimitive } from "qa-animate-ui/primitives/base-ui"
 import { cn } from "cn"
 
 function Avatar({

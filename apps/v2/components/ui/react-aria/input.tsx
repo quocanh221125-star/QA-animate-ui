@@ -5,7 +5,7 @@ import { cn } from "cn"
 import {
   composeRenderProps,
   Input as InputPrimitive,
-} from "@qa-animate-ui/react/primitives/react-aria"
+} from "qa-animate-ui/primitives/react-aria"
 
 function Input({
   className,

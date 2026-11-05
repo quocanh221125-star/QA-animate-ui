@@ -15,7 +15,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
   type TooltipProps,
-} from "@qa-animate-ui/react/primitives/tooltip"
+} from "qa-animate-ui/primitives/tooltip"
 
 import { Button } from "@/components/ui/button"
 

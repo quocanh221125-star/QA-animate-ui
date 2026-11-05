@@ -149,7 +149,7 @@ test('a Vue component page has its library tab and installs like React', async (
   await expect(install.locator('pre')).toContainText([
     'npm install @qa-animate-ui/vue motion-v',
     'npx shadcn-vue@latest add switch',
-    'npx @qa-animate-ui/cli@latest animate switch',
+    'npx qa-animate-ui-cli@latest animate switch',
   ]);
   await install.getByRole('tab', { name: 'Manual' }).click();
   await expect(install.locator('pre .diff.add').first()).toContainText(
@@ -397,7 +397,7 @@ test('the Vue sidebar has the React sections, names and order', async ({
   expect(vue).toEqual(
     react.map(([section, name, logos]) => [
       section,
-      name === '@qa-animate-ui/react' ? '@qa-animate-ui/vue' : name,
+      name === 'qa-animate-ui' ? '@qa-animate-ui/vue' : name,
       logos,
     ]),
   );

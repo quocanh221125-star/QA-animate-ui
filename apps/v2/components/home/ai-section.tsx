@@ -1,7 +1,7 @@
 'use client';
 
-import { Button } from '@qa-animate-ui/react/primitives/buttons/button';
-import { AnimateIcon } from '@qa-animate-ui/react/icons';
+import { Button } from 'qa-animate-ui/primitives/buttons/button';
+import { AnimateIcon } from 'qa-animate-ui/icons';
 import {
   Tabs,
   TabsContent,
@@ -10,16 +10,16 @@ import {
   TabsHighlightItem,
   TabsList,
   TabsTrigger,
-} from '@qa-animate-ui/react/primitives/tabs';
-import { ShimmeringText } from '@qa-animate-ui/react/primitives/texts/shimmering';
-import { TypingText } from '@qa-animate-ui/react/primitives/texts/typing';
+} from 'qa-animate-ui/primitives/tabs';
+import { ShimmeringText } from 'qa-animate-ui/primitives/texts/shimmering';
+import { TypingText } from 'qa-animate-ui/primitives/texts/typing';
 import {
   blur,
   ease,
   scale,
   spring,
   useShouldReduceMotion,
-} from '@qa-animate-ui/react/utils/motion';
+} from 'qa-animate-ui/utils/motion';
 import {
   FloppyDiskIcon,
   Loading03Icon,
@@ -366,7 +366,7 @@ const SCENARIOS: Scenario[] = [
     label: 'Review',
     prompt: 'Review the animations in my app: what feels slow or janky?',
     steps: [
-      'Ran `npx @qa-animate-ui/cli audit`: 14 animations',
+      'Ran `npx qa-animate-ui-cli audit`: 14 animations',
       'Weighed each one by how often it’s seen and what it’s for',
       'Kept the hero’s long entrance: it plays once',
       'Ranked 4 fixes, the menu first: it opens all day',

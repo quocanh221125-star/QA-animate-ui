@@ -1,8 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import { Progress } from '@qa-animate-ui/react/primitives/radix-ui/progress';
-import * as ProgressStar from '@qa-animate-ui/react/primitives/radix-ui/progress';
+import { Progress } from 'qa-animate-ui/primitives/radix-ui/progress';
+import * as ProgressStar from 'qa-animate-ui/primitives/radix-ui/progress';
 
 const track = {
   width: 200,

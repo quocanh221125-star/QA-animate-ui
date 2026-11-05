@@ -1,8 +1,8 @@
 "use client"
 
 import * as React from "react"
-import { Checkbox as CheckboxPrimitive } from "@qa-animate-ui/react/primitives/base-ui/checkbox"
-import { AnimateUIProvider } from "@qa-animate-ui/react/provider"
+import { Checkbox as CheckboxPrimitive } from "qa-animate-ui/primitives/base-ui/checkbox"
+import { AnimateUIProvider } from "qa-animate-ui/provider"
 import { cn } from "cn"
 
 import { Tick02Icon } from "@hugeicons/core-free-icons"

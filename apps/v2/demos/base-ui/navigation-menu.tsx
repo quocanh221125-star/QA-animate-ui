@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { NavigationMenu as NavigationMenuPrimitive } from "@qa-animate-ui/react/primitives/base-ui/navigation-menu"
+import { NavigationMenu as NavigationMenuPrimitive } from "qa-animate-ui/primitives/base-ui/navigation-menu"
 import { cva } from "class-variance-authority"
 import { cn } from "cn"
 

@@ -3,13 +3,13 @@
 import * as React from 'react';
 import { motion, type HTMLMotionProps, type Transition } from 'motion/react';
 
-import { Slot, type WithAsChild } from '@qa-animate-ui/react/primitives/slot';
+import { Slot, type WithAsChild } from 'qa-animate-ui/primitives/slot';
 import {
   motionTokens,
   ReducedMotionConfig,
   useShouldReduceMotion,
   useTempoTransition,
-} from '@qa-animate-ui/react/utils/motion';
+} from 'qa-animate-ui/utils/motion';
 import { cn } from 'cn';
 
 const HOVER_TRANSITION: Transition = {

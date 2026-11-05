@@ -1,6 +1,6 @@
 "use client"
 
-import { Collapsible as CollapsiblePrimitive } from "@qa-animate-ui/react/primitives/base-ui/collapsible"
+import { Collapsible as CollapsiblePrimitive } from "qa-animate-ui/primitives/base-ui/collapsible"
 
 function Collapsible({ ...props }: CollapsiblePrimitive.Root.Props) {
   return <CollapsiblePrimitive.Root data-slot="collapsible" {...props} />

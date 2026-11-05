@@ -9,13 +9,13 @@ import {
 import {
   RippleButton,
   RippleButtonRipples,
-} from '@qa-animate-ui/react/primitives/buttons/ripple';
-import { Click } from '@qa-animate-ui/react/primitives/effects/click';
+} from 'qa-animate-ui/primitives/buttons/ripple';
+import { Click } from 'qa-animate-ui/primitives/effects/click';
 import {
   ScrollingNumber,
   ScrollingNumberContainer,
   ScrollingNumberItems,
-} from '@qa-animate-ui/react/primitives/texts/scrolling-number';
+} from 'qa-animate-ui/primitives/texts/scrolling-number';
 
 export default function MinorCasesUnmountFixture() {
   const [shown, setShown] = React.useState(true);

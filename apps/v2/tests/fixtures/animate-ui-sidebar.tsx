@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import * as SidebarPrimitive from '@qa-animate-ui/react/primitives/sidebar';
+import * as SidebarPrimitive from 'qa-animate-ui/primitives/sidebar';
 
 function Bar({ label }: { label: string }) {
   const { state, toggleSidebar, open } = SidebarPrimitive.useSidebar();

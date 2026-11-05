@@ -6,7 +6,7 @@ import {
   PreviewTrigger as PreviewTriggerPrimitive,
   type PopoverProps as PopoverPrimitiveProps,
   type PreviewTriggerProps,
-} from "@qa-animate-ui/react/primitives/react-aria"
+} from "qa-animate-ui/primitives/react-aria"
 import { Button } from "@/components/ui/react-aria/button"
 
 function HoverCardTrigger({ children, ...props }: PreviewTriggerProps) {

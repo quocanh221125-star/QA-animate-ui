@@ -1,9 +1,9 @@
 'use client';
 
-import { Tooltip as RadixTooltip } from '@qa-animate-ui/react/primitives/radix-ui/tooltip';
-import { HoverCard as RadixHoverCard } from '@qa-animate-ui/react/primitives/radix-ui/hover-card';
-import { Tooltip as BaseTooltip } from '@qa-animate-ui/react/primitives/base-ui/tooltip';
-import { PreviewCard as BasePreviewCard } from '@qa-animate-ui/react/primitives/base-ui/preview-card';
+import { Tooltip as RadixTooltip } from 'qa-animate-ui/primitives/radix-ui/tooltip';
+import { HoverCard as RadixHoverCard } from 'qa-animate-ui/primitives/radix-ui/hover-card';
+import { Tooltip as BaseTooltip } from 'qa-animate-ui/primitives/base-ui/tooltip';
+import { PreviewCard as BasePreviewCard } from 'qa-animate-ui/primitives/base-ui/preview-card';
 
 const trigger =
   'flex h-12 w-72 items-center justify-center rounded-md border text-sm';

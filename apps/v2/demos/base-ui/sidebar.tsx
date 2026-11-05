@@ -1,11 +1,11 @@
 "use client"
 
 import * as React from "react"
-import { mergeProps, useRender } from "@qa-animate-ui/react/primitives/base-ui"
+import { mergeProps, useRender } from "qa-animate-ui/primitives/base-ui"
 import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "cn"
 
-import * as SidebarPrimitive from "@qa-animate-ui/react/primitives/sidebar"
+import * as SidebarPrimitive from "qa-animate-ui/primitives/sidebar"
 import { PanelLeft } from "@/registry/hugeicons/panel-left"
 import { Button } from "@/components/ui/base-ui/button"
 import { Input } from "@/components/ui/base-ui/input"

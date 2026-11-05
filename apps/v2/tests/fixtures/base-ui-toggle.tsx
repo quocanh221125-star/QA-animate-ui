@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { Toggle } from '@qa-animate-ui/react/primitives/base-ui/toggle';
+import { Toggle } from 'qa-animate-ui/primitives/base-ui/toggle';
 
 export default function BaseToggleFixture() {
   const [pressed, setPressed] = React.useState(false);

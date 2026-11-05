@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { Checkbox } from '@qa-animate-ui/react/primitives/react-aria';
+import { Checkbox } from 'qa-animate-ui/primitives/react-aria';
 
 const Indicator = ({ show }: { show: boolean }) => (
   <span data-slot="checkbox-indicator" className="grid size-5 border">

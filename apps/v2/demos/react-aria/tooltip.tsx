@@ -7,7 +7,7 @@ import {
   OverlayArrow,
   Tooltip as TooltipPrimitive,
   TooltipTrigger as TooltipTriggerPrimitive,
-} from "@qa-animate-ui/react/primitives/react-aria"
+} from "qa-animate-ui/primitives/react-aria"
 import { Button } from "@/components/ui/react-aria/button"
 
 function TooltipTrigger({

@@ -11,7 +11,7 @@ export type Primitive = {
 
 export const PRIMITIVES: Primitive[] = ALL;
 
-export const PACKAGE = '@qa-animate-ui/react';
+export const PACKAGE = 'qa-animate-ui';
 
 export function primitiveModule(primitive: Primitive) {
   if (primitive.library === 'react-aria')

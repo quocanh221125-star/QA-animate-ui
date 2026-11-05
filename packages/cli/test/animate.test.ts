@@ -64,10 +64,10 @@ test('animate <component> rewrites the file and says what changed', () => {
   const { code, output } = run(['accordion']);
   expect(code).toBe(0);
   expect(readFileSync(uiFile(), 'utf8')).toContain(
-    'from "@qa-animate-ui/react/primitives/radix-ui"',
+    'from "qa-animate-ui/primitives/radix-ui"',
   );
   expect(output).toContain('src/components/ui/accordion.tsx');
-  expect(output).toContain('pnpm add @qa-animate-ui/react motion');
+  expect(output).toContain('pnpm add qa-animate-ui motion');
 });
 
 test('--dry-run writes nothing', () => {
@@ -114,7 +114,7 @@ test('animate all --exclude leaves those components as they are', () => {
   expect(code).toBe(0);
   expect(readFileSync(tooltip, 'utf8')).toBe(before);
   expect(readFileSync(uiFile(), 'utf8')).toContain(
-    'from "@qa-animate-ui/react/primitives/radix-ui"',
+    'from "qa-animate-ui/primitives/radix-ui"',
   );
   const output = lines.join('\n');
   expect(output).toContain('1 file animated');
@@ -163,7 +163,7 @@ test('follows the tsconfig extends to find the ui folder', () => {
     JSON.stringify({ compilerOptions: { paths: { '@/*': ['../src/*'] } } }),
   );
   expect(run(['accordion']).code).toBe(0);
-  expect(readFileSync(uiFile(), 'utf8')).toContain('@qa-animate-ui/react');
+  expect(readFileSync(uiFile(), 'utf8')).toContain('qa-animate-ui');
 });
 
 test('uses the longest matching paths pattern, as TypeScript does', () => {
@@ -179,7 +179,7 @@ test('uses the longest matching paths pattern, as TypeScript does', () => {
     }),
   );
   expect(run(['accordion']).code).toBe(0);
-  expect(readFileSync(uiFile(), 'utf8')).toContain('@qa-animate-ui/react');
+  expect(readFileSync(uiFile(), 'utf8')).toContain('qa-animate-ui');
 });
 
 test("says the commands in the project's package manager", () => {
@@ -187,7 +187,7 @@ test("says the commands in the project's package manager", () => {
   writeFileSync(path.join(root, 'bun.lock'), '');
   const { output } = run(['accordion', 'dialog']);
   expect(output).toContain('bun x shadcn@latest add dialog');
-  expect(output).toContain('bun add @qa-animate-ui/react motion');
+  expect(output).toContain('bun add qa-animate-ui motion');
 });
 
 test('a component named twice is animated once', () => {
@@ -227,7 +227,7 @@ test('a file it cannot parse is named and skipped, the others still animated', (
   const { code, output } = run(['all']);
   expect(code).toBe(1);
   expect(output).toContain("src/components/ui/broken.tsx: couldn't parse it");
-  expect(readFileSync(uiFile(), 'utf8')).toContain('@qa-animate-ui/react');
+  expect(readFileSync(uiFile(), 'utf8')).toContain('qa-animate-ui');
 });
 
 test('a file it cannot write is named and skipped, the others still animated', () => {
@@ -247,7 +247,7 @@ test('a file it cannot write is named and skipped, the others still animated', (
   expect(output).not.toContain('✔ src/components/ui/accordion.tsx');
   expect(
     readFileSync(path.join(path.dirname(uiFile()), 'tabs.tsx'), 'utf8'),
-  ).toContain('@qa-animate-ui/react');
+  ).toContain('qa-animate-ui');
 });
 
 test('a missing ui folder is an error, not "nothing to animate"', () => {
@@ -260,13 +260,13 @@ test('a missing ui folder is an error, not "nothing to animate"', () => {
 test('a component named with its extension or in capitals is found', () => {
   const { code } = run(['Accordion.tsx']);
   expect(code).toBe(0);
-  expect(readFileSync(uiFile(), 'utf8')).toContain('@qa-animate-ui/react');
+  expect(readFileSync(uiFile(), 'utf8')).toContain('qa-animate-ui');
 });
 
-test('@qa-animate-ui/react as a peer dependency counts as installed', () => {
+test('qa-animate-ui as a peer dependency counts as installed', () => {
   writeFileSync(
     path.join(root, 'package.json'),
-    JSON.stringify({ peerDependencies: { '@qa-animate-ui/react': '^2.0.0' } }),
+    JSON.stringify({ peerDependencies: { 'qa-animate-ui': '^2.0.0' } }),
   );
   expect(run(['accordion']).output).not.toContain("isn't installed yet");
 });

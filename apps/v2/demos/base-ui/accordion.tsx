@@ -1,6 +1,6 @@
 "use client"
 
-import { Accordion as AccordionPrimitive } from "@qa-animate-ui/react/primitives/base-ui/accordion"
+import { Accordion as AccordionPrimitive } from "qa-animate-ui/primitives/base-ui/accordion"
 import { cn } from "cn"
 
 import { ArrowDown01Icon } from "@hugeicons/core-free-icons"

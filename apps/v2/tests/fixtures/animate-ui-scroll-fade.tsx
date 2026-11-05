@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { ScrollFade } from '@qa-animate-ui/react/primitives/effects/scroll-fade';
+import { ScrollFade } from 'qa-animate-ui/primitives/effects/scroll-fade';
 
 const items = (count: number) =>
   Array.from({ length: count }, (_, i) => (

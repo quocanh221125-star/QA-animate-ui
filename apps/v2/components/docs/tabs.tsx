@@ -8,7 +8,7 @@ import {
   TabsHighlightItem,
   TabsList,
   TabsTrigger,
-} from '@qa-animate-ui/react/primitives/tabs';
+} from 'qa-animate-ui/primitives/tabs';
 import { cn } from 'cn';
 import {
   Children,

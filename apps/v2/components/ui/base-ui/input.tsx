@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Input as InputPrimitive } from "@qa-animate-ui/react/primitives/base-ui"
+import { Input as InputPrimitive } from "qa-animate-ui/primitives/base-ui"
 import { cn } from "cn"
 
 function Input({ className, type, ...props }: React.ComponentProps<"input">) {

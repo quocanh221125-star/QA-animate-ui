@@ -5,7 +5,7 @@ import {
   type Direction,
   type Resolved,
   type ThemeSelection,
-} from "@qa-animate-ui/react/primitives/effects/theme-toggler"
+} from "qa-animate-ui/primitives/effects/theme-toggler"
 import {
   ComputerIcon,
   Moon02Icon,

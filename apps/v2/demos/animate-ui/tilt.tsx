@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { Tilt, TiltContent } from "@qa-animate-ui/react/primitives/effects/tilt"
+import { Tilt, TiltContent } from "qa-animate-ui/primitives/effects/tilt"
 
 const COLORS = ["bg-neutral-800", "bg-red-950", "bg-blue-950"]
 

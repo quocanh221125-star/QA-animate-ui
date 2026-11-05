@@ -5,7 +5,7 @@ import {
   Label,
   Radio,
   RadioGroup,
-} from '@qa-animate-ui/react/primitives/react-aria';
+} from 'qa-animate-ui/primitives/react-aria';
 
 export default function ReactAriaRadioGroupFixture() {
   const [value, setValue] = React.useState('a');

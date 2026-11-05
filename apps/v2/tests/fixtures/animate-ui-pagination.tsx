@@ -1,8 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import * as PaginationPrimitive from '@qa-animate-ui/react/primitives/pagination';
-import { AnimateUIProvider } from '@qa-animate-ui/react/provider';
+import * as PaginationPrimitive from 'qa-animate-ui/primitives/pagination';
+import { AnimateUIProvider } from 'qa-animate-ui/provider';
 
 type Transition = React.ComponentProps<
   typeof PaginationPrimitive.Root

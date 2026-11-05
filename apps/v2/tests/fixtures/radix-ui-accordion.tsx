@@ -1,8 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import { Accordion } from '@qa-animate-ui/react/primitives/radix-ui/accordion';
-import * as AccordionStar from '@qa-animate-ui/react/primitives/radix-ui/accordion';
+import { Accordion } from 'qa-animate-ui/primitives/radix-ui/accordion';
+import * as AccordionStar from 'qa-animate-ui/primitives/radix-ui/accordion';
 
 export default function RadixAccordionFixture() {
   const [value, setValue] = React.useState('a');

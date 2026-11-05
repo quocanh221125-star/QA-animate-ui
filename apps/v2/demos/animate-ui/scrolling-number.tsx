@@ -7,7 +7,7 @@ import {
   ScrollingNumberHighlight,
   ScrollingNumberItems,
   type ScrollingNumberDirection,
-} from "@qa-animate-ui/react/primitives/texts/scrolling-number"
+} from "qa-animate-ui/primitives/texts/scrolling-number"
 import { RefreshIcon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
 import { cn } from "cn"

@@ -10,7 +10,7 @@ import {
   type IconProps,
   pathClassName,
   IconPathStyle,
-} from '@qa-animate-ui/react/icons';
+} from 'qa-animate-ui/icons';
 
 type FingerprintProps = IconProps<keyof typeof animations>;
 

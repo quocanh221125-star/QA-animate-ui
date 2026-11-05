@@ -8,7 +8,7 @@ import {
   TabPanel as TabPanelPrimitive,
   Tab as TabPrimitive,
   Tabs as TabsPrimitive,
-} from "@qa-animate-ui/react/primitives/react-aria"
+} from "qa-animate-ui/primitives/react-aria"
 
 import {
   Card,

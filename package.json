@@ -1,5 +1,5 @@
 {
-  "name": "qa-animate-ui",
+  "name": "qa-animate-ui-workspace",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -12,7 +12,7 @@
     "registry:build": "pnpm --filter=v2 registry",
     "prepare": "husky",
     "check-types": "turbo check-types",
-    "release": "pnpm -r --filter @qa-animate-ui/react --filter @qa-animate-ui/cli publish --no-git-checks"
+    "release": "pnpm -r --filter qa-animate-ui --filter qa-animate-ui-cli publish --no-git-checks"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.2.3",

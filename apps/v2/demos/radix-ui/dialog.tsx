@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { cn } from "cn"
-import { Dialog as DialogPrimitive } from "@qa-animate-ui/react/primitives/radix-ui"
+import { Dialog as DialogPrimitive } from "qa-animate-ui/primitives/radix-ui"
 
 import { Button } from "@/components/ui/button"
 import { Field, FieldGroup } from "@/components/ui/field"

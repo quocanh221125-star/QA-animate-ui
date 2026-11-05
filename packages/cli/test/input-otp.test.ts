@@ -5,7 +5,7 @@ import { expect, test } from 'vitest';
 import { findPrimitive, primitiveModule } from '../src/lib/primitives';
 import { transform } from '../src/lib/transform';
 
-const INPUT_OTP = '@qa-animate-ui/react/primitives/input-otp';
+const INPUT_OTP = 'qa-animate-ui/primitives/input-otp';
 const FIXTURES = path.join(import.meta.dirname, 'fixtures');
 
 test('animate-ui primitives live directly under primitives/', () => {
@@ -13,7 +13,7 @@ test('animate-ui primitives live directly under primitives/', () => {
   expect(primitive).toBeDefined();
   expect(primitiveModule(primitive!)).toBe(INPUT_OTP);
   expect(primitiveModule({ library: 'radix-ui', name: 'tooltip' })).toBe(
-    '@qa-animate-ui/react/primitives/radix-ui/tooltip',
+    'qa-animate-ui/primitives/radix-ui/tooltip',
   );
 });
 

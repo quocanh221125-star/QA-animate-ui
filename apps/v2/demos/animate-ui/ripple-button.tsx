@@ -3,7 +3,7 @@
 import {
   RippleButton,
   RippleButtonRipples,
-} from "@qa-animate-ui/react/primitives/buttons/ripple"
+} from "qa-animate-ui/primitives/buttons/ripple"
 
 export const controls = {
   RippleButton: {

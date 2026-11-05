@@ -1,6 +1,6 @@
 # Recipes
 
-Start from the recipe that matches the component kind (see the table in SKILL.md). Each one is how the matching `@qa-animate-ui/react` primitives move, and they have interaction tests for timing, reduced motion and keyboard behavior: read the primitives as reference implementations.
+Start from the recipe that matches the component kind (see the table in SKILL.md). Each one is how the matching `qa-animate-ui` primitives move, and they have interaction tests for timing, reduced motion and keyboard behavior: read the primitives as reference implementations.
 
 Every recipe assumes the base-library wiring from `../base-libraries.md` (presence, mounted content, `ReducedMotionConfig`). Snippets show Radix; swap the mounting mechanism for Base UI or React Aria. Imports, once for all:
 
@@ -15,7 +15,7 @@ import {
   useMotionTokens,
   useShouldReduceMotion,
   useTempoTransition,
-} from '@qa-animate-ui/react/utils/motion';
+} from 'qa-animate-ui/utils/motion';
 ```
 
 One file per kind; read only the one you need:

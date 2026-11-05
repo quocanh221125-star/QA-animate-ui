@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { cn } from "cn"
-import { Tooltip as TooltipPrimitive } from "@qa-animate-ui/react/primitives/radix-ui"
+import { Tooltip as TooltipPrimitive } from "qa-animate-ui/primitives/radix-ui"
 
 function TooltipProvider({
   delayDuration = 0,

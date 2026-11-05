@@ -1,8 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import { Toggle } from '@qa-animate-ui/react/primitives/radix-ui/toggle';
-import * as ToggleStar from '@qa-animate-ui/react/primitives/radix-ui/toggle';
+import { Toggle } from 'qa-animate-ui/primitives/radix-ui/toggle';
+import * as ToggleStar from 'qa-animate-ui/primitives/radix-ui/toggle';
 
 export default function RadixToggleFixture() {
   const [pressed, setPressed] = React.useState(false);

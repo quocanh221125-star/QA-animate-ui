@@ -6,7 +6,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@qa-animate-ui/react/primitives/tooltip';
+} from 'qa-animate-ui/primitives/tooltip';
 
 export default function AnimateUITooltipUpdatesFixture() {
   const [copied, setCopied] = React.useState(false);

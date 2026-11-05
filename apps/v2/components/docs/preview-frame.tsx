@@ -1,11 +1,11 @@
 'use client';
 
-import { Button } from '@qa-animate-ui/react/primitives/buttons/button';
+import { Button } from 'qa-animate-ui/primitives/buttons/button';
 import {
   ease,
   ReducedMotionConfig,
   useTempoTransition,
-} from '@qa-animate-ui/react/utils/motion';
+} from 'qa-animate-ui/utils/motion';
 import { RefreshIcon, SlidersHorizontalIcon } from '@hugeicons/core-free-icons';
 import { HugeiconsIcon } from '@hugeicons/react';
 import { cn } from 'cn';

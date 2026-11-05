@@ -1,7 +1,7 @@
 'use client';
 
 import { Card, CardContent } from '@/components/ui/card';
-import { CarouselCounter } from '@qa-animate-ui/react/primitives/carousel';
+import { CarouselCounter } from 'qa-animate-ui/primitives/carousel';
 import {
   Carousel,
   CarouselContent,

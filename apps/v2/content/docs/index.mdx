@@ -7,7 +7,7 @@ Animate UI animates the primitives your components are built on, not the compone
 
 ```tsx
 import { Accordion as AccordionPrimitive } from 'radix-ui'; // [!code --]
-import { Accordion as AccordionPrimitive } from '@qa-animate-ui/react/primitives/radix-ui'; // [!code ++]
+import { Accordion as AccordionPrimitive } from 'qa-animate-ui/primitives/radix-ui'; // [!code ++]
 ```
 
 ## Why primitives
@@ -15,7 +15,7 @@ import { Accordion as AccordionPrimitive } from '@qa-animate-ui/react/primitives
 shadcn/ui components change often, and come in many styles and bases. Animate UI doesn't copy them: each Animate UI primitive has exactly the API of its library, with Motion inside. Whatever your shadcn/ui configuration, swapping the import is enough, and one command does it for every installed component:
 
 ```npm
-npx @qa-animate-ui/cli@latest animate all
+npx qa-animate-ui-cli@latest animate all
 ```
 
 ## Motion that feels right

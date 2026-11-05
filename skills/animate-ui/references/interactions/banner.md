@@ -14,7 +14,7 @@ import {
   ReducedMotionConfig,
   transition,
   useTempoTransition,
-} from '@qa-animate-ui/react/utils/motion';
+} from 'qa-animate-ui/utils/motion';
 
 export function Banner({
   open,

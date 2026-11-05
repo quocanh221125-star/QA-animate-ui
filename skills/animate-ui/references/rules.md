@@ -5,7 +5,7 @@ The rules come in two families:
 - **A. Quality rules** are about correctness, accessibility and performance. Breaking one is a bug, not a taste choice.
 - **B. Style rules** are Animate UI's motion language: springs, curves, scales, blur. They are defaults, tunable through props, the tokens and `tempo`, but a component ships with them unless the user asks otherwise.
 
-Every `@qa-animate-ui/react` primitive follows them. The style draws on Emil Kowalski's practical tips (see NOTICE.md) without taking them to the letter: Animate UI keeps its springs, its overshoot and its longer surfaces, and adopts what makes motion clearer (origins, curves by role, press feedback, blur on swaps).
+Every `qa-animate-ui` primitive follows them. The style draws on Emil Kowalski's practical tips (see NOTICE.md) without taking them to the letter: Animate UI keeps its springs, its overshoot and its longer surfaces, and adopts what makes motion clearer (origins, curves by role, press feedback, blur on swaps).
 
 ## A. Quality rules
 
@@ -234,7 +234,7 @@ When two states replace each other in place (an icon swapping for another, a lab
 
 ### B8. One token set, one tempo
 
-Values come from `@qa-animate-ui/react/utils/motion`. To change the pace of everything, set `tempo` on `AnimateUIProvider` (`tokens.md`), not individual components; to pop checks instead of drawing them, its `checkAnimation`.
+Values come from `qa-animate-ui/utils/motion`. To change the pace of everything, set `tempo` on `AnimateUIProvider` (`tokens.md`), not individual components; to pop checks instead of drawing them, its `checkAnimation`.
 
 ### B9. Nothing stretches
 

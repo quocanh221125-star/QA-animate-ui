@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { Menu } from '@qa-animate-ui/react/primitives/base-ui/menu';
+import { Menu } from 'qa-animate-ui/primitives/base-ui/menu';
 
 const popup = 'min-w-40 rounded-md border bg-white p-1 shadow-md outline-none';
 

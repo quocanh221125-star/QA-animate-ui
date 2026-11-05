@@ -2,8 +2,8 @@ import type * as t from '@babel/types';
 
 type Edit = { start: number; end: number; text: string };
 
-export const CODE_BLOCK_MODULE = '@qa-animate-ui/react/primitives/code-block';
-export const COPY_MODULE = '@qa-animate-ui/react/primitives/buttons/copy';
+export const CODE_BLOCK_MODULE = 'qa-animate-ui/primitives/code-block';
+export const COPY_MODULE = 'qa-animate-ui/primitives/buttons/copy';
 
 export type CodeBlockResult = {
   edits: Edit[];

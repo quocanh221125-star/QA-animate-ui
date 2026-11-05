@@ -3,7 +3,7 @@
 import {
   RotatingText,
   RotatingTextContainer,
-} from "@qa-animate-ui/react/primitives/texts/rotating"
+} from "qa-animate-ui/primitives/texts/rotating"
 
 export const controls = {
   RotatingTextContainer: {

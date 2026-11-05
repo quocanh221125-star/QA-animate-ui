@@ -14,7 +14,7 @@ import {
   spring,
   transition,
   useTempoTransition,
-} from '@qa-animate-ui/react/utils/motion';
+} from 'qa-animate-ui/utils/motion';
 
 type Item = { id: string; label: string };
 

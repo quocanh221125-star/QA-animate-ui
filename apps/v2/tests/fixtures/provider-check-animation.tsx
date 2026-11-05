@@ -1,7 +1,7 @@
 'use client';
 
-import { AnimateUIProvider } from '@qa-animate-ui/react/provider';
-import { Checkbox } from '@qa-animate-ui/react/primitives/radix-ui/checkbox';
+import { AnimateUIProvider } from 'qa-animate-ui/provider';
+import { Checkbox } from 'qa-animate-ui/primitives/radix-ui/checkbox';
 
 function Box({
   label,

@@ -1,6 +1,6 @@
 "use client"
 
-import { Collapsible as CollapsiblePrimitive } from "@qa-animate-ui/react/primitives/radix-ui"
+import { Collapsible as CollapsiblePrimitive } from "qa-animate-ui/primitives/radix-ui"
 
 function Collapsible({
   ...props

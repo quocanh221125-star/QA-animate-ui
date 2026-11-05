@@ -1,8 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import { ToggleGroup } from '@qa-animate-ui/react/primitives/radix-ui/toggle-group';
-import * as ToggleGroupStar from '@qa-animate-ui/react/primitives/radix-ui/toggle-group';
+import { ToggleGroup } from 'qa-animate-ui/primitives/radix-ui/toggle-group';
+import * as ToggleGroupStar from 'qa-animate-ui/primitives/radix-ui/toggle-group';
 
 import ToggleGroupDemo from '@/demos/radix-ui/toggle-group';
 

@@ -4,7 +4,7 @@ import * as React from 'react';
 import {
   SwappingText,
   type SwappingTextDirection,
-} from '@qa-animate-ui/react/primitives/texts/swapping';
+} from 'qa-animate-ui/primitives/texts/swapping';
 
 export default function SwappingTextFixture() {
   const [isPublic, setIsPublic] = React.useState(false);

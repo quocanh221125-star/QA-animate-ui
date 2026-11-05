@@ -6,7 +6,7 @@ import {
   OTPInput,
   OTPInputContext,
   REGEXP_ONLY_DIGITS,
-} from "@qa-animate-ui/react/primitives/input-otp"
+} from "qa-animate-ui/primitives/input-otp"
 
 import { MinusSignIcon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"

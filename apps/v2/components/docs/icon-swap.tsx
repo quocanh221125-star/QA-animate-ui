@@ -6,7 +6,7 @@ import {
   ReducedMotionConfig,
   scale,
   transition,
-} from '@qa-animate-ui/react/utils/motion';
+} from 'qa-animate-ui/utils/motion';
 import { cn } from 'cn';
 import { AnimatePresence, motion } from 'motion/react';
 

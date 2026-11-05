@@ -12,7 +12,7 @@ export const C = () => (
 `;
   const result = transform(input);
   expect(result.code).toContain(
-    'from "@qa-animate-ui/react/primitives/base-ui/accordion"',
+    'from "qa-animate-ui/primitives/base-ui/accordion"',
   );
   expect(result.code).toContain('className="overflow-hidden"');
   expect(result.code).toContain('className="pb-4 data-open:h-0"');
@@ -24,7 +24,7 @@ export const C = () => <Collapsible.Panel className="h-(--collapsible-panel-heig
 `;
   const result = transform(input);
   expect(result.code).toContain(
-    'from "@qa-animate-ui/react/primitives/base-ui/collapsible"',
+    'from "qa-animate-ui/primitives/base-ui/collapsible"',
   );
   expect(result.code).toContain('className="flex flex-col"');
 });
@@ -35,7 +35,7 @@ export const C = () => <DisclosurePanel className="h-(--disclosure-panel-height)
 `;
   const result = transform(input);
   expect(result.code).toContain(
-    'import { Disclosure, DisclosurePanel, Button } from "@qa-animate-ui/react/primitives/react-aria"',
+    'import { Disclosure, DisclosurePanel, Button } from "qa-animate-ui/primitives/react-aria"',
   );
   expect(result.code).toContain('className="overflow-clip text-sm"');
 });

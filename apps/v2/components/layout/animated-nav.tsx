@@ -1,6 +1,6 @@
 'use client';
 
-import { ReducedMotionConfig } from '@qa-animate-ui/react/utils/motion';
+import { ReducedMotionConfig } from 'qa-animate-ui/utils/motion';
 import { cn } from 'cn';
 import { AnimatePresence, LayoutGroup, motion } from 'motion/react';
 import {

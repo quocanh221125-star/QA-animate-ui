@@ -3,11 +3,11 @@
 import * as React from 'react';
 import { motion, useInView, type HTMLMotionProps } from 'motion/react';
 
-import { usePageVisible } from '@qa-animate-ui/react/utils/use-page-visible';
+import { usePageVisible } from 'qa-animate-ui/utils/use-page-visible';
 import {
   ReducedMotionConfig,
   useShouldReduceMotion,
-} from '@qa-animate-ui/react/utils/motion';
+} from 'qa-animate-ui/utils/motion';
 import { cn } from 'cn';
 
 type GradientBackgroundProps = HTMLMotionProps<'div'>;

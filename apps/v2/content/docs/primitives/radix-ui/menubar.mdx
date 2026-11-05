@@ -15,7 +15,7 @@ releaseDate: '2026-10-18'
 Import the primitive from Animate UI instead of Radix UI. Everything else stays the same.
 
 ```tsx
-import { Menubar } from '@qa-animate-ui/react/primitives/radix-ui';
+import { Menubar } from 'qa-animate-ui/primitives/radix-ui';
 
 export function EditorMenubar() {
   return (
@@ -43,7 +43,7 @@ export function EditorMenubar() {
 }
 ```
 
-Coming from the `@radix-ui/react-menubar` package? Use the subpath: `import * as MenubarPrimitive from '@qa-animate-ui/react/primitives/radix-ui/menubar'`.
+Coming from the `@radix-ui/react-menubar` package? Use the subpath: `import * as MenubarPrimitive from 'qa-animate-ui/primitives/radix-ui/menubar'`.
 
 ### Check animation
 
@@ -51,7 +51,7 @@ Checkbox and radio items show their check in an `ItemIndicator`: it draws itself
 
 ```tsx
 import * as React from 'react';
-import { Menubar } from '@qa-animate-ui/react/primitives/radix-ui';
+import { Menubar } from 'qa-animate-ui/primitives/radix-ui';
 
 export function ViewMenubar() {
   const [statusBar, setStatusBar] = React.useState(true);

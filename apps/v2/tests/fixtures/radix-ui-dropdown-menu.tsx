@@ -3,8 +3,8 @@
 import * as React from 'react';
 import { Tick02Icon } from '@hugeicons/core-free-icons';
 import { HugeiconsIcon } from '@hugeicons/react';
-import { DropdownMenu } from '@qa-animate-ui/react/primitives/radix-ui/dropdown-menu';
-import * as DropdownMenuStar from '@qa-animate-ui/react/primitives/radix-ui/dropdown-menu';
+import { DropdownMenu } from 'qa-animate-ui/primitives/radix-ui/dropdown-menu';
+import * as DropdownMenuStar from 'qa-animate-ui/primitives/radix-ui/dropdown-menu';
 
 const content = 'min-w-40 rounded-md border bg-white p-1 shadow-md';
 

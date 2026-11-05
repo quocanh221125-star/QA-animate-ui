@@ -1,6 +1,6 @@
 'use client';
 
-import { ease, useShouldReduceMotion } from '@qa-animate-ui/react/utils/motion';
+import { ease, useShouldReduceMotion } from 'qa-animate-ui/utils/motion';
 import { AnimatePresence, motion } from 'motion/react';
 import { cn } from 'cn';
 import { usePathname } from 'next/navigation';

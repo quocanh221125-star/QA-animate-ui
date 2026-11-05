@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Dialog as DialogPrimitive } from "@qa-animate-ui/react/primitives/base-ui/dialog"
+import { Dialog as DialogPrimitive } from "qa-animate-ui/primitives/base-ui/dialog"
 import { cn } from "cn"
 
 import { Button } from "@/components/ui/base-ui/button"

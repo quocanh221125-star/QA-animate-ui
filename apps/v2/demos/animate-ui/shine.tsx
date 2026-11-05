@@ -1,6 +1,6 @@
 "use client"
 
-import { Shine } from "@qa-animate-ui/react/primitives/effects/shine"
+import { Shine } from "qa-animate-ui/primitives/effects/shine"
 
 import { Button } from "@/components/ui/button"
 

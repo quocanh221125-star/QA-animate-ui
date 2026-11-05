@@ -9,7 +9,7 @@ import {
   SunMediumIcon,
   Tick02Icon,
 } from '@hugeicons/core-free-icons';
-import { DropdownMenu } from '@qa-animate-ui/react/primitives/radix-ui';
+import { DropdownMenu } from 'qa-animate-ui/primitives/radix-ui';
 import { HugeiconsIcon } from '@hugeicons/react';
 import { cn } from 'cn';
 import { useSearchContext } from 'fumadocs-ui/contexts/search';

@@ -1,8 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import { Collapsible } from '@qa-animate-ui/react/primitives/radix-ui/collapsible';
-import * as CollapsibleStar from '@qa-animate-ui/react/primitives/radix-ui/collapsible';
+import { Collapsible } from 'qa-animate-ui/primitives/radix-ui/collapsible';
+import * as CollapsibleStar from 'qa-animate-ui/primitives/radix-ui/collapsible';
 
 export default function RadixCollapsibleFixture() {
   const [open, setOpen] = React.useState(true);

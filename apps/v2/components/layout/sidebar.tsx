@@ -17,7 +17,7 @@ import {
   scaleTransition,
   useMotionTokens,
   useShouldReduceMotion,
-} from '@qa-animate-ui/react/utils/motion';
+} from 'qa-animate-ui/utils/motion';
 import { cn } from 'cn';
 import {
   SidebarContent,

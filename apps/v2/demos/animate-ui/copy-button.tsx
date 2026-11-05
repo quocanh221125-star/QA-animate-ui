@@ -5,7 +5,7 @@ import { cn } from "cn"
 import {
   CopyButton,
   CopyButtonIcon,
-} from "@qa-animate-ui/react/primitives/buttons/copy"
+} from "qa-animate-ui/primitives/buttons/copy"
 import { Copy01Icon, Tick02Icon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
 

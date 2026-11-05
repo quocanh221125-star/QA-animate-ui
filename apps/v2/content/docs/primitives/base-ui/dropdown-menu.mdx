@@ -15,7 +15,7 @@ updatedDate: '2026-10-18'
 Import the primitive from Animate UI instead of Base UI. Everything else stays the same.
 
 ```tsx
-import { Menu } from '@qa-animate-ui/react/primitives/base-ui/menu';
+import { Menu } from 'qa-animate-ui/primitives/base-ui/menu';
 
 export function AccountMenu() {
   return (
@@ -36,7 +36,7 @@ export function AccountMenu() {
 }
 ```
 
-Using the `@base-ui/react` umbrella import instead? The barrel mirrors it: `import { Menu } from '@qa-animate-ui/react/primitives/base-ui'`.
+Using the `@base-ui/react` umbrella import instead? The barrel mirrors it: `import { Menu } from 'qa-animate-ui/primitives/base-ui'`.
 
 shadcn/ui's Dropdown Menu is built on it.
 
@@ -45,7 +45,7 @@ shadcn/ui's Dropdown Menu is built on it.
 Checkbox and radio items show their check in a `CheckboxItemIndicator` or a `RadioItemIndicator`: it draws itself when the item is checked, and erases itself when it's unchecked (a radio item's while the new one draws). With `animation="pop"`, it pops in from half its size and shrinks back out instead, and a radio item's check glides to the newly checked item:
 
 ```tsx
-import { Menu } from '@qa-animate-ui/react/primitives/base-ui/menu';
+import { Menu } from 'qa-animate-ui/primitives/base-ui/menu';
 
 export function ViewMenu() {
   return (

@@ -6,13 +6,13 @@ import { AnimatePresence, motion, type Transition } from 'motion/react';
 import {
   Button,
   type ButtonProps,
-} from '@qa-animate-ui/react/primitives/buttons/button';
+} from 'qa-animate-ui/primitives/buttons/button';
 import {
   motionTokens,
   useShouldReduceMotion,
   useTempoTransition,
-} from '@qa-animate-ui/react/utils/motion';
-import { getStrictContext } from '@qa-animate-ui/react/utils/strict-context';
+} from 'qa-animate-ui/utils/motion';
+import { getStrictContext } from 'qa-animate-ui/utils/strict-context';
 import { cn } from 'cn';
 
 const themeTogglerButtonVariants = cva(

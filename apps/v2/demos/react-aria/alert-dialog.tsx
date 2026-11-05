@@ -10,7 +10,7 @@ import {
   Modal as ModalPrimitive,
   type DialogTriggerProps as AlertDialogTriggerPrimitiveProps,
   type ModalOverlayProps as ModalOverlayPrimitiveProps,
-} from "@qa-animate-ui/react/primitives/react-aria"
+} from "qa-animate-ui/primitives/react-aria"
 
 import { Button } from "@/components/ui/react-aria/button"
 

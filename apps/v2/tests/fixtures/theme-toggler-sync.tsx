@@ -5,7 +5,7 @@ import {
   ThemeToggler,
   type Resolved,
   type ThemeSelection,
-} from '@qa-animate-ui/react/primitives/effects/theme-toggler';
+} from 'qa-animate-ui/primitives/effects/theme-toggler';
 
 export default function ThemeTogglerSyncFixture() {
   const [theme, setTheme] = React.useState<ThemeSelection>('light');

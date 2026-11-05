@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { SlidingNumber } from "@qa-animate-ui/react/primitives/texts/sliding-number"
+import { SlidingNumber } from "qa-animate-ui/primitives/texts/sliding-number"
 import { RefreshIcon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
 

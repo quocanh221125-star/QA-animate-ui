@@ -1,6 +1,6 @@
 "use client"
 
-import { Magnetic } from "@qa-animate-ui/react/primitives/effects/magnetic"
+import { Magnetic } from "qa-animate-ui/primitives/effects/magnetic"
 
 import { Button } from "@/components/ui/button"
 

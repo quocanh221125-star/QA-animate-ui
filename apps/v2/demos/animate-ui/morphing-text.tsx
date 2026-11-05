@@ -1,6 +1,6 @@
 "use client"
 
-import { MorphingText } from "@qa-animate-ui/react/primitives/texts/morphing"
+import { MorphingText } from "qa-animate-ui/primitives/texts/morphing"
 
 const texts = [
   "MorphingText Primitive",

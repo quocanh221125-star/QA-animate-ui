@@ -8,7 +8,7 @@ import {
   ScrollProgress,
   ScrollProgressContainer,
   ScrollProgressProvider,
-} from "@qa-animate-ui/react/primitives/scroll-progress"
+} from "qa-animate-ui/primitives/scroll-progress"
 
 export const controls = {
   ScrollProgressProvider: {

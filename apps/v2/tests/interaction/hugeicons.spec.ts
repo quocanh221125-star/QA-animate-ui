@@ -153,7 +153,7 @@ test.describe('hugeicons', () => {
         await request.get(`/r/icons-hugeicons-${name}.json`)
       ).json();
       expect(item.name).toBe(`icons-hugeicons-${name}`);
-      expect(item.dependencies).toEqual(['@qa-animate-ui/react', 'motion']);
+      expect(item.dependencies).toEqual(['qa-animate-ui', 'motion']);
       expect(item.files[0].target).toBe(
         `@components/animate-ui/icons/hugeicons/${name}.tsx`,
       );
@@ -222,7 +222,7 @@ test.describe('hugeicons', () => {
     await expect(drawer).toContainText(
       'components/animate-ui/icons/hugeicons/notification-01.tsx',
     );
-    await expect(drawer).toContainText('@qa-animate-ui/react motion');
+    await expect(drawer).toContainText('qa-animate-ui motion');
   });
 
   test('Copy 01 by default: the two pieces part, the copy down to the right, the sheet up to the left, within the grid', async ({

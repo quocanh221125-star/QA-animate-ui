@@ -1,7 +1,7 @@
 'use client';
 
-import { Dialog } from '@qa-animate-ui/react/primitives/base-ui/dialog';
-import { Tabs } from '@qa-animate-ui/react/primitives/base-ui/tabs';
+import { Dialog } from 'qa-animate-ui/primitives/base-ui/dialog';
+import { Tabs } from 'qa-animate-ui/primitives/base-ui/tabs';
 
 function Example({ id, keepMounted }: { id: string; keepMounted?: boolean }) {
   return (

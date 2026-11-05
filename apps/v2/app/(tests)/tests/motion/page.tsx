@@ -14,7 +14,7 @@ type Family = {
 };
 
 const GLOBAL_RULES = [
-  "Ressorts d'abord : presque tout bouge sur un ressort (stiffness / damping). Les tweens sont réservés aux fondus, aux menus (fréquents), aux hauteurs des disclosures et à certains textes. Toutes les valeurs par rôle sont des tokens de @qa-animate-ui/react/utils/motion (spring, transition, scale, blur, ease).",
+  "Ressorts d'abord : presque tout bouge sur un ressort (stiffness / damping). Les tweens sont réservés aux fondus, aux menus (fréquents), aux hauteurs des disclosures et à certains textes. Toutes les valeurs par rôle sont des tokens de qa-animate-ui/utils/motion (spring, transition, scale, blur, ease).",
   'Easing des tweens selon le rôle : entrée et sortie → ease-out fort, cubic-bezier(0.23, 1, 0.32, 1) ; panneaux d’onglets → les courbes de l’exemple de Motion (sortie sur l’easeOut de Motion, cubic-bezier(0, 0, 0.58, 1) ; entrée sur cubic-bezier(0.25, 0.1, 0.35, 1) ; hauteur sur sa courbe de layout, cubic-bezier(0.4, 0, 0.1, 1)) ; coche d’une checkbox qui se dessine → easeOut de Motion, cubic-bezier(0, 0, 0.58, 1), comme la v1 ; grandes surfaces → ease-out doux, cubic-bezier(0.215, 0.61, 0.355, 1) (accordéons et collapsibles qui se déplient, overlays des modales et des drawers, menus) ; mouvement à l’écran → ease-in-out (tracés, balayages, boucles des icônes) ; couleur → ease ; mouvement continu → linear. Jamais d’ease-in.',
   'La sortie rejoue la même transition que l’entrée, à l’envers (exitTransition = transition par défaut, comme en v1).',
   'Ce qui se presse réagit à la pression seulement : 0,97 sur un ressort 550/30. Rien ne grossit au survol (boutons, radio, toggles, Pinned List). La checkbox ne bouge pas : son fond et sa coche répondent au clic.',

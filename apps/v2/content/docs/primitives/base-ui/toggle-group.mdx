@@ -15,8 +15,8 @@ updatedDate: '2026-10-18'
 Import the primitive from Animate UI instead of Base UI. Everything else stays the same. shadcn/ui's Toggle Group uses two Base UI modules, `toggle-group` and `toggle` (its items): import both from Animate UI.
 
 ```tsx
-import { Toggle } from '@qa-animate-ui/react/primitives/base-ui/toggle';
-import { ToggleGroup } from '@qa-animate-ui/react/primitives/base-ui/toggle-group';
+import { Toggle } from 'qa-animate-ui/primitives/base-ui/toggle';
+import { ToggleGroup } from 'qa-animate-ui/primitives/base-ui/toggle-group';
 
 export function Alignment() {
   return (
@@ -35,7 +35,7 @@ export function Alignment() {
 }
 ```
 
-Using the `@base-ui/react` umbrella import instead? The barrel mirrors it: `import { Toggle, ToggleGroup } from '@qa-animate-ui/react/primitives/base-ui'`.
+Using the `@base-ui/react` umbrella import instead? The barrel mirrors it: `import { Toggle, ToggleGroup } from 'qa-animate-ui/primitives/base-ui'`.
 
 ## Animation
 

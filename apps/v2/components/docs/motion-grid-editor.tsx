@@ -5,8 +5,8 @@ import {
   MotionGridCells,
   type Frame,
   type Frames,
-} from '@qa-animate-ui/react/primitives/motion-grid';
-import { Button } from '@qa-animate-ui/react/primitives/buttons/button';
+} from 'qa-animate-ui/primitives/motion-grid';
+import { Button } from 'qa-animate-ui/primitives/buttons/button';
 import {
   Add01Icon,
   ArrowLeft02Icon,
@@ -155,7 +155,7 @@ const frames: Frames = ${framesCode(animation.frames)};
   MotionGrid,
   MotionGridCells,
   type Frames,
-} from '@qa-animate-ui/react/primitives/motion-grid';
+} from 'qa-animate-ui/primitives/motion-grid';
 
 const frames: Frames = ${framesCode(animation.frames)};
 

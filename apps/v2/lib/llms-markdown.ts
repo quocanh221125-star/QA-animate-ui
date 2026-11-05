@@ -82,13 +82,13 @@ export function toLlmMarkdown(text: string) {
       /^<RegistryInstallation name="([^"]+)"\s*\/>/gm,
       (_, name: string) => bash(`${dlx} shadcn@latest add @animate-ui/${name}`),
     )
-    .replace(/^<Installation\s*\/>/gm, bash(`${add} @qa-animate-ui/react motion`))
+    .replace(/^<Installation\s*\/>/gm, bash(`${add} qa-animate-ui motion`))
     .replace(
       /^<Installation name="([^"]+)"[^>]*\/>/gm,
       (_, name: string) =>
-        `${bash(`${add} @qa-animate-ui/react motion`)}\n\nAdd the shadcn/ui component, then animate it:\n\n${bash(
+        `${bash(`${add} qa-animate-ui motion`)}\n\nAdd the shadcn/ui component, then animate it:\n\n${bash(
           `${dlx} shadcn@latest add ${name}`,
-          `${dlx} @qa-animate-ui/cli@latest animate ${name}`,
+          `${dlx} qa-animate-ui-cli@latest animate ${name}`,
         )}`,
     )
     .replace(

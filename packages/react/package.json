@@ -1,5 +1,5 @@
 {
-  "name": "@qa-animate-ui/react",
+  "name": "qa-animate-ui",
   "version": "1.0.0",
   "type": "module",
   "sideEffects": false,

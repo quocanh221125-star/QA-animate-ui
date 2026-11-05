@@ -5,7 +5,7 @@ import {
   Button,
   Tooltip,
   TooltipTrigger,
-} from '@qa-animate-ui/react/primitives/react-aria';
+} from 'qa-animate-ui/primitives/react-aria';
 
 const TOOLS = [
   { label: 'Bold', shortcut: '⌘B' },

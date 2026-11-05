@@ -1,6 +1,6 @@
 "use client"
 
-import { Tooltip as TooltipPrimitive } from "@qa-animate-ui/react/primitives/base-ui/tooltip"
+import { Tooltip as TooltipPrimitive } from "qa-animate-ui/primitives/base-ui/tooltip"
 import { cn } from "cn"
 
 function TooltipProvider({

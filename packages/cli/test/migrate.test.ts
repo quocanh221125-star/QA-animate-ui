@@ -76,20 +76,20 @@ describe('migrate all', () => {
   Provider as TooltipProvider,
   Trigger as TooltipTrigger,
   Content as TooltipContent,
-} from '@qa-animate-ui/react/primitives/radix-ui/tooltip';`);
+} from 'qa-animate-ui/primitives/radix-ui/tooltip';`);
     expect(page).toContain(`import {
   Root as AccordionRoot,
   Item,
   Header as AccordionHeader,
   Trigger,
   Content,
-} from '@qa-animate-ui/react/primitives/radix-ui/accordion';`);
+} from 'qa-animate-ui/primitives/radix-ui/accordion';`);
     expect(page).toContain(
       'type AccordionProps = React.ComponentProps<typeof AccordionRoot>;',
     );
 
     expect(page).toContain(
-      "from '@qa-animate-ui/react/primitives/base-ui/popover';",
+      "from 'qa-animate-ui/primitives/base-ui/popover';",
     );
     expect(page).toContain('const Popover = PopoverPrimitive.Root;');
     expect(page).toContain('const PopoverPopup = PopoverPrimitive.Popup;');
@@ -101,10 +101,10 @@ describe('migrate all', () => {
   Root as Sheet,
   Content as SheetContent,
   Trigger as SheetTrigger,
-} from '@qa-animate-ui/react/primitives/radix-ui/dialog';`);
+} from 'qa-animate-ui/primitives/radix-ui/dialog';`);
 
     expect(page).toContain(
-      "import { useControlledState } from '@qa-animate-ui/react/utils/use-controlled-state';",
+      "import { useControlledState } from 'qa-animate-ui/utils/use-controlled-state';",
     );
 
     expect(page).not.toContain('primitives/radix/tooltip');
@@ -182,7 +182,7 @@ describe('migrate all', () => {
 
     const popover = read(`${V1}/components/base/popover.tsx`);
     expect(popover).toContain(
-      "import { Popover as AnimatedPopover } from '@qa-animate-ui/react/primitives/base-ui/popover';",
+      "import { Popover as AnimatedPopover } from 'qa-animate-ui/primitives/base-ui/popover';",
     );
     expect(popover).toContain('const PopoverPrimitive = AnimatedPopover.Root;');
 
@@ -207,7 +207,7 @@ describe('migrate all', () => {
 
     const menu = read(`${V1}/components/radix/dropdown-menu.tsx`);
     expect(menu).toContain(
-      "  Portal as DropdownMenuPortal,\n} from '@qa-animate-ui/react/primitives/radix-ui/dropdown-menu';",
+      "  Portal as DropdownMenuPortal,\n} from 'qa-animate-ui/primitives/radix-ui/dropdown-menu';",
     );
     expect(menu).toContain(`import {
   DropdownMenuHighlightItem as DropdownMenuHighlightItemPrimitive,
@@ -218,7 +218,7 @@ describe('migrate all', () => {
     const lineOf = (text: string) =>
       menu.split('\n').findIndex((line) => line.includes(text)) + 1;
     expect(output).toContain(
-      `${V1}/components/radix/dropdown-menu.tsx:${lineOf('DropdownMenuHighlightItem as')} \`DropdownMenuHighlightItem\` is a v1-only part with no equivalent in @qa-animate-ui/react/primitives/radix-ui/dropdown-menu, left on v1: its v1 parent is now v2, so it throws at runtime. Remove it (v2 parts animate themselves; style their data-state attributes or control the state yourself), or replace the component with shadcn/ui's + \`animate-ui animate\`.`,
+      `${V1}/components/radix/dropdown-menu.tsx:${lineOf('DropdownMenuHighlightItem as')} \`DropdownMenuHighlightItem\` is a v1-only part with no equivalent in qa-animate-ui/primitives/radix-ui/dropdown-menu, left on v1: its v1 parent is now v2, so it throws at runtime. Remove it (v2 parts animate themselves; style their data-state attributes or control the state yourself), or replace the component with shadcn/ui's + \`animate-ui animate\`.`,
     );
     expect(output).not.toContain('stays on v1 because of');
   });
@@ -227,7 +227,7 @@ describe('migrate all', () => {
     const { output } = await run(['all']);
     expect(output).toContain(
       [
-        'Still imported (v1 files @qa-animate-ui/react replaces):',
+        'Still imported (v1 files qa-animate-ui replaces):',
         `    ${V1}/primitives/radix/accordion.tsx: still imported by ${PAGE}, kept.`,
         `    ${V1}/primitives/radix/dialog.tsx: still imported by ${V1}/components/radix/dialog.tsx, kept.`,
         `    ${V1}/primitives/radix/dropdown-menu.tsx: still imported by ${V1}/components/radix/dropdown-menu.tsx, kept.`,
@@ -245,10 +245,10 @@ describe('migrate all', () => {
       "} from '@/components/animate-ui/primitives/radix/accordion';",
     );
     expect(code).toContain(
-      "} from '@qa-animate-ui/react/primitives/effects/highlight';",
+      "} from 'qa-animate-ui/primitives/effects/highlight';",
     );
     expect(code).toContain(
-      "import { getStrictContext } from '@qa-animate-ui/react/utils/strict-context';",
+      "import { getStrictContext } from 'qa-animate-ui/utils/strict-context';",
     );
     expect(output).toContain(
       `    ${V1}/primitives/radix/accordion.tsx: still imported by ${PAGE}, ${files}, kept.`,
@@ -263,10 +263,10 @@ describe('migrate all', () => {
   useAnimateIconContext,
   IconWrapper,
   type IconProps,
-} from '@qa-animate-ui/react/icons';`);
+} from 'qa-animate-ui/icons';`);
     const disclosure = read(`${V1}/primitives/headless/disclosure.tsx`);
     expect(disclosure).toContain(
-      "import { getStrictContext } from '@qa-animate-ui/react/utils/strict-context';",
+      "import { getStrictContext } from 'qa-animate-ui/utils/strict-context';",
     );
     expect(disclosure).not.toContain("from '@/lib/get-strict-context'");
     const highlight = `${V1}/primitives/effects/highlight.tsx`;
@@ -287,16 +287,16 @@ describe('migrate all', () => {
       'src/hooks/use-is-in-view.tsx',
     ];
     expect(output).toContain(
-      `No longer imported (v1 files @qa-animate-ui/react replaces):\n${unused.map((file) => `    ${file}`).join('\n')}\nRun again with --delete to remove them.`,
+      `No longer imported (v1 files qa-animate-ui replaces):\n${unused.map((file) => `    ${file}`).join('\n')}\nRun again with --delete to remove them.`,
     );
     for (const file of unused)
       expect(existsSync(path.join(root, file))).toBe(true);
   });
 
-  test('warns when @qa-animate-ui/react is not installed', async () => {
+  test('warns when qa-animate-ui is not installed', async () => {
     const { output } = await run(['all']);
     expect(output).toContain(
-      "@qa-animate-ui/react isn't installed yet: pnpm add @qa-animate-ui/react motion @base-ui/react\n    @base-ui/react is Base UI 1, which v2's Base UI primitives use (v1's were built on its beta, @base-ui-components/react).",
+      "qa-animate-ui isn't installed yet: pnpm add qa-animate-ui motion @base-ui/react\n    @base-ui/react is Base UI 1, which v2's Base UI primitives use (v1's were built on its beta, @base-ui-components/react).",
     );
     const install = (...names: string[]) => {
       root = copyFixture();
@@ -304,16 +304,16 @@ describe('migrate all', () => {
       for (const name of names) pkg.dependencies[name] = '^2.0.0';
       writeFileSync(path.join(root, 'package.json'), JSON.stringify(pkg));
     };
-    install('@qa-animate-ui/react');
+    install('qa-animate-ui');
     expect((await run(['all'])).output).toContain(
       "@base-ui/react isn't installed yet: pnpm add @base-ui/react\n",
     );
-    install('@qa-animate-ui/react', '@base-ui/react');
+    install('qa-animate-ui', '@base-ui/react');
     expect((await run(['all'])).output).not.toContain("isn't installed yet");
     root = copyFixture();
     const tooltip = (await run(['tooltip'])).output;
     expect(tooltip).toContain(
-      "@qa-animate-ui/react isn't installed yet: pnpm add @qa-animate-ui/react motion",
+      "qa-animate-ui isn't installed yet: pnpm add qa-animate-ui motion",
     );
     expect(tooltip).not.toContain('@base-ui/react');
   });
@@ -344,14 +344,14 @@ test('--dry-run writes nothing', async () => {
   expect(snapshot(root)).toEqual(before);
   expect(output).toContain('8 files would be migrated');
   expect(output).toContain(
-    'Would remove (v1 files @qa-animate-ui/react replaces):',
+    'Would remove (v1 files qa-animate-ui replaces):',
   );
   expect(output).toContain(`${PAGE}:25 \`useAccordionItem\``);
 });
 
 test('--delete removes the v1 files nothing imports anymore', async () => {
   const { output } = await run(['all'], { delete: true });
-  expect(output).toContain('Removed (v1 files @qa-animate-ui/react replaces):');
+  expect(output).toContain('Removed (v1 files qa-animate-ui replaces):');
   for (const file of [
     `${V1}/icons/icon.tsx`,
     `${V1}/primitives/radix/tooltip.tsx`,
@@ -408,7 +408,7 @@ test('migrate <name> only touches the imports of that primitive', async () => {
   expect(code).toBe(0);
   const page = read(PAGE);
   expect(page).toContain(
-    "from '@qa-animate-ui/react/primitives/radix-ui/tooltip';",
+    "from 'qa-animate-ui/primitives/radix-ui/tooltip';",
   );
   expect(page).toContain(
     "} from '@/components/animate-ui/primitives/radix/accordion';",
@@ -420,7 +420,7 @@ test('migrate <name> only touches the imports of that primitive', async () => {
     "from '@/components/animate-ui/icons/icon';",
   );
   expect(output).toContain(
-    `No longer imported (v1 files @qa-animate-ui/react replaces):\n    ${V1}/primitives/radix/tooltip.tsx\n`,
+    `No longer imported (v1 files qa-animate-ui replaces):\n    ${V1}/primitives/radix/tooltip.tsx\n`,
   );
 });
 
@@ -432,7 +432,7 @@ test('migrate all --exclude leaves that primitive on v1', async () => {
     "from '@/components/animate-ui/primitives/radix/tooltip';",
   );
   expect(page).toContain(
-    "from '@qa-animate-ui/react/primitives/radix-ui/accordion';",
+    "from 'qa-animate-ui/primitives/radix-ui/accordion';",
   );
   expect(output).not.toContain(`${V1}/primitives/radix/tooltip.tsx\n`);
 });
@@ -451,7 +451,7 @@ test('component names ignore case', async () => {
   const { code } = await run(['Tooltip']);
   expect(code).toBe(0);
   expect(read(PAGE)).toContain(
-    "from '@qa-animate-ui/react/primitives/radix-ui/tooltip';",
+    "from 'qa-animate-ui/primitives/radix-ui/tooltip';",
   );
 });
 
@@ -465,7 +465,7 @@ test('--exclude ignores case', async () => {
 test('migrate icons rewrites the icon core imports', async () => {
   await run(['icons']);
   expect(read(`${V1}/icons/bell.tsx`)).toContain(
-    "from '@qa-animate-ui/react/icons';",
+    "from 'qa-animate-ui/icons';",
   );
   expect(read(PAGE)).toContain('primitives/radix/tooltip');
 });
@@ -541,7 +541,7 @@ describe('the unused v1 files, in a terminal', () => {
     const { asked, ask } = answering(3);
     const { output } = await run(['all'], { interactive: true, ask });
     expect(output).toContain(
-      `No longer imported (v1 files @qa-animate-ui/react replaces):\n${UNUSED.map((file) => `    ${file}`).join('\n')}\n`,
+      `No longer imported (v1 files qa-animate-ui replaces):\n${UNUSED.map((file) => `    ${file}`).join('\n')}\n`,
     );
     expect(asked).toEqual([
       {
@@ -643,7 +643,7 @@ describe('the unused v1 files, in a terminal', () => {
     });
     expect(asked).toEqual([]);
     for (const file of UNUSED) expect(exists(file), file).toBe(false);
-    expect(output).toContain('Removed (v1 files @qa-animate-ui/react replaces):');
+    expect(output).toContain('Removed (v1 files qa-animate-ui replaces):');
   });
 
   test('not a terminal: keeps them all, hints at --delete', async () => {
@@ -665,7 +665,7 @@ describe('the unused v1 files, in a terminal', () => {
     expect(asked).toEqual([]);
     expect(snapshot(root)).toEqual(before);
     expect(output).toContain(
-      'No longer imported (v1 files @qa-animate-ui/react replaces):',
+      'No longer imported (v1 files qa-animate-ui replaces):',
     );
     expect(output).not.toContain('Would remove');
   });
@@ -699,7 +699,7 @@ describe('imports the import graph misses keep their v1 file', () => {
     add('.storybook/preview.tsx', IMPORT);
     await run(['all']);
     expect(read('.storybook/preview.tsx')).toContain(
-      "from '@qa-animate-ui/react/primitives/radix-ui/tooltip';",
+      "from 'qa-animate-ui/primitives/radix-ui/tooltip';",
     );
   });
 
@@ -733,7 +733,7 @@ describe('imports the import graph misses keep their v1 file', () => {
     );
     await run(['all'], { delete: true });
     expect(read('src/app/base-url.tsx')).toContain(
-      "from '@qa-animate-ui/react/primitives/radix-ui/tooltip';",
+      "from 'qa-animate-ui/primitives/radix-ui/tooltip';",
     );
   });
 });
@@ -784,7 +784,7 @@ test('a migrated texts or effects primitive is deleted, not kept as still import
   );
   const { output } = await run(['all'], { delete: true });
   expect(readFileSync(path.join(root, 'src/app/texts.tsx'), 'utf8')).toContain(
-    "'@qa-animate-ui/react/primitives/texts/gradient'",
+    "'qa-animate-ui/primitives/texts/gradient'",
   );
   for (const file of files) {
     expect(output).not.toContain(`${file}: still imported`);

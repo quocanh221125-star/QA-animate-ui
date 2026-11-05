@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import {
   CarouselCounter,
   CarouselDots,
-} from '@qa-animate-ui/react/primitives/carousel';
+} from 'qa-animate-ui/primitives/carousel';
 import {
   Carousel,
   CarouselContent,

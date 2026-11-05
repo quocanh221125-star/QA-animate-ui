@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { PreviewCard } from '@qa-animate-ui/react/primitives/base-ui/preview-card';
+import { PreviewCard } from 'qa-animate-ui/primitives/base-ui/preview-card';
 
 export default function BaseUIPreviewCardFixture() {
   const [open, setOpen] = React.useState(false);

@@ -49,7 +49,7 @@ for (const category of ['backgrounds', 'buttons', 'components']) {
         .map((source) => source.match(/^(@[^/]+\/[^/]+|[^/]+)/)![1]!)
         .filter((pkg) => pkg !== 'react' && pkg !== 'react-dom'),
     );
-    if (packages.has('@qa-animate-ui/react')) packages.add('motion');
+    if (packages.has('qa-animate-ui')) packages.add('motion');
     for (const specifier of specifiers)
       for (const peer of peersOf(specifier)) packages.add(peer);
     const dependencies = [...packages].sort();

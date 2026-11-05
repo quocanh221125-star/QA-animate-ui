@@ -348,7 +348,7 @@ test('the command block is built from Animate UI tabs, copy button and buttons',
   );
   await expect(active).toHaveCount(1);
   await expect(active).toContainText(
-    'bun x @qa-animate-ui/cli@latest animate all',
+    'bun x qa-animate-ui-cli@latest animate all',
   );
   const copy = hero.locator('[data-slot="copy-button"]');
   expect(
@@ -374,7 +374,7 @@ test('the command block is built from Animate UI tabs, copy button and buttons',
   await copy.click();
   await expect(copy).toHaveAttribute('data-copied', '');
   expect(await page.evaluate(() => navigator.clipboard.readText())).toBe(
-    'bun x @qa-animate-ui/cli@latest animate all',
+    'bun x qa-animate-ui-cli@latest animate all',
   );
 
   for (const name of ['Get started', 'Browse primitives'])
@@ -713,7 +713,7 @@ test('the AI section plays a request through to its result, then keeps the tab p
   });
 
   await demo.getByRole('tab', { name: 'Review' }).click();
-  await expect(active).toContainText('npx @qa-animate-ui/cli audit', {
+  await expect(active).toContainText('npx qa-animate-ui-cli audit', {
     timeout: 8000,
   });
   await expect(active.getByText('Report ready')).toBeVisible({

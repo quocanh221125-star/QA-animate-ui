@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { Select } from '@qa-animate-ui/react/primitives/base-ui/select';
+import { Select } from 'qa-animate-ui/primitives/base-ui/select';
 
 const FRUITS = [
   { value: 'apple', label: 'Apple' },

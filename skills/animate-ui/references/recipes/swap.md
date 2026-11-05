@@ -174,7 +174,7 @@ A word changing on a timer inside a heading or a sentence ("Design. Code. **Ship
 import {
   RotatingText,
   RotatingTextContainer,
-} from '@qa-animate-ui/react/primitives/texts/rotating';
+} from 'qa-animate-ui/primitives/texts/rotating';
 
 export function CyclingWord({
   words,

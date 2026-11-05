@@ -1,6 +1,6 @@
 "use client"
 
-import { PreviewCard as PreviewCardPrimitive } from "@qa-animate-ui/react/primitives/base-ui/preview-card"
+import { PreviewCard as PreviewCardPrimitive } from "qa-animate-ui/primitives/base-ui/preview-card"
 import { cn } from "cn"
 import { Button } from "@/components/ui/base-ui/button"
 

@@ -1,6 +1,6 @@
 "use client"
 
-import { Highlight } from "@qa-animate-ui/react/primitives/effects/highlight"
+import { Highlight } from "qa-animate-ui/primitives/effects/highlight"
 
 const TABS = [
   { value: "overview", title: "Overview" },

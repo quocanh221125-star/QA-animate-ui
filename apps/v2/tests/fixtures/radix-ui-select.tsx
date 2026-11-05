@@ -1,9 +1,9 @@
 'use client';
 
 import * as React from 'react';
-import { Select } from '@qa-animate-ui/react/primitives/radix-ui/select';
-import * as SelectStar from '@qa-animate-ui/react/primitives/radix-ui/select';
-import { AnimateUIProvider } from '@qa-animate-ui/react/provider';
+import { Select } from 'qa-animate-ui/primitives/radix-ui/select';
+import * as SelectStar from 'qa-animate-ui/primitives/radix-ui/select';
+import { AnimateUIProvider } from 'qa-animate-ui/provider';
 
 const FRUITS = ['Apple', 'Banana', 'Cherry'];
 

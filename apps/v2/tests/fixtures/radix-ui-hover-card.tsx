@@ -1,8 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import { HoverCard } from '@qa-animate-ui/react/primitives/radix-ui/hover-card';
-import * as HoverCardStar from '@qa-animate-ui/react/primitives/radix-ui/hover-card';
+import { HoverCard } from 'qa-animate-ui/primitives/radix-ui/hover-card';
+import * as HoverCardStar from 'qa-animate-ui/primitives/radix-ui/hover-card';
 
 export default function RadixHoverCardFixture() {
   const [open, setOpen] = React.useState(false);

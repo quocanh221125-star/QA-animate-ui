@@ -147,7 +147,7 @@ test('the styled buttons are registry files; the code block and carousel are sha
     expect(item.files[0]!.target).toBe(
       `@components/animate-ui/buttons/${name}.tsx`,
     );
-    expect(item.dependencies).toContain('@qa-animate-ui/react');
+    expect(item.dependencies).toContain('qa-animate-ui');
     expect(item.files[0]!.content).not.toMatch(/from '\.\.?\//);
     expect(existsSync(join(PACKAGE, 'buttons', name))).toBe(false);
   }

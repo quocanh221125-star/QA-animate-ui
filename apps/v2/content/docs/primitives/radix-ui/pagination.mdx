@@ -8,12 +8,12 @@ releaseDate: '2026-10-18'
 
 ## Installation
 
-shadcn/ui's Pagination isn't a Radix UI primitive: the CLI has no import to swap in it. Its motion comes from `@qa-animate-ui/react/primitives/pagination`, a headless primitive that works with every shadcn/ui base.
+shadcn/ui's Pagination isn't a Radix UI primitive: the CLI has no import to swap in it. Its motion comes from `qa-animate-ui/primitives/pagination`, a headless primitive that works with every shadcn/ui base.
 
 ### 1. Install the packages
 
 ```npm
-npm install @qa-animate-ui/react motion
+npm install qa-animate-ui motion
 ```
 
 ### 2. Add shadcn/ui's pagination
@@ -28,7 +28,7 @@ Import the primitive:
 
 ```tsx title="components/ui/pagination.tsx"
 import * as React from 'react';
-import * as PaginationPrimitive from '@qa-animate-ui/react/primitives/pagination'; // [!code ++]
+import * as PaginationPrimitive from 'qa-animate-ui/primitives/pagination'; // [!code ++]
 ```
 
 In `Pagination`, the `<nav>` becomes the primitive's `Root` (its classes and props stay):
@@ -126,7 +126,7 @@ The slide is a Web Animation replacing the surface's `translate`, from its own t
 
 ## API Reference
 
-`@qa-animate-ui/react/primitives/pagination` exports `Root`.
+`qa-animate-ui/primitives/pagination` exports `Root`.
 
 ### Root
 

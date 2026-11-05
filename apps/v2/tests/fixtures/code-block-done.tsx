@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { CodeBlock } from '@qa-animate-ui/react/primitives/code-block';
+import { CodeBlock } from 'qa-animate-ui/primitives/code-block';
 
 export default function CodeBlockDoneFixture() {
   const [done, setDone] = React.useState(0);

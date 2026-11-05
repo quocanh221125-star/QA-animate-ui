@@ -1,8 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import { Slider } from '@qa-animate-ui/react/primitives/radix-ui/slider';
-import * as SliderStar from '@qa-animate-ui/react/primitives/radix-ui/slider';
+import { Slider } from 'qa-animate-ui/primitives/radix-ui/slider';
+import * as SliderStar from 'qa-animate-ui/primitives/radix-ui/slider';
 
 import { Slider as DemoSlider } from '@/demos/radix-ui/slider';
 

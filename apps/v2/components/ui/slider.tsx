@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { cn } from "cn"
-import { Slider as SliderPrimitive } from "@qa-animate-ui/react/primitives/radix-ui"
+import { Slider as SliderPrimitive } from "qa-animate-ui/primitives/radix-ui"
 
 function Slider({
   className,

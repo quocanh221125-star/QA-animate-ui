@@ -93,7 +93,7 @@ test.describe('primitive page', () => {
       "import { Accordion as AccordionPrimitive } from 'radix-ui';",
     ]);
     await expect(diff.locator('.line.diff.add')).toHaveText([
-      "import { Accordion as AccordionPrimitive } from '@qa-animate-ui/react/primitives/radix-ui';",
+      "import { Accordion as AccordionPrimitive } from 'qa-animate-ui/primitives/radix-ui';",
     ]);
   });
 
@@ -130,10 +130,10 @@ test.describe('primitive page', () => {
   test('package manager tabs stay in sync across steps', async ({ page }) => {
     await page.getByRole('tab', { name: 'npm', exact: true }).first().click();
     await expect(
-      page.getByText('npm install @qa-animate-ui/react motion'),
+      page.getByText('npm install qa-animate-ui motion'),
     ).toBeVisible();
     await expect(
-      page.getByText('npx @qa-animate-ui/cli@latest animate accordion'),
+      page.getByText('npx qa-animate-ui-cli@latest animate accordion'),
     ).toBeVisible();
   });
 
@@ -179,7 +179,7 @@ test('installation: a multi-line import only swaps its last line', async ({
   expect(lines[0]).toBe(' import {');
   expect(lines.filter((line) => !line.startsWith(' '))).toEqual([
     "-} from 'react-aria-components';",
-    "+} from '@qa-animate-ui/react/primitives/react-aria';",
+    "+} from 'qa-animate-ui/primitives/react-aria';",
   ]);
 });
 
@@ -188,19 +188,19 @@ test('installation: the imports the CLI swaps, as shadcn/ui writes them', async 
 }) => {
   expect(await importDiff(page, '/docs/primitives/radix-ui/drawer')).toEqual([
     "-import { Drawer as DrawerPrimitive } from 'vaul';",
-    "+import { Drawer as DrawerPrimitive } from '@qa-animate-ui/react/primitives/radix-ui/drawer';",
+    "+import { Drawer as DrawerPrimitive } from 'qa-animate-ui/primitives/radix-ui/drawer';",
   ]);
   expect(
     await importDiff(page, '/docs/primitives/animate-ui/input-otp'),
   ).toEqual([
     "-import { OTPInput, OTPInputContext } from 'input-otp';",
-    "+import { OTPInput, OTPInputContext } from '@qa-animate-ui/react/primitives/input-otp';",
+    "+import { OTPInput, OTPInputContext } from 'qa-animate-ui/primitives/input-otp';",
   ]);
   expect(
     await importDiff(page, '/docs/primitives/base-ui/navigation-menu'),
   ).toEqual([
     "-import { NavigationMenu as NavigationMenuPrimitive } from '@base-ui/react/navigation-menu';",
-    "+import { NavigationMenu as NavigationMenuPrimitive } from '@qa-animate-ui/react/primitives/base-ui/navigation-menu';",
+    "+import { NavigationMenu as NavigationMenuPrimitive } from 'qa-animate-ui/primitives/base-ui/navigation-menu';",
   ]);
   const menu = await importDiff(
     page,
@@ -217,7 +217,7 @@ test("installation: a drop-in's library page swaps the package it stands in for"
       await importDiff(page, `/docs/primitives/${library}/questionnaire`),
     ).toEqual([
       "-import { Questionnaire as QuestionnairePrimitive } from '@shadcn/react/questionnaire';",
-      "+import { Questionnaire as QuestionnairePrimitive } from '@qa-animate-ui/react/primitives/questionnaire';",
+      "+import { Questionnaire as QuestionnairePrimitive } from 'qa-animate-ui/primitives/questionnaire';",
     ]);
     await expect(
       page.getByRole('heading', { name: 'Remove the CSS animations' }),

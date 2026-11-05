@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { Progress } from '@qa-animate-ui/react/primitives/base-ui/progress';
+import { Progress } from 'qa-animate-ui/primitives/base-ui/progress';
 
 const track = {
   width: 200,

@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { CountingNumber } from "@qa-animate-ui/react/primitives/texts/counting-number"
+import { CountingNumber } from "qa-animate-ui/primitives/texts/counting-number"
 import { RefreshIcon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
 

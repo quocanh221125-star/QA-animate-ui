@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { Toast } from '@qa-animate-ui/react/primitives/base-ui/toast';
+import { Toast } from 'qa-animate-ui/primitives/base-ui/toast';
 
 const viewport = {
   position: 'fixed',

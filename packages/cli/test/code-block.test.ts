@@ -20,10 +20,10 @@ for (const file of readdirSync(FIXTURES))
     expect(result.manual).toEqual([]);
     const code = result.code;
     expect(code).toContain(
-      'import * as CodeBlockPrimitive from "@qa-animate-ui/react/primitives/code-block"',
+      'import * as CodeBlockPrimitive from "qa-animate-ui/primitives/code-block"',
     );
     expect(code).toContain(
-      'import { CopyButton, CopyButtonIcon } from "@qa-animate-ui/react/primitives/buttons/copy"',
+      'import { CopyButton, CopyButtonIcon } from "qa-animate-ui/primitives/buttons/copy"',
     );
     expect(code).toContain('<CodeBlockPrimitive.Content');
     expect(code).toContain('</CodeBlockPrimitive.Content>');

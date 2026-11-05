@@ -4,7 +4,7 @@ import * as React from "react"
 import {
   Slides,
   type SlideDirection,
-} from "@qa-animate-ui/react/primitives/effects/slide"
+} from "qa-animate-ui/primitives/effects/slide"
 import { RepeatIcon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
 

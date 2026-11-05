@@ -13,8 +13,8 @@ import {
 import {
   ReducedMotionConfig,
   useShouldReduceMotion,
-} from '@qa-animate-ui/react/utils/motion';
-import { usePageVisible } from '@qa-animate-ui/react/utils/use-page-visible';
+} from 'qa-animate-ui/utils/motion';
+import { usePageVisible } from 'qa-animate-ui/utils/use-page-visible';
 import { cn } from 'cn';
 
 const CHARACTERS =

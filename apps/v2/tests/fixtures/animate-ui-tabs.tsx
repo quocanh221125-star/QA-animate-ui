@@ -9,7 +9,7 @@ import {
   TabsList,
   TabsTrigger,
   type TabsProps,
-} from '@qa-animate-ui/react/primitives/tabs';
+} from 'qa-animate-ui/primitives/tabs';
 
 const TABS = [
   { value: 'one', label: 'One' },

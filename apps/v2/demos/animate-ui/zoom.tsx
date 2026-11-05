@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Zooms } from "@qa-animate-ui/react/primitives/effects/zoom"
+import { Zooms } from "qa-animate-ui/primitives/effects/zoom"
 import { RepeatIcon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
 

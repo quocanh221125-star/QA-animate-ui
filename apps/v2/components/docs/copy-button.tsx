@@ -1,6 +1,6 @@
 'use client';
 
-import { Button } from '@qa-animate-ui/react/primitives/buttons/button';
+import { Button } from 'qa-animate-ui/primitives/buttons/button';
 import { Copy01Icon, Tick02Icon } from '@hugeicons/core-free-icons';
 import { cn } from 'cn';
 import { useEffect, useRef, useState } from 'react';

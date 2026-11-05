@@ -30,7 +30,7 @@ describe('rewrite', () => {
       'import { Checkbox } from "@/components/animate-ui/primitives/radix/checkbox"\n',
     );
     expect(code).toBe(
-      'import { Root as Checkbox } from "@qa-animate-ui/react/primitives/radix-ui/checkbox"\n',
+      'import { Root as Checkbox } from "qa-animate-ui/primitives/radix-ui/checkbox"\n',
     );
   });
 
@@ -42,7 +42,7 @@ describe('rewrite', () => {
       `export {
   Root as Accordion,
   type AccordionItemProps as ItemProps,
-} from '@qa-animate-ui/react/primitives/radix-ui/accordion';\n`,
+} from 'qa-animate-ui/primitives/radix-ui/accordion';\n`,
     );
   });
 
@@ -82,7 +82,7 @@ describe('rewrite', () => {
       '/app/types.ts',
     );
     expect(code).toBe(
-      "import type { Popover as PopoverPrimitive } from '@qa-animate-ui/react/primitives/base-ui/popover';\n\ntype PopoverProps = PopoverPrimitive.Root.Props;\n\nexport type P = PopoverProps;\n",
+      "import type { Popover as PopoverPrimitive } from 'qa-animate-ui/primitives/base-ui/popover';\n\ntype PopoverProps = PopoverPrimitive.Root.Props;\n\nexport type P = PopoverProps;\n",
     );
   });
 
@@ -94,7 +94,7 @@ describe('rewrite', () => {
       `import {
   Root as Tooltip,
   type TooltipProps,
-} from '@qa-animate-ui/react/primitives/radix-ui/tooltip';\n`,
+} from 'qa-animate-ui/primitives/radix-ui/tooltip';\n`,
     );
   });
 
@@ -116,7 +116,7 @@ describe('rewrite', () => {
       '/app/components/animate-ui/icons/bell.tsx',
     );
     expect(code).toBe(
-      "import { AnimateIcon, type IconProps } from '@qa-animate-ui/react/icons';\n",
+      "import { AnimateIcon, type IconProps } from 'qa-animate-ui/icons';\n",
     );
   });
 
@@ -125,7 +125,7 @@ describe('rewrite', () => {
       "import { useControlledState } from '@/hooks/use-controlled-state';\nimport { getStrictContext } from '@/lib/get-strict-context';\n",
     );
     expect(code).toBe(
-      "import { useControlledState } from '@qa-animate-ui/react/utils/use-controlled-state';\nimport { getStrictContext } from '@qa-animate-ui/react/utils/strict-context';\n",
+      "import { useControlledState } from 'qa-animate-ui/utils/use-controlled-state';\nimport { getStrictContext } from 'qa-animate-ui/utils/strict-context';\n",
     );
   });
 
@@ -202,7 +202,7 @@ describe('rewrite', () => {
       "vi.mock('@/components/animate-ui/primitives/radix/tooltip', () => ({}));\n",
     );
     expect(manual.map((step) => step.message)).toEqual([
-      'Mock of a v1 module: point it at @qa-animate-ui/react/primitives/radix-ui/tooltip, which now replaces it.',
+      'Mock of a v1 module: point it at qa-animate-ui/primitives/radix-ui/tooltip, which now replaces it.',
     ]);
   });
 
@@ -234,7 +234,7 @@ describe('rewrite', () => {
         'import {',
         '  type DialogContentProps,',
         '  Content as SheetContent,',
-        "} from '@qa-animate-ui/react/primitives/radix-ui/dialog';",
+        "} from 'qa-animate-ui/primitives/radix-ui/dialog';",
         '',
         "type SheetContentProps = DialogContentProps & { side?: 'top' | 'right' | 'bottom' | 'left' };",
         '',
@@ -252,10 +252,10 @@ describe('rewrite', () => {
       "import { RadioGroup, Radio } from '@/components/animate-ui/primitives/base/radio';\n",
     );
     expect(code).toContain(
-      "import { RadioGroup } from '@qa-animate-ui/react/primitives/base-ui/radio-group';",
+      "import { RadioGroup } from 'qa-animate-ui/primitives/base-ui/radio-group';",
     );
     expect(code).toContain(
-      "import { Radio as RadioPrimitive } from '@qa-animate-ui/react/primitives/base-ui/radio';",
+      "import { Radio as RadioPrimitive } from 'qa-animate-ui/primitives/base-ui/radio';",
     );
     expect(code).toContain('const Radio = RadioPrimitive.Root;');
   });
@@ -284,7 +284,7 @@ describe('rewrite', () => {
     const { code, manual, found } = run(source);
     expect(code).toBe(source);
     expect(manual.map((step) => step.message)).toEqual([
-      'buttons/liquid is a registry component in v2, not part of @qa-animate-ui/react: add it with `npx shadcn@latest add @animate-ui/buttons-liquid` and import it from `@/components/animate-ui/buttons/liquid`. The v1 file keeps working meanwhile.',
+      'buttons/liquid is a registry component in v2, not part of qa-animate-ui: add it with `npx shadcn@latest add @animate-ui/buttons-liquid` and import it from `@/components/animate-ui/buttons/liquid`. The v1 file keeps working meanwhile.',
     ]);
     expect(found).toEqual(['buttons/liquid']);
   });
@@ -395,7 +395,7 @@ describe('rewrite', () => {
         'import {',
         '  Root as DropdownMenu,',
         '  Item as DropdownMenuItem,',
-        "} from '@qa-animate-ui/react/primitives/radix-ui/dropdown-menu';",
+        "} from 'qa-animate-ui/primitives/radix-ui/dropdown-menu';",
         'import {',
         '  DropdownMenuHighlight,',
         '  useDropdownMenu,',
@@ -409,7 +409,7 @@ describe('rewrite', () => {
       [5, 7],
     ]);
     expect(manual[0]!.message).toBe(
-      "`DropdownMenuHighlight` is a v1-only part with no equivalent in @qa-animate-ui/react/primitives/radix-ui/dropdown-menu, left on v1: its v1 parent is now v2, so it throws at runtime. Remove it (v2 parts animate themselves; style their data-state attributes or control the state yourself), or replace the component with shadcn/ui's + `animate-ui animate`.",
+      "`DropdownMenuHighlight` is a v1-only part with no equivalent in qa-animate-ui/primitives/radix-ui/dropdown-menu, left on v1: its v1 parent is now v2, so it throws at runtime. Remove it (v2 parts animate themselves; style their data-state attributes or control the state yourself), or replace the component with shadcn/ui's + `animate-ui animate`.",
     );
     expect(manual[1]!.message).toContain(
       '`useDropdownMenu` is a v1 context hook, left on v1: its v1 parent is now v2, so it throws at runtime.',

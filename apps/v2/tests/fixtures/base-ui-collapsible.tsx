@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { Collapsible } from '@qa-animate-ui/react/primitives/base-ui/collapsible';
+import { Collapsible } from 'qa-animate-ui/primitives/base-ui/collapsible';
 
 export default function BaseCollapsibleFixture() {
   const [open, setOpen] = React.useState(true);

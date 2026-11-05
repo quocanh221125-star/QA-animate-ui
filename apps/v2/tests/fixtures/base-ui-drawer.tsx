@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { Drawer } from '@qa-animate-ui/react/primitives/base-ui/drawer';
+import { Drawer } from 'qa-animate-ui/primitives/base-ui/drawer';
 
 const backdrop = 'fixed inset-0 z-50 bg-black/20';
 const viewport = 'fixed inset-0 z-50';

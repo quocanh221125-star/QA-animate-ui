@@ -1,6 +1,6 @@
 "use client"
 
-import { ShimmeringText } from "@qa-animate-ui/react/primitives/texts/shimmering"
+import { ShimmeringText } from "qa-animate-ui/primitives/texts/shimmering"
 
 export const controls = {
   ShimmeringText: {

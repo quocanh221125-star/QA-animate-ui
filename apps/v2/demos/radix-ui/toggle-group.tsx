@@ -3,7 +3,7 @@
 import * as React from "react"
 import { type VariantProps } from "class-variance-authority"
 import { cn } from "cn"
-import { ToggleGroup as ToggleGroupPrimitive } from "@qa-animate-ui/react/primitives/radix-ui"
+import { ToggleGroup as ToggleGroupPrimitive } from "qa-animate-ui/primitives/radix-ui"
 
 import { toggleVariants } from "@/components/ui/toggle"
 import { TextBoldIcon, TextItalicIcon, TextUnderlineIcon } from "@hugeicons/core-free-icons"

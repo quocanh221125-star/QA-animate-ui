@@ -8,14 +8,14 @@ import {
   type Variant,
 } from 'motion/react';
 
-import { Slot, type WithAsChild } from '@qa-animate-ui/react/primitives/slot';
+import { Slot, type WithAsChild } from 'qa-animate-ui/primitives/slot';
 import {
   motionTokens,
   ReducedMotionConfig,
   useShouldReduceMotion,
   useTempoTransition,
-} from '@qa-animate-ui/react/utils/motion';
-import { getStrictContext } from '@qa-animate-ui/react/utils/strict-context';
+} from 'qa-animate-ui/utils/motion';
+import { getStrictContext } from 'qa-animate-ui/utils/strict-context';
 import { cn } from 'cn';
 
 const FACE_TRANSITION: Transition = {

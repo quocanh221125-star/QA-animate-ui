@@ -10,7 +10,7 @@
 Animate every installed shadcn/ui component in one command:
 
 ```bash
-npx @qa-animate-ui/cli@latest animate all
+npx qa-animate-ui-cli@latest animate all
 ```
 
 Or swap a primitive's import yourself:
@@ -19,13 +19,13 @@ Or swap a primitive's import yourself:
 // Before
 import { Accordion as AccordionPrimitive } from 'radix-ui';
 // After
-import { Accordion as AccordionPrimitive } from '@qa-animate-ui/react/primitives/radix-ui';
+import { Accordion as AccordionPrimitive } from 'qa-animate-ui/primitives/radix-ui';
 ```
 
 ## Workspace Structure
 
-- **`packages/react`** (`@qa-animate-ui/react`): Core animated React primitives, components, effects, buttons, and animated icons (Radix UI, Base UI, React Aria + Motion).
-- **`packages/cli`** (`@qa-animate-ui/cli`): Automated CLI & codemod tool to swap standard shadcn/ui primitives for `@qa-animate-ui/react` animated primitives.
+- **`packages/react`** (`qa-animate-ui`): Core animated React primitives, components, effects, buttons, and animated icons (Radix UI, Base UI, React Aria + Motion).
+- **`packages/cli`** (`qa-animate-ui-cli`): Automated CLI & codemod tool to swap standard shadcn/ui primitives for `qa-animate-ui` animated primitives.
 - **`apps/v2`**: Interactive Next.js Documentation, Component Showcase, and Shadcn Registry.
 
 ## Development

@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { Accordion } from '@qa-animate-ui/react/primitives/base-ui/accordion';
+import { Accordion } from 'qa-animate-ui/primitives/base-ui/accordion';
 
 export default function BaseAccordionFixture() {
   const [value, setValue] = React.useState<string[]>(['a']);

@@ -4,7 +4,7 @@ import {
   AvatarGroup,
   AvatarGroupTooltip,
   AvatarGroupTooltipArrow,
-} from "@qa-animate-ui/react/primitives/avatar-group"
+} from "qa-animate-ui/primitives/avatar-group"
 import { cn } from "cn"
 import { motion } from "motion/react"
 

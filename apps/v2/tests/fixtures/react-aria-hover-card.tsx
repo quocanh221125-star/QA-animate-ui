@@ -5,7 +5,7 @@ import {
   Link,
   Popover,
   PreviewTrigger,
-} from '@qa-animate-ui/react/primitives/react-aria';
+} from 'qa-animate-ui/primitives/react-aria';
 
 export default function ReactAriaHoverCardFixture() {
   const [open, setOpen] = React.useState(false);

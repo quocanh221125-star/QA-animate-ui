@@ -17,9 +17,9 @@ const KEYFRAMES =
 
 test('select: every base swaps its primitive and loses the CSS keyframes', () => {
   const swaps = {
-    'radix-ui': 'from "@qa-animate-ui/react/primitives/radix-ui"',
-    'base-ui': 'from "@qa-animate-ui/react/primitives/base-ui/select"',
-    'react-aria': 'from "@qa-animate-ui/react/primitives/react-aria"',
+    'radix-ui': 'from "qa-animate-ui/primitives/radix-ui"',
+    'base-ui': 'from "qa-animate-ui/primitives/base-ui/select"',
+    'react-aria': 'from "qa-animate-ui/primitives/react-aria"',
   };
   for (const [library, swap] of Object.entries(swaps)) {
     for (const file of fixtures(library, 'select')) {
@@ -43,7 +43,7 @@ test('combobox: the `@base-ui/react` import of every base moves to the Base UI b
     for (const file of fixtures(library, 'combobox')) {
       const { code, imports } = transform(read(library, file));
       expect(code, file).toContain(
-        'import { Combobox as ComboboxPrimitive } from "@qa-animate-ui/react/primitives/base-ui"',
+        'import { Combobox as ComboboxPrimitive } from "qa-animate-ui/primitives/base-ui"',
       );
       expect(
         imports.map((change) => change.from),

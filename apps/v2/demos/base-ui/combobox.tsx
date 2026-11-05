@@ -1,8 +1,8 @@
 "use client"
 
 import * as React from "react"
-import { Combobox as ComboboxPrimitive } from "@qa-animate-ui/react/primitives/base-ui"
-import { AnimateUIProvider } from "@qa-animate-ui/react/provider"
+import { Combobox as ComboboxPrimitive } from "qa-animate-ui/primitives/base-ui"
+import { AnimateUIProvider } from "qa-animate-ui/provider"
 import { cn } from "cn"
 
 import { Button } from "@/components/ui/base-ui/button"

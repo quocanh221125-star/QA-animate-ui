@@ -1,7 +1,7 @@
 'use client';
 
-import { AnimateUIProvider } from '@qa-animate-ui/react/provider';
-import { RadioGroup } from '@qa-animate-ui/react/primitives/radix-ui/radio-group';
+import { AnimateUIProvider } from 'qa-animate-ui/provider';
+import { RadioGroup } from 'qa-animate-ui/primitives/radix-ui/radio-group';
 
 function Group({ label }: { label: string }) {
   return (

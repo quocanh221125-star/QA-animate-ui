@@ -3,9 +3,9 @@
 import {
   RotatingText,
   RotatingTextContainer,
-} from '@qa-animate-ui/react/primitives/texts/rotating';
-import { SplittingText } from '@qa-animate-ui/react/primitives/texts/splitting';
-import { ease } from '@qa-animate-ui/react/utils/motion';
+} from 'qa-animate-ui/primitives/texts/rotating';
+import { SplittingText } from 'qa-animate-ui/primitives/texts/splitting';
+import { ease } from 'qa-animate-ui/utils/motion';
 import { motion } from 'motion/react';
 import { useLayoutEffect, useRef, useState } from 'react';
 

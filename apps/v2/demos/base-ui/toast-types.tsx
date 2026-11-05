@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Toast as ToastPrimitive } from "@qa-animate-ui/react/primitives/base-ui/toast"
+import { Toast as ToastPrimitive } from "qa-animate-ui/primitives/base-ui/toast"
 import { cn } from "cn"
 
 import { Button } from "@/components/ui/base-ui/button"

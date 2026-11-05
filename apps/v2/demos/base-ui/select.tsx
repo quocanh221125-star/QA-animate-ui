@@ -1,8 +1,8 @@
 "use client"
 
 import * as React from "react"
-import { Select as SelectPrimitive } from "@qa-animate-ui/react/primitives/base-ui/select"
-import { AnimateUIProvider } from "@qa-animate-ui/react/provider"
+import { Select as SelectPrimitive } from "qa-animate-ui/primitives/base-ui/select"
+import { AnimateUIProvider } from "qa-animate-ui/provider"
 import { cn } from "cn"
 
 import { ArrowDown01Icon, ArrowUp01Icon, Tick02Icon, UnfoldMoreIcon } from "@hugeicons/core-free-icons"

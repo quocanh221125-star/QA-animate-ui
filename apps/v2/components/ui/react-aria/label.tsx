@@ -6,7 +6,7 @@ import {
   LabelContext,
   Label as LabelPrimitive,
   type LabelProps,
-} from "@qa-animate-ui/react/primitives/react-aria"
+} from "qa-animate-ui/primitives/react-aria"
 
 function Label({ className, htmlFor, slot, ...props }: LabelProps) {
   const label = (

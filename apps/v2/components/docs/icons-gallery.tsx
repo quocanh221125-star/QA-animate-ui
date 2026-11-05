@@ -4,7 +4,7 @@ import {
   AnimateIcon,
   staticAnimations,
   type IconProps,
-} from '@qa-animate-ui/react/icons';
+} from 'qa-animate-ui/icons';
 import {
   Cancel01Icon,
   InfinityIcon,
@@ -13,7 +13,7 @@ import {
 } from '@hugeicons/core-free-icons';
 import { HugeiconsIcon } from '@hugeicons/react';
 import { cn } from 'cn';
-import { motionTokens } from '@qa-animate-ui/react/utils/motion';
+import { motionTokens } from 'qa-animate-ui/utils/motion';
 import {
   AnimatePresence,
   motion,
@@ -292,7 +292,7 @@ function IconInstallation({ entry }: { entry: IconEntry }) {
                 command={(m) =>
                   vue
                     ? `${m.add} @qa-animate-ui/vue motion-v`
-                    : `${m.add} @qa-animate-ui/react motion`
+                    : `${m.add} qa-animate-ui motion`
                 }
               />
               {file && (

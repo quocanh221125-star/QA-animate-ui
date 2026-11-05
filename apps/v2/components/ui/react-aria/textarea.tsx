@@ -5,7 +5,7 @@ import { cn } from "cn"
 import {
   composeRenderProps,
   TextArea as TextareaPrimitive,
-} from "@qa-animate-ui/react/primitives/react-aria"
+} from "qa-animate-ui/primitives/react-aria"
 
 function Textarea({
   className,

@@ -4,7 +4,7 @@ import * as React from 'react';
 import {
   Highlight,
   HighlightItem,
-} from '@qa-animate-ui/react/primitives/effects/highlight';
+} from 'qa-animate-ui/primitives/effects/highlight';
 
 const bg = 'bg-black/10';
 

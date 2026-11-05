@@ -8,7 +8,7 @@ import {
   DisclosurePanel,
   Heading,
   type Key,
-} from '@qa-animate-ui/react/primitives/react-aria';
+} from 'qa-animate-ui/primitives/react-aria';
 
 export default function ReactAriaDisclosureFixture() {
   const [expanded, setExpanded] = React.useState(true);

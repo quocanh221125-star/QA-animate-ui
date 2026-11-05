@@ -1,8 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import { RadioGroup } from '@qa-animate-ui/react/primitives/radix-ui/radio-group';
-import * as RadioGroupStar from '@qa-animate-ui/react/primitives/radix-ui/radio-group';
+import { RadioGroup } from 'qa-animate-ui/primitives/radix-ui/radio-group';
+import * as RadioGroupStar from 'qa-animate-ui/primitives/radix-ui/radio-group';
 
 const item = 'grid size-5 place-content-center rounded-full border';
 

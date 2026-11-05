@@ -3,7 +3,7 @@
 import {
   SwappingText,
   type SwappingTextDirection,
-} from "@qa-animate-ui/react/primitives/texts/swapping"
+} from "qa-animate-ui/primitives/texts/swapping"
 
 const WORDS = ["Design", "Develop", "Deploy"]
 

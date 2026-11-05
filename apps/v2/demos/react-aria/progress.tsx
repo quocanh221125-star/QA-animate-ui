@@ -7,7 +7,7 @@ import {
   ProgressBar as ProgressPrimitive,
   type LabelProps,
   type ProgressBarProps as ProgressPrimitiveProps,
-} from "@qa-animate-ui/react/primitives/react-aria"
+} from "qa-animate-ui/primitives/react-aria"
 
 type ProgressContextValue = {
   percentage?: number

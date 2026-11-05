@@ -16,7 +16,7 @@ import {
   toCssTiming,
   ReducedMotionConfig,
   useShouldReduceMotion,
-} from '@qa-animate-ui/react/utils/motion';
+} from 'qa-animate-ui/utils/motion';
 ```
 
 The static exports are the values at tempo 1. Inside a component, either read them from `useMotionTokens()` or pass the one you use through `useTempoTransition()`: both follow `<AnimateUIProvider tempo>`.
@@ -178,7 +178,7 @@ Delays between items moving one after another, in seconds, paced by `tempo` like
 `tempo` paces every token at once: durations and delays are multiplied by it, and a stiffness/damping spring keeps its exact shape on the new time scale (stiffness / tempo², damping / tempo). Change it for an app or a subtree without touching any component:
 
 ```tsx
-import { AnimateUIProvider } from '@qa-animate-ui/react/provider';
+import { AnimateUIProvider } from 'qa-animate-ui/provider';
 
 <AnimateUIProvider tempo={0.85}>{children}</AnimateUIProvider>; // a little crisper; 1.15 a little calmer
 ```
@@ -196,7 +196,7 @@ Checks (checkboxes', and the checks of menus, selects, comboboxes and lists) sho
 <AnimateUIProvider checkAnimation="pop">{children}</AnimateUIProvider>
 ```
 
-A check's own `animation` prop wins. Inside a component, `useCheckAnimation(own)` returns the one to use (`@qa-animate-ui/react/utils/motion`).
+A check's own `animation` prop wins. Inside a component, `useCheckAnimation(own)` returns the one to use (`qa-animate-ui/utils/motion`).
 
 ## CSS transitions
 

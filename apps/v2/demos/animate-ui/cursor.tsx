@@ -7,7 +7,7 @@ import {
   CursorProvider,
   type CursorFollowAlign,
   type CursorFollowSide,
-} from "@qa-animate-ui/react/primitives/cursor"
+} from "qa-animate-ui/primitives/cursor"
 
 export const controls = {
   CursorProvider: {
